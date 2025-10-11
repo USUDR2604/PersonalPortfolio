@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PersonalPortfolio/static/css/main.2f780b1c.css",
-    "main.js": "/PersonalPortfolio/static/js/main.0a7f0f58.js",
+    "main.css": "/PersonalPortfolio/static/css/main.096763cb.css",
+    "main.js": "/PersonalPortfolio/static/js/main.132091ac.js",
     "static/js/453.c937a3a2.chunk.js": "/PersonalPortfolio/static/js/453.c937a3a2.chunk.js",
     "static/media/Bag1.png": "/PersonalPortfolio/static/media/Bag1.1a2225ee6c7d6ac567de.png",
     "static/media/Web_Design_Logo.png": "/PersonalPortfolio/static/media/Web_Design_Logo.5daa16f8cdc476f9d78f.png",
@@ -60,12 +60,12 @@
     "static/media/crypto_logo.jpg": "/PersonalPortfolio/static/media/crypto_logo.278e356d5943df6a358b.jpg",
     "static/media/fa-v4compatibility.woff2": "/PersonalPortfolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/PersonalPortfolio/index.html",
-    "main.2f780b1c.css.map": "/PersonalPortfolio/static/css/main.2f780b1c.css.map",
-    "main.0a7f0f58.js.map": "/PersonalPortfolio/static/js/main.0a7f0f58.js.map",
+    "main.096763cb.css.map": "/PersonalPortfolio/static/css/main.096763cb.css.map",
+    "main.132091ac.js.map": "/PersonalPortfolio/static/js/main.132091ac.js.map",
     "453.c937a3a2.chunk.js.map": "/PersonalPortfolio/static/js/453.c937a3a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f780b1c.css",
-    "static/js/main.0a7f0f58.js"
+    "static/css/main.096763cb.css",
+    "static/js/main.132091ac.js"
   ]
 }
