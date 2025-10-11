@@ -1,0 +1,356 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+/* ✅ Mobile: <768px */
+@media (max-width:767px) {
+body{
+font-size: 11px;}
+.education-flex {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 1rem 0;
+  height: 100%;
+  min-height: 300px;
+  font-style: italic;
+}
+
+.education-left {
+  display: none;
+}
+
+.education-right {
+  flex: 2 0 100%;
+}
+
+.education-mobile-content {
+  display: flex;
+  flex: 1 0 100%;
+  margin-bottom: 0.85rem;
+  font-size: 1.65rem;
+}
+.education-mobile-det{
+justify-content:start;}
+
+.education-mobile-det img.img-icon-sty {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  border-radius:50%;
+}
+.education-screen-content{
+display:none;}
+.edu-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.edu-locdursty {
+  display:flex;
+  width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edu-locsty,
+  .edu-dursty {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .edu-dursty {
+    text-align: right;
+    padding-right: 0.5rem;
+    margin-top: 0.25rem;
+  }
+}
+/* ✅ Tab: <992px */
+@media (min-width:768px) and (max-width: 991px) {
+body{
+font-size: 13px;}
+.education-screen-content{
+display:none;}
+  .education-flex {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 0;
+    height: 100%;
+    min-height: 300px;
+    font-style: italic;
+  }
+
+  .education-left {
+    display: none;
+  }
+
+  .education-right {
+    flex: 2 0 100%;
+  }
+
+  .education-mobile-content {
+    display: flex;
+    flex: 1 0 100%;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  .education-mobile-det{
+  justify-content:start;}
+.edu-logo {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+  .education-mobile-det img.img-icon-sty {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    border-radius:50%;
+  }
+  .edu-locdursty {
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edu-locsty,
+  .edu-dursty {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .edu-dursty {
+    text-align: right;
+    padding-right: 0.5rem;
+    margin-top: 0.25rem;
+  }
+}
+
+/* ✅ Tablet: 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+body{
+font-size: 15px;}
+.education-screen-content{
+display:show;}
+  .education-flex {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.2rem 1.65rem;
+    height: 100%;
+    min-height: 400px;
+    font-style: italic;
+  }
+
+  .education-left {
+    flex: 0 0 32.5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .education-flex .education-logo-sty{
+  flex-direction:column;
+  text-align:center;}
+
+  .education-right {
+    flex: 0 0 67.5%;
+  }
+
+  .education-mobile-content {
+    display: none;
+  }
+  .edu-logo {
+    width:4.15rem;
+    height: 4.15rem;
+  }
+  .edu-locdursty {
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+
+  .edu-locsty {
+    flex: 0 0 65%;
+    overflow: hidden;           
+    text-overflow: ellipsis;    
+    white-space: nowrap;       
+  }
+
+  .edu-dursty {
+    flex: 0 0 35%;
+    text-align: right;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+  }
+}
+
+/* ✅ Desktop: 1200px and above */
+@media (min-width: 1200px) {
+body{
+font-size: 15px;}
+.education-screen-content{
+display:show;}
+  .education-flex {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    height: 100%;
+    min-height: 400px;
+    font-style: italic;
+  }
+
+  .education-left {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .education-flex .education-logo-sty{
+  flex-direction:column;
+  text-align:center;}
+
+  .education-right {
+    flex: 0 0 75%;
+  }
+
+  .education-mobile-content {
+    display: none;
+  }
+  .edu-locdursty {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .edu-locsty {
+    flex: 0 0 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .edu-dursty {
+    flex: 0 0 35%;
+    text-align: right;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+  }
+  .edu-logo {
+    width:5rem;
+    height: 5rem;
+  }
+}
+
+/* Remaining Common Styles */
+.icon-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  margin: auto;
+  padding:2rem;
+}
+
+.education-icon {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.education-right {
+  flex: 1;
+  position: relative;
+  color: black !important;
+}
+
+
+.text-bold {
+  font-style: bold;
+  font-weight: 700;
+}
+
+.edu-logo {
+  border-radius: 50%;
+  border: 0.1rem solid black;
+  object-fit: contain;
+  background: #fff;
+  padding: 0.25rem;
+}
+
+.education-logsty {
+  display: flex;
+  gap: 1.25rem;
+  align-items: stretch;
+  color: black !important;
+}
+
+.edu-logoicon {
+  flex: 0 0 12.5%;
+  text-align: center;
+}
+
+.edu-compsty {
+  flex: 0 0 87.5%;
+}
+
+
+
+.education-detail-sty {
+  padding: 0.5rem;
+}
+
+.edu-tasks {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  color: black;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.edu-tasks li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+.edu-skills,
+.edu-projects,
+.edu-courses {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: white;
+}
+
+.skill-headsty {
+  color: black;
+  font-style: italic;
+}
+
+.skill-badge {
+  font-style: italic;
+  background-color: #334155;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+}
+
+
+.horizsontalsty {
+  height: 0.325rem;
+  background-color: #737373;
+}
+

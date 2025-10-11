@@ -1,0 +1,88 @@
+/* Root container spacing */
+.container {
+  max-width: 1140px;
+}
+
+/* Developer info box on the left */
+.contactUsLeft {
+  background-color: #1e293b;
+  color: #ffffff;
+  border-radius: 1rem;
+}
+.contactUsLeft{height:auto;
+min-height: 60vh;
+background-color: #6c757d;}
+.contactUsLeft h4 {
+  font-weight: bold;
+  color: #fff;
+}
+
+.contactUsLeft ul {
+  padding-left: 1rem;
+}
+
+.contactUsLeft ul li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Icon spacing inside list items */
+.contactUsLeft i {
+  font-size: 1rem;
+  width: 1.5rem;
+}
+
+/* Heading in form */
+.contactUsRight h3 {
+  font-weight: bold;
+  color: #0f172a;
+}
+
+/* Contact icon (avatar) */
+.contactUsRight img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Character counter */
+.form-text {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+/* Error state (provided by Bootstrap classes) remains untouched */
+
+/* Form field adjustments */
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 0.95rem;
+}
+
+/* Submit button */
+.btn.btn-primary {
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .contactUsLeft {
+    margin-bottom: 2rem;
+  }
+
+  .contactUsRight h3 {
+    font-size: 1.5rem;
+  }
+
+  .contactUsLeft ul li {
+    font-size: 0.85rem;
+  }
+}

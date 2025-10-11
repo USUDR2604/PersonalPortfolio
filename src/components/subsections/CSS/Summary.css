@@ -1,0 +1,136 @@
+/* === Summary Flex Container === */
+.summary-flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+  font-style: italic;
+}
+
+/* === Summary Left (Icon + Heading) === */
+.summary-left {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.summary-img-icon {
+  width: 7.5rem;
+  height: 7.5rem;
+  object-fit: contain;
+}
+
+/* === Summary Right (Text Block) === */
+.summary-right {
+  flex: 0 0 70%;
+  padding-left: 2rem;
+  color: #333;
+  text-align: justify;
+  line-height: 1.75;
+  font-size: 1.15rem;
+  z-index: 2;
+}
+
+/* === Vertical Separator === */
+.summary-separator {
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  height: 80%;
+  width: 2px;
+  background-color: #2d3748;
+  z-index: 1;
+  opacity: 0.6;
+  border-radius: 4px;
+  animation: growLine 0.8s ease-out;
+}
+
+@keyframes growLine {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 80%;
+    opacity: 0.6;
+  }
+}
+
+/* === Mobile Heading Content (Default Hidden) === */
+.summary-mobile-content {
+  display: none;
+  text-align: center;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.summary-img-mobile-icon {
+  width: 2rem;
+  height: auto;
+}
+
+/* === Tablet View (768px–991px) === */
+@media (max-width: 991px) {
+  .summary-flex {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .summary-left,
+  .summary-right {
+    flex: 0 0 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .summary-left {
+    display: none;
+  }
+
+  .summary-right {
+    font-size: 1.05rem;
+    padding: 1rem;
+    text-align: justify;
+  }
+
+  .summary-separator {
+    display: none;
+  }
+
+  .summary-mobile-content {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* === Mobile View (<768px) === */
+@media (max-width: 767px) {
+  .summary-right {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .summary-img-icon {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .summary-left {
+    display: none;
+  }
+
+  .summary-mobile-content {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,134 @@
+/* Key Skill Card Container */
+.key-skill-card {
+  width: 12rem;
+  text-align: center;
+  margin-top: 0.3rem;
+  padding: 0.45rem;
+  border-radius: 0.8rem;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.key-skill-card:hover {
+  transform: scale(1.05);
+}
+
+/* Logo inside circular progress */
+.circle-logo {
+  width: 5.75rem;
+  height: 5.75rem;
+  border-radius: 50%;
+  object-fit: contain;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Skill title */
+.key-skill-info h4 {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Optional percentage text */
+.key-skill-info p {
+  margin: 0;
+  font-weight: bold;
+  color: #555;
+}
+
+.key-skill-card {
+  animation: pulse 12s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0rem rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0rem rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0rem rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .key-skill-card {
+    width: 12rem;
+  }
+
+  .circle-logo {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+   .key-skills-wrapper {
+     grid-template-columns: repeat(4, 1fr);
+   }
+
+   .supporting-skills-wrapper {
+     grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+/* Medium Screens */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .key-skill-card {
+    width: 9.5rem;
+  }
+
+  .circle-logo {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+  .key-skills-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .supporting-skills-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets */
+@media (max-width: 991px) and (min-width: 768px) {
+  .key-skill-card {
+    width: 8.75rem;
+  }
+
+  .circle-logo {
+    width: 4.75rem;
+    height: 4.75rem;
+  }
+   .key-skills-wrapper {
+     grid-template-columns: repeat(4, 1fr);
+   }
+
+   .supporting-skills-wrapper {
+     grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+/* Small Tablets & Mobile */
+@media (max-width: 767px) {
+  .key-skill-card {
+    width: 7.5rem;
+  }
+
+  .circle-logo {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .key-skills-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .supporting-skills-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

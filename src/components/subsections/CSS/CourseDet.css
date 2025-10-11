@@ -1,0 +1,257 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(11px, 1.5vw, 16px);
+}
+.course-flex {
+  display: flex;
+  align-items: stretch;     /* Ensures left and right align vertically */
+  min-height: 400px; 
+  width:100%;  
+  height:100%;    
+}
+.course-flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 400px;
+  padding: 1rem 0;
+  font-style: italic;
+}
+.course-left{
+  width:100%;
+  min-height: 30vh;
+height:auto;}
+
+/* ===== Common Styling ===== */
+
+.course-icon {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.course-logo-sty {
+  text-align: center;
+}
+
+.course-icon-wrapper {
+  margin-bottom: 1rem;
+}
+
+.ordered-item-list {
+  width: 100%;
+}
+
+.ordered-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ordered-item {
+  margin-bottom: 2rem;
+}
+
+.course-detail-sty {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  gap: 1.25rem;
+}
+
+.course-main-logo {
+  flex: 0 0 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.course-main-logo img {
+  width: 6rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.course-content {
+  flex: 0 0 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.course-logo {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.course-logo img {
+  width: 4rem;
+  object-fit: contain;
+}
+
+.course-text {
+  flex: 0 0 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.course-text h4 {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  margin: 0;
+}
+
+.course-text p {
+  font-weight: bold;
+  margin: 0.25rem 0;
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+}
+
+.assoc-institution {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.assoc-institution img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.horizsontalsty {
+  height: 0.125rem;
+  background-color: #737373;
+  margin: 1rem 0;
+  border: none;
+}
+
+/* ===== Mobile: < 768px ===== */
+@media (max-width: 767px) {
+  .course-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .course-left {
+    display: none;
+  }
+
+  .course-right {
+    flex: 1 0 100%;
+    padding: 0 1rem;
+  }
+
+  .course-mobile-content {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: clamp(1rem, 4vw, 1.65rem);
+  }
+
+  .course-mobile-content img.img-icon-sty {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+
+  .course-detail-sty,
+  .course-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .course-text {
+    align-items: center;
+  }
+}
+
+/* ===== Tablet: 768px to 991px ===== */
+@media (min-width: 768px) and (max-width: 991px) {
+  .course-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .course-left {
+    display: none;
+  }
+
+  .course-right {
+    flex: 1 0 100%;
+    padding: 0 1.25rem;
+  }
+
+  .course-mobile-content {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: clamp(1.25rem, 3.5vw, 2.25rem);
+  }
+
+  .course-mobile-content img.img-icon-sty {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .course-detail-sty,
+  .course-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .course-text {
+    align-items: center;
+  }
+}
+
+/* ===== Desktop: 992px to 1199px (Left 20%) ===== */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .course-left {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .course-right {
+    flex: 0 0 80%;
+    padding: 1.25rem;
+  }
+
+  .course-mobile-content {
+    display: none;
+  }
+}
+
+/* ===== Desktop: 1200px and more (Left 25%) ===== */
+@media (min-width: 1200px) {
+  .course-left {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .course-right {
+    flex: 0 0 75%;
+    padding: 1.5rem;
+  }
+
+  .course-mobile-content {
+    display: none;
+  }
+}

@@ -1,0 +1,1053 @@
+{
+  "SummarySectionBackgroundColor":"#a3c2c2",
+  "ProjectSectionBackgroundColor": "#cceeff",
+  "EducationSectionBackgroundColor":"#f0f8ff",
+  "ExperienceSectionBackgroundColor":"#ffccb3",
+  "SkillSectionBackgroundColor":"#ccddff",
+  "SummaryDetails":{
+  "Summary":"A highly motivated and results-oriented Master’s student in Computer Science at the University of Missouri - Kansas City, specializing in Data Analysis, Full-Stack Development and Artificial Intelligence. Demonstrates a wealth of experience in developing AI-powered solutions, implementing machine learning models, and advancing cutting-edge deep learning methodologies. Proficient in Python (Django, REST APIs), Java, and C++, with a robust foundation in full-stack development, seamless API integration, and cloud technologies. Known for deploying containerized applications using Docker, and recognized for driving operational excellence through innovative problem-solving. Committed to delivering high-impact, data-driven solutions that foster efficiency and scalability while actively pursuing continuous growth within a dynamic, fast-paced environment."},  
+  "experienceList": [
+    {
+      "title": "Software Engineer",
+      "company": "Tata Consultancy Services",
+      "logo": "TcsLogo",
+      "type": "Full-time",
+      "Duration": {
+        "Start_Date": "Jul 2022",
+        "End_Date": "Dec 2023"
+      },
+      "Location": {
+        "City": "Hyderabad",
+        "State": "Telangana",
+        "Country": "India"
+      },
+      "jobtype": "Onsite",
+      "tasks": [
+        "Developed scalable backend services using Django, Docker, and OpenShift, reducing API response time by 30%.",
+        "Created and optimized 15+ RESTful APIs for authentication, network checks, and data management across microservices.",
+        "Improved database performance with Oracle SQL and PL/SQL, achieving 40% faster data retrieval and real-time updates.",
+        "Enhanced system efficiency with Redis caching and Docker-GitLab deployments, cutting deployment time from 1 hour to 15 minutes.",
+        "Monitored logs with Kibana and Logstash, reducing debugging time by 50% and improving system reliability.",
+        "Designed microservices for dynamic data allocation and server relocation, significantly boosting network performance.",
+        "Authored technical documentation and mentored junior developers to support maintainability and team growth."
+      ],
+      "skills": [
+        "Python",
+        "MySQL",
+        "Django",
+        "Redis",
+        "AngularJS",
+        "Back-End Web Development",
+        "REST APIs",
+        "Django REST Framework"
+      ]
+    },
+    {
+      "title": "Student Intern",
+      "company": "Tata Consultancy Services",
+      "logo": "TcsLogo",
+      "type": "Internship",
+      "Duration": {
+        "Start_Date": "Feb 2022",
+        "End_Date": "May 2022"
+      },
+      "Location": {
+        "City": "Chennai",
+        "State": "Tamil Nadu",
+        "Country": "India"
+      },
+      "jobtype": "Remote",
+      "tasks": [
+        "Built an AI-powered chatbot using Rasa, machine learning, and NLP, improving response accuracy by 20% and boosting user engagement by 50%.",
+        "Developed scalable frontend components with AngularJS, reducing load times by 35% and enhancing user experience.",
+        "Integrated MongoDB for efficient data storage, reducing query execution time by 40%.",
+        "Delivered a fully functional chatbot within 4 months, ahead of schedule, with comprehensive documentation for future upgrades.",
+        "Applied Python, Django, and Docker to streamline backend workflows and support seamless deployment."
+      ],
+      "skills": [
+        "Python",
+        "Teamwork",
+        "MySQL",
+        "Artificial Intelligence (AI)",
+        "Databases",
+        "JavaScript",
+        "Rasa",
+        "MongoDB",
+        "Natural Language Processing (NLP)"
+      ]
+    }
+  ],
+  "educationList": [
+    {
+      "University_Name": "University of Missouri - Kansas City",
+      "University_Shortform": "UMKC",
+      "University_Logo": "#",
+      "Degree": "Masters",
+      "Field_of_Study": "Computer Science",
+      "Grad_Type": "Full-Time",
+      "Duration": { "Start_Date": "Jan 2024", "End_Date": "Dec 2025" },
+      "Grade_Type": { "Grade": "3.67", "OutGrade": "4.00" },
+      "Location": {
+        "City": "Kansas City",
+        "State": "Missouri",
+        "State_SF": "MO",
+        "Country": "United States of America",
+        "Country_SF": "USA",
+        "ZipCode": "64111"
+      },
+      "Description": "Designed and implemented innovative projects, including a Health Records Monitoring System with advanced cryptographic security and a scalable Blood Bank Management System powered by cloud technologies. Other notable projects include an end-to-end chat application, a smart medical system chatbot for real-time interaction, and predictive machine learning models for accurate sales and inventory forecasting. Gained expertise in cloud computing, cryptography, Python, and distributed systems, applying this knowledge to build secure, data-driven, and scalable solutions.",
+      "Activity_Achievements": [
+        "Served as an Event Staff Member for university-hosted academic and cultural events, contributing to organization and coordination efforts.",
+        "Active member of university coding clubs, participating in hackathons, coding challenges, and collaborative tech workshops."
+      ],
+      "Skills": [
+        "Python",
+        "Machine Learning",
+        "Cloud Computing",
+        "Cryptography",
+        "Data Science",
+        "Artificial Intelligence",
+        "NodeJS",
+        "Distributed Computing",
+        "Big Data",
+        "RASA"
+      ],
+      "Courses_Learned": [
+        "Distributed Computing",
+        "Cloud Computing",
+        "Network Architecture",
+        "Data Science",
+        "Big Data Management Systems",
+        "Advanced Operating Systems",
+        "Cryptography",
+        "Advanced Machine Learning (Statistical Learning)"
+      ],
+      "Projects_Contributed": [
+        "Blood bank Management With Cloud Systems",
+        "Distributed Chat Application Between Users",
+        "Operating System File Management",
+        "Health System Data Monitor",
+        "Medical Chatbot Application"
+      ]
+    },
+    {
+      "University_Name": "Shanmugha Arts, Science, Technology & Research Academy",
+      "University_Shortform": "SASTRA",
+      "University_Logo": "#",
+      "Degree": "Bachelors of Technology",
+      "Field_of_Study": "Computer Science",
+      "Grad_Type": "Full-Time",
+      "Duration": {
+        "Start_Date": "Jul 2018",
+        "End_Date": "Jun 2022"
+      },
+      "Grade_Type": {
+        "Grade": "8.449",
+        "OutGrade": "10.00"
+      },
+      "Location": {
+        "City": "Thanjavur",
+        "State": "Tamil Nadu",
+        "State_SF": "TN",
+        "Country": "India",
+        "Country_SF": "IND",
+        "ZipCode": "613401"
+      },
+      "Description": "Completed Bachelor of Technology in Computer Science with a strong focus on practical, project-based learning. Developed multiple real-world applications that demonstrate proficiency in machine learning, web development, and conversational AI. Key projects include a Multi-Digit Handwritten Digit Recognition System using machine learning, a Zodiac Horoscope Web Scraper leveraging Python and BeautifulSoup, a context-aware chatbot built with Rasa and NLP, and a Resume Creator web application using Django. These projects enhanced my skills in Python, full-stack development, web scraping, and AI integration, while also strengthening my abilities in team collaboration, problem-solving, and agile development practices.",
+      "Activity_Achievements": [
+        "Participated in NSS camps.",
+        "Helped poor people with the help of an NGO.",
+        "Worked as a member of the Quality Management Team."
+      ],
+      "Skills": [
+        "Python",
+        "Django",
+        "REST API",
+        "C",
+        "C++",
+        "Artificial Intelligence",
+        "Natural Language Processing",
+        "RASA",
+        "Frontend Development",
+        "Backend Development",
+        "Web Development",
+        "Data Structures",
+        "Java",
+        "SQL",
+        "Oracle-SQL",
+        "MongoDB"
+      ],
+      "Courses_Learned": [
+        "Python Programming",
+        "Django Web Framework",
+        "Natural Language Processing",
+        "Data Science",
+        "Artificial Intelligence",
+        "Internet of Things(IOT)",
+        "Data Structures & Algorithms",
+        "C Programming",
+        "C++ Programming",
+        "Java",
+        "MongoDb",
+        "Database Management Systems(DBMS)",
+        "Distributed Computing",
+        "Operating Systems",
+        "Data Science"
+      ],
+      "Projects_Contributed": [
+        "Movie Recommendation Analysis",
+        "Zodiac Horoscope Details",
+        "Hand Written Multi Digit Recognizer",
+        "RASA Challenging Bot"
+      ]
+    }
+  ],
+  "keySkills": [
+    {
+      "name": "Python",
+      "percentage": 95,
+      "logo": "PythonLogo",
+      "color": "#306998"
+    },
+    {
+      "name": "Data Science",
+      "percentage": 84,
+      "logo": "DSLogo",
+      "color": "#ccc"
+    },
+    {
+      "name": "AWS",
+      "percentage": 75,
+      "logo": "AWSLogo",
+      "color": "#ccc"
+    },
+    {
+      "name": "ML",
+      "percentage": 84,
+      "logo": "MLLogo",
+      "color": "#ff5722"
+    },
+    {
+      "name": "Django",
+      "percentage": 91,
+      "logo": "DjangoLogo",
+      "color": "#092e20"
+    },
+    {
+      "name": "AI",
+      "percentage": 72,
+      "logo": "AILogo",
+      "color": "#9c27b0"
+    },
+    {
+      "name": "React",
+      "percentage": 88,
+      "logo": "ReactLogo",
+      "color": "#61dafb"
+    },
+
+    {
+      "name": "SQL",
+      "percentage": 95,
+      "logo": "SQLLogo",
+      "color": "#00758f"
+    }
+  ],
+  "supportingSkills": [
+    {
+      "name": "Rasa",
+      "percentage": 84,
+      "logo": "RasaLogo",
+      "color": "#7c29b9"
+    },
+    {
+      "name": "Docker",
+      "percentage": 65,
+      "logo": "DockerLogo",
+      "color": "#0db7ed"
+    },
+    {
+      "name": "Kibana",
+      "percentage": 60,
+      "logo": "KibanaLogo",
+      "color": "#e8478b"
+    },
+    {
+      "name": "Cloud Computing",
+      "percentage": 70,
+      "logo": "CloudLogo",
+      "color": "#42a5f5"
+    },
+    {
+      "name": "Azure",
+      "percentage": 62,
+      "logo": "AzureLogo",
+      "color": "#007fff"
+    },
+    {
+      "name": "MongoDB",
+      "percentage": 95,
+      "logo": "MongodbLogo",
+      "color": "#4db33d"
+    },
+    {
+      "name": "Github",
+      "percentage": 76,
+      "logo": "GithubLogo",
+      "color": "#ccdfdd"
+    },
+    { "name": "Git", "percentage": 76, "logo": "GitLogo", "color": "#ccffff" },
+    {
+      "name": "Frontend Development",
+      "percentage": 80,
+      "logo": "FrontendLogo",
+      "color": "#ccc"
+    },
+    {
+      "name": "Backend Development",
+      "percentage": 84,
+      "logo": "BackendLogo",
+      "color": "#ccc"
+    }
+  ],
+  "RemainingSkills": [
+    { "name": "GitLab", "logo": "GitlabLogo" },
+    { "name": "AngularJS", "logo": "AngularLogo" },
+    { "name": "Java", "logo": "JavaLogo" },
+    { "name": "JQuery", "logo": "JqueryLogo" },
+    { "name": "Web Design", "logo": "WebdesignLogo" },
+    { "name": "Web Development", "logo": "WebdevelopmentLogo" },
+    { "name": "Cryptography", "logo": "CryptoLogo" },
+    { "name": "Cyber Security", "logo": "CybersecurityLogo" }
+  ],
+  "SoftSkills": [
+    "Group Communication, Team Management, Leadership, Learning Ability, Time Management"
+  ],
+  "ProjectDetails": [
+    {
+      "is_published": "True",
+      "name": "Personal Portfolio",
+      "proj_url": "",
+      "Associated_Comp_Logo": "UMKCLogo",
+      "Duration": {
+        "Start_Date": "April 2025",
+        "End_Date": "Jun 2025",
+        "is_present": "True"
+      },
+      "Location": {
+        "City": "Kansas City",
+        "State": "Missouri",
+        "State_SF": "MO",
+        "Country": "United States of America",
+        "Country_SF": "USA",
+        "ZipCode": "64111"
+      },
+      "associated_with": "University of Missouri- Kansas City",
+      "project_description": "Built a customizable personal portfolio platform that enables users to generate their own portfolio websites by simply providing structured data. Users can easily edit sections like skills, education, experience, and projects. The system supports full-stack integration with cloud storage and includes AI-powered features that suggest tasks or improvements based on user profile data using machine learning and deep learning techniques.",
+      "project_tasks": [
+        "Engineered a no-code portfolio builder that increased user onboarding efficiency by 30%, allowing individuals to design and launch personalized websites through intuitive data-driven input.",
+        "Integrated AI-powered task recommendations using ML and DL models, enhancing portfolio relevance and customization — resulting in a 40% increase in user engagement and feature adoption."
+      ],
+      "project_contrib_mem": 0,
+      "projects_contributors": "",
+      "skills_used": [
+        "Python",
+        "React",
+        "Data Science",
+        "REST API",
+        "MongoDB",
+        "MySQL",
+        "Data Structures and Algorithms",
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Frontend Development",
+        "Backend Development"
+      ],
+      "is_featured": true,
+      "tags": [
+        "AI",
+        "ML",
+        "Data Science",
+        "Web Development",
+        "Database Management",
+        "Cloud",
+        "Security"
+      ]
+    },
+    {
+      "is_published": "True",
+      "name": "Blood Bank Management System",
+      "proj_url": "",
+      "Associated_Comp_Logo": "UMKCLogo",
+      "Duration": {
+        "Start_Date": "Feb 2024",
+        "End_Date": "Apr 2024",
+        "is_present": "False"
+      },
+      "Location": {
+        "City": "Kansas City",
+        "State": "Missouri",
+        "State_SF": "MO",
+        "Country": "United States of America",
+        "Country_SF": "USA",
+        "ZipCode": "64111"
+      },
+      "associated_with": "University of Missouri- Kansas City",
+      "project_description": "Developed a cloud-based blood bank management platform that connects donors and patients through a secure and scalable system. Users can register and log in with admin approval after verification, donate blood, or request available units. Real-time availability and secure withdrawal requests ensure timely access to critical resources.",
+      "project_tasks": [
+        "Built a full-stack system using Django and AWS that streamlined donor-patient interaction, reducing response time for blood requests by over 35% through automated availability tracking and approval workflows.",
+        "Implemented secure login and role-based approval logic with cloud data encryption, ensuring HIPAA-compliant handling of user and medical data."
+      ],
+      "project_contrib_mem": 2,
+      "projects_contributors": ["Mohini Priya", "Surya Chowdary"],
+      "skills_used": [
+        "Python",
+        "Django",
+        "Machine Learning",
+        "Deep Learning",
+        "REST API",
+        "MongoDB",
+        "MySQL",
+        "Data Structures and Algorithms",
+        "AWS",
+        "Cloud Computing",
+        "Frontend Development",
+        "Backend Development"
+      ],
+      "is_featured": true,
+      "tags": ["Healthcare", "Cloud", "AI", "Full Stack", "Data Security"]
+    },
+    {
+      "is_published": "False",
+      "name": "Health System Data Monitor",
+      "proj_url": "",
+      "Associated_Comp_Logo": "UMKCLogo",
+      "Duration": {
+        "Start_Date": "Feb 2024",
+        "End_Date": "Apr 2024",
+        "is_present": "False"
+      },
+      "Location": {
+        "City": "Kansas City",
+        "State": "Missouri",
+        "State_SF": "MO",
+        "Country": "United States of America",
+        "Country_SF": "USA",
+        "ZipCode": "64111"
+      },
+      "associated_with": "University of Missouri- Kansas City",
+      "project_description": "Built a real-time health data monitoring platform that ensures secure communication between patients and doctors. The system encrypts health records using SHA and ECC, enabling trusted data transmission, tamper detection, and integrity verification over cloud infrastructure.",
+      "project_tasks": [
+        "Implemented hybrid SHA + ECC encryption for secure patient-doctor communication, reducing data breach risks and ensuring end-to-end transmission security.",
+        "Developed a real-time cloud monitoring system with alert dashboards, boosting anomaly response efficiency by 40%."
+      ],
+      "project_contrib_mem": 2,
+      "projects_contributors": ["Meghana", "Akshay"],
+      "skills_used": [
+        "Python",
+        "Django",
+        "Machine Learning",
+        "Data Structures and Algorithms",
+        "Statistics",
+        "AWS",
+        "Cloud Computing",
+        "Cryptography",
+        "Frontend Development",
+        "Backend Development"
+      ],
+      "is_featured": true,
+      "tags": ["Healthcare", "Cloud", "Cybersecurity", "Data Monitoring", "AI"]
+    },
+    {
+      "is_published": "False",
+      "name": "Distributed Chat Application Between Users",
+      "proj_url": "",
+      "Associated_Comp_Logo": "UMKCLogo",
+      "Duration": {
+        "Start_Date": "Feb 2024",
+        "End_Date": "Apr 2024",
+        "is_present": "False"
+      },
+      "Location": {
+        "City": "Kansas City",
+        "State": "Missouri",
+        "State_SF": "MO",
+        "Country": "United States of America",
+        "Country_SF": "USA",
+        "ZipCode": "64111"
+      },
+      "associated_with": "University of Missouri- Kansas City",
+      "project_description": "Designed a distributed chat application that facilitates real-time, peer-to-peer communication between users, supporting secure text, image, and file transfer. The system uses client-server socket architecture, backed by cloud databases, to manage sessions and ensure fast, encrypted message delivery.",
+      "project_tasks": [
+        "Built a Python-based distributed client-server system enabling real-time file, image, and message exchange with socket programming and session tracking.",
+        "Secured communication layers with access control and metadata handling, improving reliability and message delivery accuracy by 45% in concurrent chat sessions."
+      ],
+      "project_contrib_mem": 2,
+      "projects_contributors": ["Kanoj", "Jaideep"],
+      "skills_used": [
+        "Python",
+        "Distributed Computing",
+        "Cloud Computing",
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Data Structures and Algorithms",
+        "MySQL",
+        "MongoDB",
+        "Frontend Development",
+        "Backend Development"
+      ],
+      "is_featured": true,
+      "tags": ["Networking", "Cloud", "Distributed Systems", "Real-Time", "AI"]
+    },
+    {
+      "is_published": "True",
+      "name": "Medical Chatbot Application",
+      "proj_url": "",
+      "Associated_Comp_Logo": "UMKCLogo",
+      "Duration": {
+        "Start_Date": "Sep 2024",
+        "End_Date": "Dec 2024",
+        "is_present": "False"
+      },
+      "Location": {
+        "City": "Kansas City",
+        "State": "Missouri",
+        "State_SF": "MO",
+        "Country": "United States of America",
+        "Country_SF": "USA",
+        "ZipCode": "64111"
+      },
+      "associated_with": "University of Missouri- Kansas City",
+      "project_description": "Developed an intelligent medical chatbot platform that assists patients in identifying potential illnesses based on symptoms, suggests relevant medications, and locates nearby pharmacies. The system leverages NLP and ML for conversational accuracy and integrates with cloud APIs to deliver reliable, real-time healthcare information.",
+      "project_tasks": [
+        "Implemented a conversational assistant using Rasa and ML-based intent recognition, enabling users to check symptoms, receive diagnosis suggestions, and view medication options with 85% query resolution accuracy.",
+        "Integrated location-based pharmacy lookup and secure symptom form handling, improving medical access efficiency and user satisfaction for over 300+ test cases."
+      ],
+      "project_contrib_mem": 2,
+      "projects_contributors": ["Mohini Priya", "Harsha Sree"],
+      "skills_used": [
+        "Python",
+        "Rasa",
+        "Data Science",
+        "Machine Learning",
+        "Deep Learning",
+        "Artificial Intelligence",
+        "AWS",
+        "Cloud Computing",
+        "Frontend Development",
+        "Backend Development"
+      ],
+      "is_featured": true,
+      "tags": ["AI", "Chatbot", "Healthcare", "ML", "NLP"]
+    },
+    {
+      "is_published": "True",
+      "name": "Operating System File Management",
+      "proj_url": "",
+      "Associated_Comp_Logo": "UMKCLogo",
+      "Duration": {
+        "Start_Date": "Feb 2025",
+        "End_Date": "May 2025",
+        "is_present": "True"
+      },
+      "Location": {
+        "City": "Kansas City",
+        "State": "Missouri",
+        "State_SF": "MO",
+        "Country": "United States of America",
+        "Country_SF": "USA",
+        "ZipCode": "64111"
+      },
+      "associated_with": "University of Missouri- Kansas City",
+      "project_description": "Engineered a simulated operating system-level file management platform that enables users to upload, share, and manage files with read/write/edit permissions. The system includes role-based access, collaborative editing with approval workflows, real-time system monitoring, and automated backup processes running every 12 or 24 hours.",
+      "project_tasks": [
+        "Built a permission-driven file system where users can assign read/write/edit rights to others, with admin or creator approval workflows to enable collaborative editing on shared or public files.",
+        "Integrated system monitoring dashboards, access logs, and an automated backup scheduler that ensures data recovery every 12–24 hours, enhancing reliability and transparency."
+      ],
+      "project_contrib_mem": 2,
+      "projects_contributors": ["Sreepathi", "Amrutha"],
+      "skills_used": [
+        "Python",
+        "Data Science",
+        "Machine Learning",
+        "Operating Systems",
+        "Frontend Development",
+        "Backend Development"
+      ],
+      "is_featured": true,
+      "tags": [
+        "OS",
+        "File System",
+        "System Design",
+        "Automation",
+        "Concurrency"
+      ]
+    },
+    {
+      "is_published": "False",
+      "name": "Django Resume Builder",
+      "proj_url": "",
+      "Associated_Comp_Logo": "SASTRALogo",
+      "Duration": {
+        "Start_Date": "Feb 2022",
+        "End_Date": "May 2022",
+        "is_present": "True"
+      },
+      "Location": {
+        "City": "Thanjavur",
+        "State": "Tamil Nadu",
+        "State_SF": "TN",
+        "Country": "India",
+        "Country_SF": "IND",
+        "ZipCode": "613401"
+      },
+      "associated_with": "Shanmugha Arts, Science, Technology & Research Academy University",
+      "project_description": "Created a dynamic resume builder platform that collects user information through structured forms and generates downloadable, professional resumes in multiple formats. Designed for flexibility, speed, and automation using Django and REST APIs.",
+      "project_tasks": [
+        "Developed form-driven resume generation with Django, enabling instant PDF downloads and template previews based on user input.",
+        "Automated data handling and storage using REST APIs and MongoDB, reducing resume generation time by 50% while supporting structured customization."
+      ],
+      "project_contrib_mem": 0,
+      "projects_contributors": "",
+      "skills_used": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "REST API",
+        "MongoDB",
+        "Data Structures and Algorithms",
+        "Frontend Development",
+        "Backend Development"
+      ],
+      "is_featured": true,
+      "tags": [
+        "Resume Builder",
+        "Django",
+        "Web App",
+        "Automation",
+        "PDF Generation"
+      ]
+    },
+    {
+      "is_published": "True",
+      "name": "Multiple Digit Recognizer using Morph CNN",
+      "proj_url": "",
+      "Associated_Comp_Logo": "SASTRALogo",
+      "Duration": {
+        "Start_Date": "Feb 2022",
+        "End_Date": "May 2022",
+        "is_present": "False"
+      },
+      "Location": {
+        "City": "Thanjavur",
+        "State": "Tamil Nadu",
+        "State_SF": "TN",
+        "Country": "India",
+        "Country_SF": "IND",
+        "ZipCode": "613401"
+      },
+      "associated_with": "Shanmugha Arts, Science, Technology & Research Academy University",
+      "project_description": "Developed a Morph-CNN based deep learning model to recognize multiple handwritten digits from scanned images, including shaded, partially visible, or overlapping digits. Focused on enhancing precision and robustness in real-world image scenarios using OCR and morphological operations.",
+      "project_tasks": [
+        "Built and trained a Morphological CNN model capable of recognizing digits even when distorted, shaded, or partially written, improving detection accuracy by 38%.",
+        "Designed a prediction-serving REST API with image preprocessing and digit segmentation, enabling real-time recognition through a user-friendly interface."
+      ],
+      "project_contrib_mem": 1,
+      "projects_contributors": ["Purna Chandra"],
+      "skills_used": [
+        "Python",
+        "REST API",
+        "Data Science",
+        "Machine Learning",
+        "Deep Learning",
+        "Frontend Development",
+        "Backend Development"
+      ],
+      "is_featured": true,
+      "tags": [
+        "Deep Learning",
+        "OCR",
+        "Image Recognition",
+        "Computer Vision",
+        "AI"
+      ]
+    },
+    {
+      "is_published": "False",
+      "name": "Daily News App",
+      "proj_url": "",
+      "Associated_Comp_Logo": "SASTRALogo",
+      "Duration": {
+        "Start_Date": "Feb 2022",
+        "End_Date": "May 2022",
+        "is_present": "True"
+      },
+      "Location": {
+        "City": "Thanjavur",
+        "State": "Tamil Nadu",
+        "State_SF": "TN",
+        "Country": "India",
+        "Country_SF": "IND",
+        "ZipCode": "613401"
+      },
+      "associated_with": "Shanmugha Arts, Science, Technology & Research Academy University",
+      "project_description": "Developed a real-time news aggregation platform that fetches and categorizes news from various sources using web scraping and APIs. The app displays content based on user interest categories like sports, technology, and education, offering a streamlined reading experience tailored to individual preferences.",
+      "project_tasks": [
+        "Implemented a Django-based backend that collects and organizes live news using web scraping and third-party APIs, improving update frequency and content freshness.",
+        "Designed an intuitive frontend with category filters and user-interest tracking, increasing content relevance and readability for daily users by 50%."
+      ],
+      "project_contrib_mem": 0,
+      "projects_contributors": "",
+      "skills_used": [
+        "Python",
+        "Django",
+        "API",
+        "Web Development",
+        "Web Scraping",
+        "REST API",
+        "Frontend Development",
+        "Backend Development"
+      ],
+      "is_featured": true,
+      "tags": [
+        "News",
+        "Web App",
+        "Web Scraping",
+        "Live Data",
+        "API Integration"
+      ]
+    },
+    {
+      "is_published": "False",
+      "name": "Zodiac Horoscope Details",
+      "proj_url": "",
+      "Associated_Comp_Logo": "SASTRALogo",
+      "Duration": {
+        "Start_Date": "Feb 2022",
+        "End_Date": "May 2022",
+        "is_present": "True"
+      },
+      "Location": {
+        "City": "Thanjavur",
+        "State": "Tamil Nadu",
+        "State_SF": "TN",
+        "Country": "India",
+        "Country_SF": "IND",
+        "ZipCode": "613401"
+      },
+      "associated_with": "Shanmugha Arts, Science, Technology & Research Academy University",
+      "project_description": "Created a personalized zodiac web platform that displays daily, weekly, and monthly horoscopes using external APIs and web scraping. The system dynamically determines the user's zodiac sign from their date of birth and provides detailed insights into love, finance, career, and compatibility across all signs.",
+      "project_tasks": [
+        "Integrated astrology APIs and scraping logic to fetch and display multi-category zodiac predictions, including love, finance, and wellness insights.",
+        "Built a dynamic sign-detection engine using user birth data to deliver tailored horoscopes, increasing user engagement and time spent by over 40%."
+      ],
+      "project_contrib_mem": 0,
+      "projects_contributors": "",
+      "skills_used": [
+        "Python",
+        "Django",
+        "Web Development",
+        "API",
+        "REST API",
+        "Web Scraping",
+        "Frontend Development",
+        "Backend Development"
+      ],
+      "is_featured": true,
+      "tags": ["Zodiac", "Web App", "APIs", "Web Scraping", "Personalization"]
+    },
+    {
+      "is_published": "True",
+      "name": "Rasa Challenging Chatbot",
+      "proj_url": "",
+      "Associated_Comp_Logo": "TCSLogo",
+      "Duration": {
+        "Start_Date": "Feb 2022",
+        "End_Date": "May 2022",
+        "is_present": "False"
+      },
+      "Location": {
+        "City": "Hyderabad",
+        "State": "Telangana",
+        "State_SF": "TS",
+        "Country": "India",
+        "Country_SF": "IND",
+        "ZipCode": "640001"
+      },
+      "associated_with": "Tata Consultancy Services",
+      "project_description": "Developed an AI-powered educational chatbot using Rasa that quizzes users on subject knowledge, assigns topic-based challenges, and provides real-time feedback. The platform simulates a virtual tutor by evaluating responses, resolving doubts, and tracking individual learning progress.",
+      "project_tasks": [
+        "Engineered NLP pipelines in Rasa to classify questions, detect user doubts, and deliver contextual responses with 90% accuracy.",
+        "Integrated a full-stack evaluation system using Django and AngularJS to deliver interactive challenges, auto-grade responses, and monitor learner performance in real-time."
+      ],
+      "project_contrib_mem": 1,
+      "projects_contributors": ["Vijay"],
+      "skills_used": [
+        "Python",
+        "Django",
+        "REST API",
+        "Rasa",
+        "Machine Learning",
+        "Deep Learning",
+        "Data Science",
+        "AngularJS",
+        "MongoDB",
+        "MySQL",
+        "Frontend Development",
+        "Backend Development"
+      ],
+      "is_featured": true,
+      "tags": ["EdTech", "Chatbot", "AI", "Rasa", "Evaluation System", "NLP"]
+    }
+  ],
+  "LicenseCertificationBGColor": "#008080",
+  "LicenseCertifyDetails": [
+    {
+      "is_published":"True",
+      "LicenseCertify_Name": "American Red Cross Course",
+      "LicenseCertify_Logo": "AmericanRedCrossLogo",
+      "Certification_Company": "American Red Cross",
+      "Associated_With":"University of Missouri- Kansas City",
+      "Associated_With_Comp_Logo":"UMKCLogo",
+      "Duration": {
+        "Start_Date": "Mar  2025",
+        "End_Date": "",
+        "is_present": "False",
+        "is_expirable": "False"
+      },
+      "Location": {
+        "City": "Kansas City",
+        "State": "Missouri",
+        "State_SF": "MO",
+        "Country": "United States of America",
+        "Country_SF": "USA",
+        "ZipCode": "64111"
+      },
+      "Credential_ID": "01RM7KU",
+      "Credential_URL": "https://www.redcross.org/take-a-class/qrcode?certnumber=01RM7KU",
+      "Skills": [],
+      "tags": ["First AID","Healthcare","AED","CPR","Medical Emergency"]
+    },
+    {
+      "is_published":"True",
+      "LicenseCertify_Name": "Data Science",
+      "LicenseCertify_Logo": "InternshalaLogo",
+      "Certification_Company": "Internshala",
+      "Associated_With":"SASTRA Deemed to be University",
+      "Associated_With_Comp_Logo":"SASTRALogo",
+      "Duration": {
+        "Start_Date": "Feb 2021",
+        "End_Date": "",
+        "is_present": "False",
+        "is_expirable": "False"
+      },
+      "Location": {
+        "City": "Thanjavur",
+        "State": "Tamil Nadu",
+        "State_SF": "TN",
+        "Country": "India",
+        "Country_SF": "IND",
+        "ZipCode": "613402"
+      },
+      "Credential_ID": "COC-0AB724EC-C0FA-3CFC-46C8-D1F27CA79BA4",
+      "Credential_URL": "https://s3-ap-south-1.amazonaws.com/trainings-uploads/certificates/COC-0AB724EC-C0FA-3CFC-46C8-D1F27CA79BA4.jpg",
+      "Skills": ["Python","Data Science","Machine Learning","Deep Learning"],
+      "tags": []
+    },
+    {
+      "is_published":"True",
+      "LicenseCertify_Name": "Introduction to Artificial Intelligence (AI)",
+      "LicenseCertify_Logo": "CourseraLogo",
+      "Certification_Company": "Coursera",
+      "Associated_With":"SASTRA Deemed to be University",
+      "Associated_With_Comp_Logo":"SASTRALogo",
+      "Duration": {
+        "Start_Date": "Jan 2021",
+        "End_Date": "",
+        "is_present": "False",
+        "is_expirable": "False"
+      },
+      "Location": {
+        "City": "Thanjavur",
+        "State": "Tamil Nadu",
+        "State_SF": "TN",
+        "Country": "India",
+        "Country_SF": "IND",
+        "ZipCode": "613402"
+      },
+      "Credential_ID": "588QFCPX8SZQ",
+      "Credential_URL": "https://www.coursera.org/account/accomplishments/certificate/588QFCPX8SZQ",
+      "Skills": ["Python","Data Science","Deep Learning","Machine Learning","Artificial Intelligence"],
+      "tags": ["Data Science","Data Monitoring","Data Analysis"]
+    },
+    {
+      "is_published":"True",
+      "LicenseCertify_Name": "Programming With Python",
+      "LicenseCertify_Logo": "InternshalaLogo",
+      "Certification_Company": "Internshala",
+      "Associated_With":"SASTRA Deemed to be University",
+      "Associated_With_Comp_Logo":"SASTRALogo",
+      "Duration": {
+        "Start_Date": "Nov 2020",
+        "End_Date": "",
+        "is_present": "False",
+        "is_expirable": "False"
+      },
+      "Location": {
+        "City": "Thanjavur",
+        "State": "Tamil Nadu",
+        "State_SF": "TN",
+        "Country": "India",
+        "Country_SF": "IND",
+        "ZipCode": "613402"
+      },
+      "Credential_ID": "COC-B896A8B7-E171-890A-17A2-3F95BDBDCB54",
+      "Credential_URL": "https://s3-ap-south-1.amazonaws.com/trainings-uploads/certificates/COC-B896A8B7-E171-890A-17A2-3F95BDBDCB54.jpg",
+      "Skills": ["Python","Machine Learning","GUI","PyGame"],
+      "tags": ["GUI","Pygame"]
+    },
+    {
+      "is_published":"False",
+      "LicenseCertify_Name": "The Complete Python Masterclass: Learn Python From Scratch",
+      "LicenseCertify_Logo": "UdemyLogo",
+      "Certification_Company": "Udemy",
+      "Associated_With":"SASTRA Deemed to be University",
+      "Associated_With_Comp_Logo":"SASTRALogo",
+      "Duration": {
+        "Start_Date": "Aug 2020",
+        "End_Date": "",
+        "is_present": "False",
+        "is_expirable": "False"
+      },
+      "Location": {
+        "City": "Thanjavur",
+        "State": "Tamil Nadu",
+        "State_SF": "TN",
+        "Country": "India",
+        "Country_SF": "IND",
+        "ZipCode": "613402"
+      },
+      "Credential_ID": "UC-3273b888-0449-4c93-84a4-93914638242b",
+      "Credential_URL": "https://udemy-certificate.s3.amazonaws.com/image/UC-3273b888-0449-4c93-84a4-93914638242b.jpg",
+      "Skills": ["Python","GUI","PyGame"],
+      "tags": ["GUI","Pygame"]
+    },
+    {
+      "is_published":"True",
+      "LicenseCertify_Name": "Google Analytics Professional_Certificate",
+      "LicenseCertify_Logo": "GoogleCertLogo",
+      "Certification_Company": "Coursera",
+      "Associated_With":"University of Missouri- Kansas City",
+      "Associated_With_Comp_Logo":"UMKCLogo",
+      "Duration": {
+        "Start_Date": "Mar 2025",
+        "End_Date": "",
+        "is_present": "True",
+        "is_expirable": "False"
+      },
+      "Location": {
+        "City": "Kansas City",
+        "State": "Missouri",
+        "State_SF": "MO",
+        "Country": "United States of America",
+        "Country_SF": "USA",
+        "ZipCode": "64111"
+      },
+      "Credential_ID": "",
+      "Credential_URL": "",
+      "Skills": ["Python","Data Science","Machine Learning","Artificial Intelligence","Deep Learning"],
+      "tags": ["Data Analysis","Data Monitoring","Data Security","Data Automation"]
+    },
+    {
+      "is_published":"True",
+      "LicenseCertify_Name": "Google Cybersecurity Professional Certificate",
+      "LicenseCertify_Logo": "GoogleCertLogo",
+      "Certification_Company": "Coursera",
+      "Associated_With":"University of Missouri- Kansas City",
+      "Associated_With_Comp_Logo":"UMKCLogo",
+      "Duration": {
+        "Start_Date": "Apr 2025",
+        "End_Date": "",
+        "is_present": "True",
+        "is_expirable": "False"
+      },
+      "Location": {
+        "City": "Kansas City",
+        "State": "Missouri",
+        "State_SF": "MO",
+        "Country": "United States of America",
+        "Country_SF": "USA",
+        "ZipCode": "64111"
+      },
+      "Credential_ID": "",
+      "Credential_URL": "",
+      "Skills": ["Python","Machine Learning","Deep Learning","Cyber Security","Statistics","Web Development","Web Scrpaing","Network & Architecture"],
+      "tags": ["Security","Networking","Network Security","Hacking","Block Access"]
+    }
+  ],
+  "VolunteerContentbackground":"#79a6d2",
+  "VolunteerDetails":[
+  {
+  "is_published":"True",
+  "Org_Logo":"NSS_Logo",
+  "Organization_name":"National Service Scheme",
+  "Is_Gov_recog":"True",
+  "Association_with":{"is_assoc":"True","name":"Sastra Deemed to be University","logo":"SASTRALogo"},
+  "Role":"Student Volunteer",
+  "Role_Cause":"Social Service",
+  "Duration": {
+    "Start_Date":{"Month":"Nov","Year":"2020"},
+    "End_Date":{"Month":"Mar","Year":"2022"},
+    "is_present": "False"
+  },
+ "Description": "Volunteered as part of the National Service Scheme (NSS) through my University. Contributed to various community service activities such as awareness drives, environmental campaigns, and social development programs. This experience enhanced my leadership, teamwork, and civic responsibility skills while making a positive impact on society."
+ },
+  {
+   "is_published":"True",
+  "Org_Logo":"Vol_logo",
+  "Organization_name":"Quality Management",
+  "Is_Gov_recog":"False",
+  "Association_with":{"is_assoc":"True","name":"Sastra Deemed to be University","logo":"SASTRALogo"},
+  "Role":"Member",
+   "Role_Cause":"Education",
+  "Duration": {
+    "Start_Date":{"Month":"Mar","Year":"2021"},
+    "End_Date":{"Month":"Feb","Year":"2022"},
+    "is_present": "False"
+  },
+  "Description":"Supported the team by reviewing daily program plans and activities to ensure quality and minimize errors. Focused on maintaining high standards in educational initiatives by identifying potential issues and suggesting improvements for smoother operations."
+  },
+  {
+   "is_published":"True",
+  "Org_Logo":"Vol_logo",
+  "Organization_name":"Akshitha Foundation",
+  "Is_Gov_recog":"True",
+  "Role":"Volunteer",
+  "Association_with":{"is_assoc":"False","name":"","logo":""},
+   "Role_Cause":"Social Service",
+  "Duration": {
+    "Start_Date":{"Month":"Nov","Year":"2020"},
+    "End_Date":{"Month":"Dec","Year":"2020"},
+    "is_present": "False"
+  },
+  "Description":"I volunteered to teach foundational lessons to children, tailoring the content based on their grade levels. In addition to academic support, I helped provide essential educational materials: children above 5th grade received a book, pencil, and pen, while those below 5th grade were given a book and pencil. Through this initiative, I aimed to encourage learning and ensure that basic educational needs were met."
+  }
+  ],
+  "ReferenceDetailbackgoundColor":"#d6f5f5",
+  "ReferenceDetails":[
+  {"is_published":"True",
+  "name":"Harini Ala",
+  "Role":"Associate Cloud Engineer",
+  "Role_Detail":"Backend Developer | Proficient in Python, Flask, Django, Docker, SQL, GCP | Google Certified - Associate Cloud Engineer",
+  "By_Date":{"Day":"15","Month":"Feb","Year":"2023"},
+  "Description":"You are good in functional understanding.keep learning keep growing."
+}
+  ],
+  "CourseDetailBackgroundColor":"#ccddfa",
+  "CourseDetails":[
+  {"Course_Logo":"CloudComputingLogo","Course_Name":"Cloud Computing","Course_Code":"CC5530","Associated_Comp_Logo":"UMKCLogo","Assoc_Comp":"University of Missouri - Kansas City"},
+  {"Course_Logo":"AWSLogo","Course_Name":"Amazon Web Services","Course_Code":"CC5523","Associated_Comp_Logo":"UMKCLogo","Assoc_Comp":"University of Missouri - Kansas City"},
+  {"Course_Logo":"AILogo","Course_Name":"Artificial Intelligence","Course_Code":"CS5532","Associated_Comp_Logo":"SASTRALogo","Assoc_Comp":"SASTRA Deemed to be University"},
+  {"Course_Logo":"PythonLogo","Course_Name":"Python Programming","Course_Code":"CS5522","Associated_Comp_Logo":"SASTRALogo","Assoc_Comp":"SASTRA Deemed to be University"}
+  ]
+}

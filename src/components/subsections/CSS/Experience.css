@@ -1,0 +1,370 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* ✅ Mobile: <768px */
+@media (max-width: 767px) {
+  body {
+    font-size: 11px;
+  }
+
+  .experience-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 1rem 0;
+    height: 100%;
+    min-height: 300px;
+    font-style: italic;
+  }
+
+  .experience-left {
+    display: none;
+  }
+
+  .experience-right {
+    flex: 2 0 100%;
+  }
+
+  .experience-mobile-content {
+    display: flex;
+    flex: 1 0 100%;
+    margin-bottom: 0.85rem;
+    font-size: 1.65rem;
+  }
+
+  .experience-mobile-det {
+    justify-content: start;
+  }
+
+  .experience-mobile-det img.img-icon-sty {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  .experience-screen-content {
+    display: none;
+  }
+ .exp-locdursty {
+   display:flex;
+   width: 100%;
+     flex-direction: column;
+     align-items: flex-start;
+  }
+
+  .exp-locsty,
+  .exp-dursty {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .exp-dursty {
+    text-align: right;
+    padding-right: 0.5rem;
+    margin-top: 0.25rem;
+  }
+  .exp-logo{
+  width:2.5rem;
+  height:2.5rem;}
+}
+
+/* ✅ Tab: 768px - 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 13px;
+  }
+
+  .experience-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 0;
+    height: 100%;
+    min-height: 300px;
+    font-style: italic;
+  }
+
+  .experience-left {
+    display: none;
+  }
+
+  .experience-right {
+    flex: 2 0 100%;
+  }
+
+  .experience-mobile-content {
+    display: flex;
+    flex: 1 0 100%;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .experience-mobile-det {
+    justify-content: start;
+  }
+
+  .experience-mobile-det img.img-icon-sty {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  .experience-screen-content {
+    display: none;
+  }
+  .exp-locdursty {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.25rem;
+  }
+
+  .exp-locsty,
+  .exp-dursty {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .exp-dursty {
+    text-align: right;
+    padding-right: 0.5rem;
+    margin-top: 0.25rem;
+  }
+    .exp-logo{
+    width:3.25rem;
+    height:3.25rem;}
+}
+
+/* ✅ Tablet: 992px - 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 15px;
+  }
+
+  .experience-screen-content {
+    display: block;
+  }
+
+  .experience-flex {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.2rem 1.65rem;
+    height: 100%;
+    min-height: 400px;
+    font-style: italic;
+  }
+
+  .experience-left {
+    flex: 0 0 32.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience-flex .experience-logo-sty {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-right {
+    flex: 0 0 67.5%;
+  }
+
+  .experience-mobile-content {
+    display: none;
+  }
+  .exp-locdursty {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0.25rem;
+  }
+
+  .exp-locsty {
+    flex: 0 0 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+.exp-logo{
+width:4.15rem;
+height:4.15rem;}
+  .exp-dursty {
+    flex: 0 0 35%;
+    text-align: right;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+  }
+}
+
+/* ✅ Desktop: 1200px and above */
+@media (min-width: 1200px) {
+  body {
+    font-size: 15px;
+  }
+  .exp-logo{
+  width:5rem;
+  height:5rem;}
+
+  .experience-screen-content {
+    display: block;
+  }
+
+  .experience-flex {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    height: 100%;
+    min-height: 400px;
+    font-style: italic;
+  }
+
+  .experience-left {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience-flex .experience-logo-sty {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-right {
+    flex: 0 0 75%;
+  }
+
+  .experience-mobile-content {
+    display: none;
+  }
+  .exp-locdursty {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0.25rem;
+  }
+
+  .exp-locsty {
+    flex: 0 0 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .exp-dursty {
+    flex: 0 0 35%;
+    text-align: right;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+  }
+}
+
+/* Common Layout Styles */
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.experience-icon {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.experience-right {
+  flex: 1;
+  position: relative;
+  color: black !important;
+}
+
+
+.text-bold {
+  font-style: bold;
+  font-weight: 700;
+}
+
+.exp-logo {
+  border-radius: 50%;
+  border: 0.1rem solid black;
+  object-fit: contain;
+  background: #fff;
+  padding: 0.25rem;
+}
+
+.experience-logsty {
+  display: flex;
+  gap: 1.25rem;
+  align-items: stretch;
+  color: black !important;
+}
+
+.exp-logoicon {
+  flex: 0 0 12.5%;
+  text-align: center;
+}
+
+.exp-compsty {
+  flex: 0 0 87.5%;
+}
+
+.experience-detail-sty {
+  padding: 0.5rem;
+}
+
+.exp-tasks {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  color: black;
+  line-height: 1.5;
+}
+
+.exp-tasks li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+.exp-skills {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: white;
+}
+
+.skill-headsty {
+  color: black;
+  font-style: italic;
+}
+
+.skill-badge {
+  font-style: italic;
+  background-color: #334155;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.horizsontalsty {
+  height: 0.325rem;
+  background-color: #737373;
+}
+
