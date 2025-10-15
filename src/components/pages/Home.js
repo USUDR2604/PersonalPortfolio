@@ -13,6 +13,7 @@ import LicenseCertifys from '../subsections/LicenseCertify';
 import Volunteer from "../subsections/Volunteer.js";
 import CourseDetails from "../subsections/CourseDetail.js";
 import References from "../subsections/ReferenceDetail.js";
+import ProfessionalSummary from "../subsections/ProfessionalSummary.js"
 
 import data from '../DataFiles/data.json';
 
@@ -25,7 +26,7 @@ function Home() {
     ProjectSectionBackgroundColor,
     EducationSectionBackgroundColor,
     ExperienceSectionBackgroundColor,
-    CourseDetailBackgroundColor, 
+    CourseDetailBackgroundColor,
     ReferenceDetailbackgoundColor
   } = data;
 
@@ -79,7 +80,7 @@ function Home() {
 
       <section className="SummarySectionSty" style={{ backgroundColor: SummarySectionBackgroundColor }}>
         <div className="container">
-          <Summary />
+          <ProfessionalSummary />
         </div>
       </section>
 
@@ -118,7 +119,7 @@ function Home() {
           <Volunteer />
         </div>
       </section>
-      
+
       <section className="CourseSectionSty" style={{ backgroundColor: CourseDetailBackgroundColor}}>
        <div className="container">
          <CourseDetails />

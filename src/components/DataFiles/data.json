@@ -5,7 +5,7 @@
   "ExperienceSectionBackgroundColor":"#ffccb3",
   "SkillSectionBackgroundColor":"#ccddff",
   "SummaryDetails":{
-  "Summary":"A highly motivated and results-oriented Master’s student in Computer Science at the University of Missouri - Kansas City, specializing in Data Analysis, Full-Stack Development and Artificial Intelligence. Demonstrates a wealth of experience in developing AI-powered solutions, implementing machine learning models, and advancing cutting-edge deep learning methodologies. Proficient in Python (Django, REST APIs), Java, and C++, with a robust foundation in full-stack development, seamless API integration, and cloud technologies. Known for deploying containerized applications using Docker, and recognized for driving operational excellence through innovative problem-solving. Committed to delivering high-impact, data-driven solutions that foster efficiency and scalability while actively pursuing continuous growth within a dynamic, fast-paced environment."},  
+  "Summary":"A highly motivated and results-oriented Master’s student in Computer Science at the University of Missouri - Kansas City, specializing in Data Analysis, Full-Stack Development and Artificial Intelligence. Demonstrates a wealth of experience in developing AI-powered solutions, implementing machine learning models, and advancing cutting-edge deep learning methodologies. Proficient in Python (Django, REST APIs), Java, and C++, with a robust foundation in full-stack development, seamless API integration, and cloud technologies. Known for deploying containerized applications using Docker, and recognized for driving operational excellence through innovative problem-solving. Committed to delivering high-impact, data-driven solutions that foster efficiency and scalability while actively pursuing continuous growth within a dynamic, fast-paced environment."},
   "experienceList": [
     {
       "title": "Software Engineer",
@@ -202,6 +202,68 @@
       ]
     }
   ],
+  "Skills": {
+    "Programming_Lang": {
+      "KeySkills": [
+        {
+          "name": "Python",
+          "percentage": 95,
+          "logo": "PythonLogo",
+          "color": "#306998"
+        },
+        {
+          "name": "R",
+          "percentage": 80,
+          "logo": "RLogo",
+          "color": "#306998"
+        },
+        {
+          "name": "C++",
+          "percentage": 87,
+          "logo": "CPPLogo",
+          "color": "#306998"
+        }
+      ],
+      "SupportingSkills": [
+        {
+          "name": "Java",
+          "percentage": 95,
+          "logo": "JavaLogo",
+          "color": "#306998"
+        },
+        {
+          "name": "C",
+          "percentage": 95,
+          "logo": "CLogo",
+          "color": "#306998"
+        }
+      ]
+    }
+  },
+
+"Professional_summary_exp": [
+    {
+      "title": "Experience & Focus",
+      "lines": [
+        "2+ years at TCS as a Data Science Developer focused on Data Analysis with ML and NLP.",
+        "3–5+ years coding; Python & SQL specialist with a Data Science focus (ML, DL, AI/LLMs), scalable production pipelines, and full-stack web development with Django & Angular."
+      ]
+    },
+    {
+  "title": "Core Competencies",
+  "lines": [
+    "Design and ship end-to-end ML/LLM solutions: model development, MLOps, explainability (SHAP), and humanized response generation using LLMs (RAG, prompt engineering).",
+    "Production-grade data systems: automated ETL/ELT & streaming; Dockerized services; React UIs; robust APIs (Django/DRF, FastAPI)."
+  ]
+},
+    {
+      "title": "Deployment",
+      "lines": [
+        "Production APIs with Python (Flask/ FastAPI/ Django-DRF) for Data Science & LLM/NLP services.",
+        "Containerization & CI/CD (Docker, GitLab CI) on AWS (S3, QuickSight) with observability and cost-aware scaling."
+      ]
+    }
+  ],
   "keySkills": [
     {
       "name": "Python",
@@ -310,6 +372,86 @@
       "color": "#ccc"
     }
   ],
+  "ProgrammingSkills":[
+    {"name":"Python","logo":"PythonLogo"},
+    {"name":"ES6","logo":"ES6Logo"},
+    {"name":"OOP", "logo":"OOPLogo"},
+    {"name":"PLSQL", "logo":"PLSQLLogo"},
+    {"name":"Oracle SQL", "logo":"OracleSQLLogo"},
+    {"name":"My Sql", "logo":"SQLLogo"},
+    {"name":"Java", "logo":"JavaLogo"},
+    {"name":"C++", "logo":"CPPLogo"},
+    {"name":"C", "logo":"CLogo"}
+  ],
+"AI_ML_Systems":[
+  {"name":"PyTorch","logo":"PyTorchLogo"},
+  {"name":"LLM(Large Language Models)","logo":"LLMLogo"},
+  {"name":"Natural Language Processing(NLP)","logo":"NLPLogo"},
+  {"name":"RASA","logo":"RasaLogo"},
+  {"name":"Clustering","logo":"ClusterLogo"},
+  {"name":"Machine Learning(ML)", "logo":"MLLogo"},
+  {"name":"Deep Learning(DL)", "logo":"DLLogo"},
+  {"name":"Recommendation Systems","logo":"RecommendSysLogo"},
+  {"name":"Artificial Intelligence(AI)", "logo":"AILogo"}
+],
+"Data_Streaming":[
+  {"name":"Apache Kafka","logo":"ApachekafkaLogo"},
+  {"name":"Pyspark", "logo":"PysparkLogo"},
+  {"name":"Hadoop","logo":"HadoopLogo"},
+  {"name":"ETL Pipelines","logo":"ETLLogo"},
+  {"name":"Map Reduce","logo":"MapReduceLogo"},
+  {"name":"Apache Hive", "logo":"ApacheHiveLogo"},
+  {"name":"Real Time Streaming Protocol(RTSP)","logo":"RTSPLogo"}
+],
+"Backend_Web_Frameworks": [
+    { "name": "Django", "logo": "DjangoLogo" },
+    { "name": "REST APIs", "logo": "RESTAPILogo" },
+    { "name": "DRF", "logo": "DRFLogo" },
+    { "name": "Web Scraping", "logo": "WebScrapeLogo" },
+    { "name": "Node.js", "logo": "NodeJSLogo" },
+    { "name": "Flask", "logo": "FlaskLogo" },
+    { "name": "Web Applications", "logo": "WebApplicationLogo" }
+  ],
+  "Front_End_UI": [
+    { "name": "ReactJS", "logo": "ReactLogo" },
+    { "name": "AngularJS", "logo": "AngularLogo" },
+    { "name": "HTML", "logo": "HTMLLogo" },
+    { "name": "CSS", "logo": "CSSLogo" },
+    { "name": "JavaScript (JS)", "logo": "JSLogo" },
+    { "name": "Bootstrap", "logo": "BootstrapLogo" },
+    { "name": "jQuery", "logo": "JqueryLogo" },
+    { "name": "Web Design", "logo": "WebdesignLogo" },
+    { "name": "Front-End Development", "logo": "FrontendLogo" }
+  ],
+
+  "Monitoring_Databases": [
+    { "name": "Kibana", "logo": "KibanaLogo" },
+    { "name": "Logstash", "logo": "LogstashLogo" },
+    { "name": "Redis (Caching)", "logo": "RedisLogo" },
+    { "name": "MongoDB", "logo": "MongodbLogo" },
+    { "name": "Real-time Monitoring", "logo": "RTSPLogo" }
+  ],
+
+  "BI_Analytics": [
+    { "name": "Tableau", "logo": "TableauLogo" },
+    { "name": "Power BI", "logo": "BILogo" },
+    { "name": "AWS QuickSight", "logo": "AWSQuickInsightLogo" },
+    { "name": "Data Analysis", "logo": "DataAnalysisLogo" },
+    { "name": "Web Analytics", "logo": "WebAnalyticsLogo" }
+  ],
+"Cloud_Devops":[
+  {"name":"Cloud Computing","logo":"CloudComputingLogo"},
+  {"name":"AWS","logo":"AWSLogo"},
+  {"name":"Amazon S3","logo":"AmazonS3Logo"},
+  {"name":"Azure","logo":"AzureLogo"},
+  {"name":"Docker","logo":"DockerLogo"},
+  {"name":"CI/CD", "logo":"CICDLogo"},
+  {"name":"Gitlab","logo":"GitlabLogo"},
+  {"name":"Git","logo":"GitLogo"},
+  {"name":"OpenShift","logo":"OpenShiftLogo"},
+  {"name":"Kubernetes","logo":"KubernetesLogo"},
+  {"name":"Automation","logo":"AutomationprogLogo"}
+],
   "RemainingSkills": [
     { "name": "GitLab", "logo": "GitlabLogo" },
     { "name": "AngularJS", "logo": "AngularLogo" },
@@ -321,7 +463,17 @@
     { "name": "Cyber Security", "logo": "CybersecurityLogo" }
   ],
   "SoftSkills": [
-    "Group Communication, Team Management, Leadership, Learning Ability, Time Management"
+    "Group Communication",
+    "Good Communication Skills",
+    "Team Management",
+    "Leadership",
+    "Learning Ability",
+    "Time Management",
+    "Creative Problem Solving",
+    "Debugging",
+    "Teamwork",
+    "Decision-Making",
+    "Adaptability"
   ],
   "ProjectDetails": [
     {

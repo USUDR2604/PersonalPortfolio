@@ -1,0 +1,109 @@
+/* Root block (no page background here; we live inside your section) */
+.psx {
+  color: #0f172a; /* deep slate */
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  padding: clamp(1rem, 2.5vw, 1.5rem) 0;
+}
+
+/* Title */
+.psx__head {
+  display: grid;
+  justify-items: center;
+  row-gap: .5rem;
+  margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+}
+.psx__title {
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: .3px;
+  font-size: clamp(1.4rem, 3.3vw, 2rem);
+  color: #0b1220;
+  text-shadow: 0 1px 0 rgba(255,255,255,.6);
+}
+.psx__underline {
+  width: min(160px, 40%);
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #22d3ee, #a78bfa); /* cyan → violet */
+  box-shadow: 0 0 14px rgba(34, 211, 238, .35);
+  opacity: 1;
+}
+
+/* Cards grid: 1 / 2 / 3 columns */
+.psx__grid {
+  display: grid;
+  gap: clamp(.9rem, 2vw, 1.2rem);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px)  { .psx__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1200px) { .psx__grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* Card */
+.psx__card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #dbe3ee;         /* cool border */
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(2, 6, 23, .06);
+  padding: clamp(.9rem, 2vw, 1.15rem) clamp(1rem, 2.2vw, 1.35rem);
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.psx__card:hover {
+  transform: translateY(-2px);
+  border-color: #c7d2fe;             /* soft indigo */
+  box-shadow:
+    0 10px 22px rgba(2, 6, 23, .08),
+    0 0 0 3px rgba(167, 139, 250, .15); /* outer glow */
+}
+
+/* Accent bar */
+.psx__accent {
+  position: absolute; left: 0; top: 0; bottom: 0; width: 10px;
+  background: linear-gradient(180deg, #22d3ee, #a78bfa); /* cyan → violet */
+  border-radius: 14px 0 0 14px;
+  box-shadow: inset 0 0 10px rgba(34, 211, 238, .25);
+}
+
+/* Card title & list */
+.psx__cardTitle {
+  margin: 0 0 .5rem;
+  color: #0f172a;
+  font-weight: 800;
+  letter-spacing: .2px;
+  font-size: clamp(1.05rem, 2.1vw, 1.25rem);
+}
+.psx__list {
+  margin: .25rem 0 0;
+  padding-left: 1.15rem;
+  color: #334155;                    /* slate-700 */
+  line-height: 1.65;
+  font-size: clamp(.95rem, 1.6vw, 1.05rem);
+}
+.psx__list li { margin: .22rem 0; }
+.psx__list li::marker { color: #06b6d4; } /* cyan bullet */
+
+/* Dark-mode variant if your section background is dark */
+.SummarySectionSty--dark .psx { color: #e5e7eb; }
+.SummarySectionSty--dark .psx__title { color: #e5e7eb; text-shadow: none; }
+.SummarySectionSty--dark .psx__card {
+  background: #0f172a;
+  border: 1px solid rgba(148,163,184,.25);
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+.SummarySectionSty--dark .psx__card:hover {
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.35),
+    0 0 0 3px rgba(34, 211, 238, .18);
+}
+.SummarySectionSty--dark .psx__cardTitle { color: #e2e8f0; }
+.SummarySectionSty--dark .psx__list { color: #cbd5e1; }
+.SummarySectionSty--dark .psx__accent {
+  background: linear-gradient(180deg, #22d3ee, #a78bfa);
+  box-shadow: inset 0 0 12px rgba(34, 211, 238, .25);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .psx__card { transition: none; }
+}
