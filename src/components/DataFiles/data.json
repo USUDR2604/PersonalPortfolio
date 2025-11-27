@@ -1111,6 +1111,58 @@
       "tags": ["Data Analysis","Data Monitoring","Data Security","Data Automation"]
     },
     {
+  "is_published":"True",
+  "LicenseCertify_Name": "IBM Generative AI for Data Scientists",
+  "LicenseCertify_Logo": "IBMLogo",
+  "Certification_Company": "IBM",
+  "Associated_With":"University of Missouri- Kansas City",
+  "Associated_With_Comp_Logo":"UMKCLogo",
+  "Duration": {
+    "Start_Date": "Oct 2025",
+    "End_Date": "",
+    "is_present": "False",
+    "is_expirable": "True"
+  },
+  "Location": {
+    "City": "Kansas City",
+    "State": "Missouri",
+    "State_SF": "MO",
+    "Country": "United States of America",
+    "Country_SF": "USA",
+    "ZipCode": "64111"
+  },
+  "Credential_ID": "RXKDWUS4MDZN",
+  "Credential_URL": "https://www.coursera.org/account/accomplishments/specialization/certificate/RXKDWUS4MDZN",
+  "Skills": [
+    "Feature Engineering",
+    "Data Science",
+    "Data Synthesis",
+    "Natural Language Processing",
+    "Data Analysis",
+    "Prompt Patterns",
+    "Data Ethics",
+    "Artificial Intelligence and Machine Learning (AI/ML)",
+    "Responsible AI",
+    "Exploratory Data Analysis",
+    "Data Visualization Software",
+    "Predictive Modeling",
+    "Prompt Engineering",
+    "Deep Learning",
+    "AI Product Strategy",
+    "Machine Learning",
+    "Generative AI",
+    "ChatGPT"
+  ],
+  "tags": [
+    "Generative AI",
+    "AI/ML",
+    "NLP",
+    "Prompt Engineering",
+    "Responsible AI",
+    "Data Science"
+  ]
+},
+    {
       "is_published":"True",
       "LicenseCertify_Name": "Google Cybersecurity Professional Certificate",
       "LicenseCertify_Logo": "GoogleCertLogo",
