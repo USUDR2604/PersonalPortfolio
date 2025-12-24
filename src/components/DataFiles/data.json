@@ -86,7 +86,7 @@
         "Implemented monitoring and log analysis using Kibana and Logstash, reducing debugging time by ~50% and enabling proactive issue detection.",
         "Built reusable feature engineering pipelines and evaluation workflows, supporting scalable model training and consistent validation.",
         "Integrated AWS S3 with SQL/PL/SQL analytics pipelines to process large-scale Vodacom customer datasets, enabling behavioral analysis, reporting, and data-driven service optimization.",
-        "Performed EDA, feature engineering, and ETL pipeline design on customer usage and billing data to identify trends, anomalies, and segmentation opportunities for analytics and modeling.",
+        "Performed EDA, feature engineering, and ETL pipeline design on customer usage and billing data to identify trends, anomalies, and segmentation opportunities for analytics and modeling."
         ],
       "skills": [
         "Python",
