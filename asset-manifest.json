@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/PersonalPortfolio/static/css/main.073d0eb9.css",
-    "main.js": "/PersonalPortfolio/static/js/main.01c4365e.js",
+    "main.css": "/PersonalPortfolio/static/css/main.044533cc.css",
+    "main.js": "/PersonalPortfolio/static/js/main.6cf46654.js",
     "static/js/453.c937a3a2.chunk.js": "/PersonalPortfolio/static/js/453.c937a3a2.chunk.js",
     "static/media/Bag1.png": "/PersonalPortfolio/static/media/Bag1.1a2225ee6c7d6ac567de.png",
+    "static/media/PBDMLogo.png": "/PersonalPortfolio/static/media/PBDMLogo.194817462313ecb92c30.png",
+    "static/media/IOTLogo.png": "/PersonalPortfolio/static/media/IOTLogo.2d95a28fd275bf300bdd.png",
     "static/media/IBMLogo.png": "/PersonalPortfolio/static/media/IBMLogo.f77e36d0b0a6a9dd0afe.png",
     "static/media/AutomationprogLogo.png": "/PersonalPortfolio/static/media/AutomationprogLogo.7fc03c210b4e0dc47ba7.png",
     "static/media/OOPLogo.png": "/PersonalPortfolio/static/media/OOPLogo.22c7f1758d11aef90617.png",
@@ -63,7 +65,7 @@
     "static/media/SASTRA_Logo.png": "/PersonalPortfolio/static/media/SASTRA_Logo.e684ed36b9e027d26348.png",
     "static/media/gitlab_logo.png": "/PersonalPortfolio/static/media/gitlab_logo.b09b042718b8c4239412.png",
     "static/media/Skill_Icon.jpg": "/PersonalPortfolio/static/media/Skill_Icon.80af50ef21c8a0552081.jpg",
-    "static/media/Uday_Pic.png": "/PersonalPortfolio/static/media/Uday_Pic.becb42265700078e077c.png",
+    "static/media/UdayDeepPic.png": "/PersonalPortfolio/static/media/UdayDeepPic.e52936ff0715a5834f67.png",
     "static/media/CloudComputingLogo.png": "/PersonalPortfolio/static/media/CloudComputingLogo.a91fc2e49a23f598da4a.png",
     "static/media/Azure_Logo.png": "/PersonalPortfolio/static/media/Azure_Logo.e56a8388ec9e0497058d.png",
     "static/media/Django_Logo.png": "/PersonalPortfolio/static/media/Django_Logo.78cc14dd6cbe74b3016f.png",
@@ -105,12 +107,12 @@
     "static/media/crypto_logo.jpg": "/PersonalPortfolio/static/media/crypto_logo.278e356d5943df6a358b.jpg",
     "static/media/fa-v4compatibility.woff2": "/PersonalPortfolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/PersonalPortfolio/index.html",
-    "main.073d0eb9.css.map": "/PersonalPortfolio/static/css/main.073d0eb9.css.map",
-    "main.01c4365e.js.map": "/PersonalPortfolio/static/js/main.01c4365e.js.map",
+    "main.044533cc.css.map": "/PersonalPortfolio/static/css/main.044533cc.css.map",
+    "main.6cf46654.js.map": "/PersonalPortfolio/static/js/main.6cf46654.js.map",
     "453.c937a3a2.chunk.js.map": "/PersonalPortfolio/static/js/453.c937a3a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073d0eb9.css",
-    "static/js/main.01c4365e.js"
+    "static/css/main.044533cc.css",
+    "static/js/main.6cf46654.js"
   ]
 }
