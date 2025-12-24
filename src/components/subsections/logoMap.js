@@ -86,10 +86,17 @@ import TableauLogo from "../Images/Logos/ProgrammingIcon/TableauLogo.png"
 import LogstashLogo from "../Images/Logos/ProgrammingIcon/LogstashLogo.png"
 import AWSQuickInsightLogo from "../Images/Logos/ProgrammingIcon/AWSQuickInsightLogo.png"
 import DataAnalysisLogo from "../Images/Logos/ProgrammingIcon/DataAnalysisLogo.png"
+import IBMLogo from "../Images/Logos/OrganizationLogo/IBMLogo.png"
+import IOTLogo from "../Images/Logos/ProgrammingIcon/IOTLogo.png"
+import PBDMLogo from "../Images/Logos/ProgrammingIcon/PBDMLogo.png"
 import { Link } from "react-bootstrap-icons";
 // import other logos here..
 
 const logoMap = {
+  "PBDMLogo":PBDMLogo,
+  "IOTLogo":IOTLogo,
+  "CryptoLogo":CryptoLogo,
+  "IBMLogo":IBMLogo,
   "AWSQuickInsightLogo":AWSQuickInsightLogo,
   "DataAnalysisLogo":DataAnalysisLogo,
   "BILogo":BILogo,

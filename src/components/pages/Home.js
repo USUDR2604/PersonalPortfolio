@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import ProfilePicture from '../Images/Logos/Uday_Pic.png';
+import ProfilePicture from '../Images/Logos/UdayDeepPic.png';
 import programIcon from '../Images/Logos/SubSectionLogo/Prog-icon.png';
 import { Tools, Mortarboard } from 'react-bootstrap-icons';
 

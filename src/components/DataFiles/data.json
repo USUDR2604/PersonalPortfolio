@@ -8,6 +8,62 @@
   "Summary":"A highly motivated and results-oriented Master’s student in Computer Science at the University of Missouri - Kansas City, specializing in Data Analysis, Full-Stack Development and Artificial Intelligence. Demonstrates a wealth of experience in developing AI-powered solutions, implementing machine learning models, and advancing cutting-edge deep learning methodologies. Proficient in Python (Django, REST APIs), Java, and C++, with a robust foundation in full-stack development, seamless API integration, and cloud technologies. Known for deploying containerized applications using Docker, and recognized for driving operational excellence through innovative problem-solving. Committed to delivering high-impact, data-driven solutions that foster efficiency and scalability while actively pursuing continuous growth within a dynamic, fast-paced environment."},
   "experienceList": [
     {
+  "title": "Data & Operations Analyst",
+  "company": "Sodexo",
+  "logo": "SodexoLogo",
+  "type": "Part-time",
+  "Duration": {
+    "Start_Date": "Aug 2025",
+    "End_Date": "Dec 2025"
+  },
+  "Location": {
+    "City": "Kansas City",
+    "State": "Missouri",
+    "Country": "United States"
+  },
+  "jobtype": "Onsite",
+  "tasks": [
+    "Analyzed campus dining ordering, spending, and onboarding data to identify peak demand periods and high-volume items, enabling data-driven meal scheduling and staffing decisions.",
+    "Built structured reports on food spending patterns and stall-level payment trends to support operational planning and efficiency improvements.",
+    "Applied exploratory data analysis to dining operations data to uncover workload trends and support optimized resource allocation."
+  ],
+  "skills": [
+    "Data Analysis",
+    "SQL",
+    "Exploratory Data Analysis (EDA)",
+    "Reporting",
+    "Operational Analytics"
+  ]
+},
+{
+  "title": "Campus Recreation Data Operations Analyst",
+  "company": "University of Missouri–Kansas City",
+  "logo": "UMKCLogo",
+  "type": "Part-time",
+  "Duration": {
+    "Start_Date": "Jan 2025",
+    "End_Date": "Dec 2025"
+  },
+  "Location": {
+    "City": "Kansas City",
+    "State": "Missouri",
+    "Country": "United States"
+  },
+  "jobtype": "Onsite",
+  "tasks": [
+    "Analyzed membership activity, guest inflow patterns, and sport-wise facility utilization data to identify peak and low-traffic periods.",
+    "Developed collision-free scheduling insights and team-wise staff allocation recommendations based on usage trends and demand analysis.",
+    "Supported data-driven operational planning by aligning staffing hours and facility usage with real demand patterns for cost efficiency."
+  ],
+  "skills": [
+    "Data Analysis",
+    "Usage Analytics",
+    "Scheduling Optimization",
+    "Reporting",
+    "Operational Decision Support"
+  ]
+},
+    {
       "title": "Software Engineer",
       "company": "Tata Consultancy Services",
       "logo": "TcsLogo",
@@ -23,15 +79,15 @@
       },
       "jobtype": "Onsite",
       "tasks": [
-"Developed scalable backend services using Python (Django), Docker, and OpenShift, reducing API response time by ~30% and improving overall system reliability.",
-"Designed and optimized RESTful APIs for authentication, network validation, and data management across microservices supporting analytics workflows.",
-"Improved database performance using Oracle SQL and PL/SQL, achieving ~40% faster data retrieval and enabling near real-time analytics.",
-"Integrated Redis caching and GitLab CI/CD pipelines, reducing deployment time from ~1 hour to 15 minutes and improving release stability.",
-"Implemented monitoring and log analysis using Kibana and Logstash, reducing debugging time by ~50% and enabling proactive issue detection.",
-"Built reusable feature engineering pipelines and evaluation workflows, supporting scalable model training and consistent validation.",
-"Integrated AWS S3 with SQL/PL/SQL analytics pipelines to process large-scale Vodacom customer datasets, enabling behavioral analysis, reporting, and data-driven service optimization.",
-"Performed EDA, feature engineering, and ETL pipeline design on customer usage and billing data to identify trends, anomalies, and segmentation opportunities for analytics and modeling.",
-      ],
+        "Developed scalable backend services using Python (Django), Docker, and OpenShift, reducing API response time by ~30% and improving overall system reliability.",
+        "Designed and optimized RESTful APIs for authentication, network validation, and data management across microservices supporting analytics workflows.",
+        "Improved database performance using Oracle SQL and PL/SQL, achieving ~40% faster data retrieval and enabling near real-time analytics.",
+        "Integrated Redis caching and GitLab CI/CD pipelines, reducing deployment time from ~1 hour to 15 minutes and improving release stability.",
+        "Implemented monitoring and log analysis using Kibana and Logstash, reducing debugging time by ~50% and enabling proactive issue detection.",
+        "Built reusable feature engineering pipelines and evaluation workflows, supporting scalable model training and consistent validation.",
+        "Integrated AWS S3 with SQL/PL/SQL analytics pipelines to process large-scale Vodacom customer datasets, enabling behavioral analysis, reporting, and data-driven service optimization.",
+        "Performed EDA, feature engineering, and ETL pipeline design on customer usage and billing data to identify trends, anomalies, and segmentation opportunities for analytics and modeling.",
+        ],
       "skills": [
         "Python",
         "MySQL",
@@ -1093,7 +1149,7 @@
       "Associated_With":"University of Missouri- Kansas City",
       "Associated_With_Comp_Logo":"UMKCLogo",
       "Duration": {
-        "Start_Date": "Mar 2025",
+        "Start_Date": "Oct 2025",
         "End_Date": "",
         "is_present": "True",
         "is_expirable": "False"
@@ -1171,7 +1227,7 @@
       "Associated_With":"University of Missouri- Kansas City",
       "Associated_With_Comp_Logo":"UMKCLogo",
       "Duration": {
-        "Start_Date": "Apr 2025",
+        "Start_Date": "Nov 2025",
         "End_Date": "",
         "is_present": "True",
         "is_expirable": "False"
@@ -1248,11 +1304,85 @@
   "Description":"You are good in functional understanding.keep learning keep growing."
 }
   ],
-  "CourseDetailBackgroundColor":"#ccddfa",
-  "CourseDetails":[
-  {"Course_Logo":"CloudComputingLogo","Course_Name":"Cloud Computing","Course_Code":"CC5530","Associated_Comp_Logo":"UMKCLogo","Assoc_Comp":"University of Missouri - Kansas City"},
-  {"Course_Logo":"AWSLogo","Course_Name":"Amazon Web Services","Course_Code":"CC5523","Associated_Comp_Logo":"UMKCLogo","Assoc_Comp":"University of Missouri - Kansas City"},
-  {"Course_Logo":"AILogo","Course_Name":"Artificial Intelligence","Course_Code":"CS5532","Associated_Comp_Logo":"SASTRALogo","Assoc_Comp":"SASTRA Deemed to be University"},
-  {"Course_Logo":"PythonLogo","Course_Name":"Python Programming","Course_Code":"CS5522","Associated_Comp_Logo":"SASTRALogo","Assoc_Comp":"SASTRA Deemed to be University"}
-  ]
+  "CourseDetailBackgroundColor": "#ccddfa",
+"CourseDetails": [
+  {
+    "Course_Logo": "DSLogo",
+    "Course_Name": "Principles of Data Science",
+    "Course_Code": "DS5500",
+    "Associated_Comp_Logo": "UMKCLogo",
+    "Assoc_Comp": "University of Missouri - Kansas City"
+  },
+  {
+    "Course_Logo": "CryptoLogo",
+    "Course_Name": "Cryptography",
+    "Course_Code": "CS5580",
+    "Associated_Comp_Logo": "UMKCLogo",
+    "Assoc_Comp": "University of Missouri - Kansas City"
+  },
+  {
+    "Course_Logo": "IOTLogo",
+    "Course_Name": "Internet of Things",
+    "Course_Code": "CS5590",
+    "Associated_Comp_Logo": "UMKCLogo",
+    "Assoc_Comp": "University of Missouri - Kansas City"
+  },
+  {
+    "Course_Logo": "PBDMLogo",
+    "Course_Name": "Principles of Big Data Management",
+    "Course_Code": "CS5510",
+    "Associated_Comp_Logo": "UMKCLogo",
+    "Assoc_Comp": "University of Missouri - Kansas City"
+  },
+  {
+    "Course_Logo": "MLLogo",
+    "Course_Name": "Introduction to Machine Learning",
+    "Course_Code": "CS5520",
+    "Associated_Comp_Logo": "UMKCLogo",
+    "Assoc_Comp": "University of Missouri - Kansas City"
+  },
+  {
+    "Course_Logo": "LLMLogo",
+    "Course_Name": "Large Language Models",
+    "Course_Code": "CS5565",
+    "Associated_Comp_Logo": "UMKCLogo",
+    "Assoc_Comp": "University of Missouri - Kansas City"
+  },
+  {
+    "Course_Logo": "CloudComputingLogo",
+    "Course_Name": "Cloud Computing",
+    "Course_Code": "CC5530",
+    "Associated_Comp_Logo": "UMKCLogo",
+    "Assoc_Comp": "University of Missouri - Kansas City"
+  },
+  {
+    "Course_Logo": "AWSLogo",
+    "Course_Name": "Amazon Web Services",
+    "Course_Code": "CC5523",
+    "Associated_Comp_Logo": "UMKCLogo",
+    "Assoc_Comp": "University of Missouri - Kansas City"
+  },
+  {
+    "Course_Logo": "AILogo",
+    "Course_Name": "Artificial Intelligence",
+    "Course_Code": "CS5532",
+    "Associated_Comp_Logo": "SASTRALogo",
+    "Assoc_Comp": "SASTRA Deemed to be University"
+  },
+  {
+    "Course_Logo": "MLLogo",
+    "Course_Name": "Introduction to Machine Learning",
+    "Course_Code": "CS5561",
+    "Associated_Comp_Logo": "UMKCLogo",
+    "Assoc_Comp": "University of Missouri - Kansas City"
+  },
+  {
+    "Course_Logo": "PythonLogo",
+    "Course_Name": "Python Programming",
+    "Course_Code": "CS5522",
+    "Associated_Comp_Logo": "SASTRALogo",
+    "Assoc_Comp": "SASTRA Deemed to be University"
+  }
+]
+
 }
