@@ -23,13 +23,14 @@
       },
       "jobtype": "Onsite",
       "tasks": [
-        "Developed scalable backend services using Django, Docker, and OpenShift, reducing API response time by 30%.",
-        "Created and optimized 15+ RESTful APIs for authentication, network checks, and data management across microservices.",
-        "Improved database performance with Oracle SQL and PL/SQL, achieving 40% faster data retrieval and real-time updates.",
-        "Enhanced system efficiency with Redis caching and Docker-GitLab deployments, cutting deployment time from 1 hour to 15 minutes.",
-        "Monitored logs with Kibana and Logstash, reducing debugging time by 50% and improving system reliability.",
-        "Designed microservices for dynamic data allocation and server relocation, significantly boosting network performance.",
-        "Authored technical documentation and mentored junior developers to support maintainability and team growth."
+"Developed scalable backend services using Python (Django), Docker, and OpenShift, reducing API response time by ~30% and improving overall system reliability.",
+"Designed and optimized RESTful APIs for authentication, network validation, and data management across microservices supporting analytics workflows.",
+"Improved database performance using Oracle SQL and PL/SQL, achieving ~40% faster data retrieval and enabling near real-time analytics.",
+"Integrated Redis caching and GitLab CI/CD pipelines, reducing deployment time from ~1 hour to 15 minutes and improving release stability.",
+"Implemented monitoring and log analysis using Kibana and Logstash, reducing debugging time by ~50% and enabling proactive issue detection.",
+"Built reusable feature engineering pipelines and evaluation workflows, supporting scalable model training and consistent validation.",
+"Integrated AWS S3 with SQL/PL/SQL analytics pipelines to process large-scale Vodacom customer datasets, enabling behavioral analysis, reporting, and data-driven service optimization.",
+"Performed EDA, feature engineering, and ETL pipeline design on customer usage and billing data to identify trends, anomalies, and segmentation opportunities for analytics and modeling.",
       ],
       "skills": [
         "Python",
