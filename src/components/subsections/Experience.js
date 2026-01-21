@@ -9,6 +9,7 @@ const Experience = () => {
 
   const logoMap = {
     TcsLogo: TcsLogo,
+    UMKCLogo:UMKCLogo,
     // Add more mappings as needed
   };
 
