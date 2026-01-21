@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PersonalPortfolio/static/css/main.044533cc.css",
-    "main.js": "/PersonalPortfolio/static/js/main.7a42f46f.js",
+    "main.css": "/PersonalPortfolio/static/css/main.ee9f91b3.css",
+    "main.js": "/PersonalPortfolio/static/js/main.e4e161dd.js",
     "static/js/453.c937a3a2.chunk.js": "/PersonalPortfolio/static/js/453.c937a3a2.chunk.js",
     "static/media/Bag1.png": "/PersonalPortfolio/static/media/Bag1.1a2225ee6c7d6ac567de.png",
     "static/media/PBDMLogo.png": "/PersonalPortfolio/static/media/PBDMLogo.194817462313ecb92c30.png",
@@ -81,7 +81,6 @@
     "static/media/fa-brands-400.woff2": "/PersonalPortfolio/static/media/fa-brands-400.c210719e60948b211a12.woff2",
     "static/media/AWS_logo.png": "/PersonalPortfolio/static/media/AWS_logo.ede93b2db20b118769d9.png",
     "static/media/Cloud_Logo.jpg": "/PersonalPortfolio/static/media/Cloud_Logo.e8780c9d41e37df3f041.jpg",
-    "static/media/SummaryIcon.png": "/PersonalPortfolio/static/media/SummaryIcon.66f5e63f66e24a043401.png",
     "static/media/NPTEL_LOGO.png": "/PersonalPortfolio/static/media/NPTEL_LOGO.cd4dc64ebd31138ba24e.png",
     "static/media/fa-regular-400.ttf": "/PersonalPortfolio/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
     "static/media/Docker_logo.png": "/PersonalPortfolio/static/media/Docker_logo.5330a2311f1b596468db.png",
@@ -107,12 +106,12 @@
     "static/media/crypto_logo.jpg": "/PersonalPortfolio/static/media/crypto_logo.278e356d5943df6a358b.jpg",
     "static/media/fa-v4compatibility.woff2": "/PersonalPortfolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/PersonalPortfolio/index.html",
-    "main.044533cc.css.map": "/PersonalPortfolio/static/css/main.044533cc.css.map",
-    "main.7a42f46f.js.map": "/PersonalPortfolio/static/js/main.7a42f46f.js.map",
+    "main.ee9f91b3.css.map": "/PersonalPortfolio/static/css/main.ee9f91b3.css.map",
+    "main.e4e161dd.js.map": "/PersonalPortfolio/static/js/main.e4e161dd.js.map",
     "453.c937a3a2.chunk.js.map": "/PersonalPortfolio/static/js/453.c937a3a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.044533cc.css",
-    "static/js/main.7a42f46f.js"
+    "static/css/main.ee9f91b3.css",
+    "static/js/main.e4e161dd.js"
   ]
 }
