@@ -2,6 +2,7 @@ import React from "react";
 import "./CSS/Experience.css";
 import WorkIcon from "../Images/Logos/SubSectionLogo/WorkIcon.jpg";
 import TcsLogo from "../Images/Logos/OrganizationLogo/TCS_Logo.png";
+import UMKCLogo from "../Images/Logos/OrganizationLogo/UMKC_Logo.png";
 import data from "../DataFiles/data.json";
 
 const Experience = () => {
