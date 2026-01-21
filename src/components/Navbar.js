@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { HouseDoorFill, PersonLinesFill, EnvelopeFill, Gear, PersonCircle } from 'react-bootstrap-icons';
+import { HouseDoorFill, PersonLinesFill, EnvelopeFill, PersonCircle } from 'react-bootstrap-icons';
 
 function PortfolioNavbar() {
   return (

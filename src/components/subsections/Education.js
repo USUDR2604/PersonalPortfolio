@@ -4,7 +4,6 @@ import EducationIcon from "../Images/Logos/SubSectionLogo/Education_Logo.jpg";
 import UMKCLogo from "../Images/Logos/OrganizationLogo/UMKC_Logo.png"; // Example
 import SastraLogo from "../Images/Logos/OrganizationLogo/SASTRA_Logo.png"; // Example
 import data from "../DataFiles/data.json"; 
-import StarIcon from "../Images/Logos/SubSectionLogo/Staricon.png";
 const Education = () => {
   const { educationList } = data;
 

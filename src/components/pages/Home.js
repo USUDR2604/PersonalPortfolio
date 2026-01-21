@@ -4,7 +4,6 @@ import ProfilePicture from '../Images/Logos/UdayDeepPic.png';
 import programIcon from '../Images/Logos/SubSectionLogo/Prog-icon.png';
 import { Tools, Mortarboard } from 'react-bootstrap-icons';
 
-import Summary from '../subsections/Summary';
 import Experience from '../subsections/Experience';
 import Education from '../subsections/Education';
 import Skill from '../subsections/Skill';

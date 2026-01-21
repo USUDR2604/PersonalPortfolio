@@ -10,11 +10,9 @@ const Skill = () => {
   const skillData = useMemo(() => (data?.skills ? data.skills : data) || {}, []);
 
   const {
-    keySkills = [],
     ProgrammingSkills = [],
     AI_ML_Systems=[],
     Data_Streaming=[],
-    Cloud_Devops =[],
     Backend_Web_Frameworks=[],
     Front_End_UI=[],
     Monitoring_Databases =[],

@@ -15,24 +15,30 @@ const ContactUs = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [isSending, setIsSending] = useState(false);
+  const [statusMsg, setStatusMsg] = useState({ type: "", text: "" }); // type: success | error
 
   const validate = () => {
     const errs = {};
     if (!formData.firstName.trim()) errs.firstName = "First name is required.";
     if (!formData.lastName.trim()) errs.lastName = "Last name is required.";
+
     if (!formData.email.trim()) {
       errs.email = "Email is required.";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       errs.email = "Invalid email format.";
     }
+
     if (formData.phone && !/^\d{10,15}$/.test(formData.phone)) {
       errs.phone = "Phone must be 10–15 digits.";
     }
+
     if (!formData.subject.trim()) {
       errs.subject = "Subject is required.";
     } else if (formData.subject.length > 300) {
       errs.subject = "Subject cannot exceed 300 characters.";
     }
+
     if (!formData.message.trim()) {
       errs.message = "Message is required.";
     } else if (formData.message.length > 2000) {
@@ -47,39 +53,59 @@ const ContactUs = () => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
 
-    if (name === "subject" && value.length > 300) {
-      setErrors((prev) => ({ ...prev, subject: "Subject cannot exceed 300 characters." }));
-    } else if (name === "subject") {
-      setErrors((prev) => ({ ...prev, subject: "" }));
+    // live limit feedback (optional)
+    if (name === "subject") {
+      setErrors((prev) => ({ ...prev, subject: value.length > 300 ? "Subject cannot exceed 300 characters." : "" }));
     }
-
-    if (name === "message" && value.length > 2000) {
-      setErrors((prev) => ({ ...prev, message: "Message cannot exceed 2000 characters." }));
-    } else if (name === "message") {
-      setErrors((prev) => ({ ...prev, message: "" }));
+    if (name === "message") {
+      setErrors((prev) => ({ ...prev, message: value.length > 2000 ? "Message cannot exceed 2000 characters." : "" }));
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatusMsg({ type: "", text: "" });
+
     if (!validate()) return;
 
-    alert("✅ Message sent successfully!");
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: ""
-    });
-    setErrors({});
+    try {
+      setIsSending(true);
+
+      // ✅ change URL if your backend is deployed elsewhere
+      const res = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
+
+      const payload = await res.json();
+
+      if (!res.ok || !payload.ok) {
+        throw new Error(payload?.error || "Failed to send message");
+      }
+
+      setStatusMsg({ type: "success", text: "✅ Message sent successfully!" });
+
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: ""
+      });
+      setErrors({});
+    } catch (err) {
+      setStatusMsg({ type: "error", text: "❌ Failed to send. Please try again later." });
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
     <div className="container py-5" style={{ backgroundColor: ContactUsSectionBackgroundColor }}>
       <div className="row g-5 align-items-start">
-        
+
         {/* LEFT PANEL */}
         <div className="ContactUsLeft col-lg-5 text-light">
           <div className="p-4 bg-dark rounded shadow">
@@ -117,6 +143,14 @@ const ContactUs = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="bg-light p-4 rounded shadow">
+
+            {/* ✅ Status message */}
+            {statusMsg.text && (
+              <div className={`alert ${statusMsg.type === "success" ? "alert-success" : "alert-danger"} mb-3`}>
+                {statusMsg.text}
+              </div>
+            )}
+
             <div className="row mb-3">
               <div className="col-md-6">
                 <label className="form-label">First Name</label>
@@ -169,36 +203,40 @@ const ContactUs = () => {
 
             <div className="mb-3">
               <label className="form-label">Subject</label>
-              <input
-                name="subject"
-                className={`form-control ${errors.subject ? "is-invalid" : ""}`}
-                value={formData.subject}
-                onChange={handleChange}
-                maxLength={400}
-                placeholder="Enter subject"
-              />
+              {/* Max length aligned with validator (300 chars) */}
+<input
+  name="subject"
+  className={`form-control ${errors.subject ? "is-invalid" : ""}`}
+  value={formData.subject}
+  onChange={handleChange}
+  maxLength={300}
+  placeholder="Enter subject"
+/>
+
               <div className="form-text text-end">{formData.subject.length}/300</div>
               <div className="invalid-feedback">{errors.subject}</div>
             </div>
 
             <div className="mb-3">
               <label className="form-label">Message</label>
+              {/* Max length aligned with validator (2000 chars) */}
               <textarea
                 name="message"
                 className={`form-control ${errors.message ? "is-invalid" : ""}`}
                 rows="6"
                 value={formData.message}
                 onChange={handleChange}
-                maxLength={2200}
+                maxLength={2000}
                 placeholder="Type your message..."
               ></textarea>
-              <div className="form-text text-end">{formData.message.length}/2000</div>
-              <div className="invalid-feedback">{errors.message}</div>
             </div>
 
             <div className="text-end">
-              <button type="submit" className="btn btn-primary px-4">Send Message</button>
+              <button type="submit" className="btn btn-primary px-4" disabled={isSending}>
+                {isSending ? "Sending..." : "Send Message"}
+              </button>
             </div>
+
           </form>
         </div>
       </div>

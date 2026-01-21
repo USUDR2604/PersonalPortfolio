@@ -89,10 +89,10 @@ import DataAnalysisLogo from "../Images/Logos/ProgrammingIcon/DataAnalysisLogo.p
 import IBMLogo from "../Images/Logos/OrganizationLogo/IBMLogo.png"
 import IOTLogo from "../Images/Logos/ProgrammingIcon/IOTLogo.png"
 import PBDMLogo from "../Images/Logos/ProgrammingIcon/PBDMLogo.png"
-import { Link } from "react-bootstrap-icons";
 // import other logos here..
 
 const logoMap = {
+  "VolunteerLogo":VolunteerLogo,
   "PBDMLogo":PBDMLogo,
   "IOTLogo":IOTLogo,
   "CryptoLogo":CryptoLogo,
@@ -168,10 +168,8 @@ const logoMap = {
   "GitlabLogo":GitlabLogo,
   "AngularLogo":AngularLogo,
   "JavaLogo":JavaLogo,
-  "JqueryLogo":JqueryLogo,
   "WebdesignLogo":WebdesignLogo,
   "WebdevelopmentLogo":WebdevelopmentLogo,
-  "CryptoLogo":CryptoLogo,
   "CybersecurityLogo":CybersecurityLogo,
   "CourseraLogo":CourseraLogo,
   "UdemyLogo":UdemyLogo,
