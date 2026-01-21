@@ -8,36 +8,8 @@
   "Summary":"A highly motivated and results-oriented Master’s student in Computer Science at the University of Missouri - Kansas City, specializing in Data Analysis, Full-Stack Development and Artificial Intelligence. Demonstrates a wealth of experience in developing AI-powered solutions, implementing machine learning models, and advancing cutting-edge deep learning methodologies. Proficient in Python (Django, REST APIs), Java, and C++, with a robust foundation in full-stack development, seamless API integration, and cloud technologies. Known for deploying containerized applications using Docker, and recognized for driving operational excellence through innovative problem-solving. Committed to delivering high-impact, data-driven solutions that foster efficiency and scalability while actively pursuing continuous growth within a dynamic, fast-paced environment."},
   "experienceList": [
     {
-  "title": "Data & Operations Analyst",
-  "company": "Sodexo",
-  "logo": "SodexoLogo",
-  "type": "Part-time",
-  "Duration": {
-    "Start_Date": "Aug 2025",
-    "End_Date": "Dec 2025"
-  },
-  "Location": {
-    "City": "Kansas City",
-    "State": "Missouri",
-    "Country": "United States"
-  },
-  "jobtype": "Onsite",
-  "tasks": [
-    "Analyzed campus dining ordering, spending, and onboarding data to identify peak demand periods and high-volume items, enabling data-driven meal scheduling and staffing decisions.",
-    "Built structured reports on food spending patterns and stall-level payment trends to support operational planning and efficiency improvements.",
-    "Applied exploratory data analysis to dining operations data to uncover workload trends and support optimized resource allocation."
-  ],
-  "skills": [
-    "Data Analysis",
-    "SQL",
-    "Exploratory Data Analysis (EDA)",
-    "Reporting",
-    "Operational Analytics"
-  ]
-},
-{
-  "title": "Campus Recreation Data Operations Analyst",
-  "company": "University of Missouri–Kansas City",
+  "title": "Data Scientist",
+  "company": "University of Missouri - Kansas City",
   "logo": "UMKCLogo",
   "type": "Part-time",
   "Duration": {
@@ -51,20 +23,22 @@
   },
   "jobtype": "Onsite",
   "tasks": [
-    "Analyzed membership activity, guest inflow patterns, and sport-wise facility utilization data to identify peak and low-traffic periods.",
-    "Developed collision-free scheduling insights and team-wise staff allocation recommendations based on usage trends and demand analysis.",
-    "Supported data-driven operational planning by aligning staffing hours and facility usage with real demand patterns for cost efficiency."
-  ],
+    "Designed and operated real-time data monitoring workflows over dining orders, service requests, student onboarding records, and facility usage, enabling AI-ready operational insights for demand forecasting and scheduling optimization.",
+    "Built time-windowed analytics and trend detection logic to identify peak demand periods, service bottlenecks, and workload imbalances, supporting decision automation and human-in-the-loop planning for campus operations.",
+    "Analyzed high-volume event and usage logs (membership check-ins, guest inflows, sport-wise facility utilization) to derive behavioral patterns, enabling collision-free scheduling and optimized staff allocation aligned with real demand.",
+    "Developed structured datasets and reporting layers used by supervisors for operational planning, forming a foundation for future GenAI/LLM-assisted recommendation and scheduling systems.",
+    "Applied principles of data validation, anomaly detection, and consistency checks to ensure reliability of operational data feeding analytics dashboards and downstream AI-driven decision workflows."
+    ],
   "skills": [
     "Data Analysis",
-    "Usage Analytics",
-    "Scheduling Optimization",
+    "SQL",
+    "Exploratory Data Analysis (EDA)",
     "Reporting",
-    "Operational Decision Support"
+    "Operational Analytics"
   ]
 },
     {
-      "title": "Software Engineer",
+      "title": "Data Scientist",
       "company": "Tata Consultancy Services",
       "logo": "TcsLogo",
       "type": "Full-time",
@@ -100,7 +74,7 @@
       ]
     },
     {
-      "title": "Student Intern",
+      "title": "Data Scientist Intern",
       "company": "Tata Consultancy Services",
       "logo": "TcsLogo",
       "type": "Internship",
@@ -132,7 +106,41 @@
         "MongoDB",
         "Natural Language Processing (NLP)"
       ]
-    }
+    },
+    {
+  "title": "Data Scientist",
+  "company": "TwoWaits",
+  "logo": "TwoWaitsLogo",
+  "type": "Full-time",
+  "Duration": {
+    "Start_Date": "Jul 2020",
+    "End_Date": "Dec 2021"
+  },
+  "Location": {
+    "City": "Remote",
+    "State": "",
+    "Country": ""
+  },
+  "jobtype": "Remote",
+  "tasks": [
+    "Analyzed sales and customer datasets using Python (Pandas, NumPy) and SQL to perform exploratory data analysis (EDA), uncovering trends in product demand and customer behavior.",
+    "Built data preprocessing and cleaning pipelines to handle missing values, inconsistencies, and outliers, improving data quality for downstream analysis.",
+    "Developed Python-based data visualization and reporting workflows to generate actionable business insights for internal stakeholders.",
+    "Conducted basic predictive and trend analysis to support data-driven decision-making and early forecasting initiatives.",
+    "Collaborated with cross-functional teams to translate business questions into analytical tasks and interpretable data outputs."
+  ],
+  "skills": [
+    "Python",
+    "Pandas",
+    "NumPy",
+    "SQL",
+    "Exploratory Data Analysis (EDA)",
+    "Data Cleaning",
+    "Data Visualization",
+    "Statistical Analysis",
+    "Business Analytics"
+  ]
+}
   ],
   "educationList": [
     {
