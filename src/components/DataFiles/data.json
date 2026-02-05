@@ -23,11 +23,11 @@
   },
   "jobtype": "Onsite",
   "tasks": [
-    "Designed and operated real-time data monitoring workflows over dining orders, service requests, student onboarding records, and facility usage, enabling AI-ready operational insights for demand forecasting and scheduling optimization.",
-    "Built time-windowed analytics and trend detection logic to identify peak demand periods, service bottlenecks, and workload imbalances, supporting decision automation and human-in-the-loop planning for campus operations.",
-    "Analyzed high-volume event and usage logs (membership check-ins, guest inflows, sport-wise facility utilization) to derive behavioral patterns, enabling collision-free scheduling and optimized staff allocation aligned with real demand.",
-    "Developed structured datasets and reporting layers used by supervisors for operational planning, forming a foundation for future GenAI/LLM-assisted recommendation and scheduling systems.",
-    "Applied principles of data validation, anomaly detection, and consistency checks to ensure reliability of operational data feeding analytics dashboards and downstream AI-driven decision workflows."
+"Analyzed dining and recreation utilization data using SQL, Pandas, and EDA to identify peak-demand patterns, enabling staffing optimization and improving workforce efficiency by 15–20%.",
+ "Developed analytical tables, KPI frameworks, and automated dashboards in Tableau and Power BI to monitor usage trends and anomalies, leading to more efficient shift planning and a 15% reduction in overtime and manual reporting.",
+ "Conducted resource utilization and congestion analysis to optimize campus facility allocation, reducing wait times and improving student satisfaction with campus services.",
+ "Designed and deployed an end-to-end cloud analytics platform by exposing SQL/Pandas-based analytical outputs through Python APIs and integrating them with a React frontend, enabling stakeholders to interactively explore utilization metrics, trends, and KPIs in real time.",
+"Implemented a cloud-hosted React dashboard backed by scalable data services (ETL pipelines, analytical tables, and APIs), supporting secure access, responsive visualizations, and on-demand insights for operations teams, which improved decision turnaround time and reduced dependency on manual reports."
     ],
   "skills": [
     "Data Analysis",
@@ -53,14 +53,27 @@
       },
       "jobtype": "Onsite",
       "tasks": [
-        "Developed scalable backend services using Python (Django), Docker, and OpenShift, reducing API response time by ~30% and improving overall system reliability.",
-        "Designed and optimized RESTful APIs for authentication, network validation, and data management across microservices supporting analytics workflows.",
-        "Improved database performance using Oracle SQL and PL/SQL, achieving ~40% faster data retrieval and enabling near real-time analytics.",
-        "Integrated Redis caching and GitLab CI/CD pipelines, reducing deployment time from ~1 hour to 15 minutes and improving release stability.",
-        "Implemented monitoring and log analysis using Kibana and Logstash, reducing debugging time by ~50% and enabling proactive issue detection.",
-        "Built reusable feature engineering pipelines and evaluation workflows, supporting scalable model training and consistent validation.",
-        "Integrated AWS S3 with SQL/PL/SQL analytics pipelines to process large-scale Vodacom customer datasets, enabling behavioral analysis, reporting, and data-driven service optimization.",
-        "Performed EDA, feature engineering, and ETL pipeline design on customer usage and billing data to identify trends, anomalies, and segmentation opportunities for analytics and modeling."
+        "Analyzed 50M+ telecom network events and system logs using Python, SQL, statistical profiling, and anomaly detection to reduce Mean Time to Diagnosis (MTTD) by 35% for operations and SRE teams, directly improving customer-impacting incident resolution.",
+        "Built scalable Spark (PySpark) data pipelines to process high-volume telecom telemetry, enabling large-scale feature generation and ML analysis while reducing incident analysis latency by 30% across customer-facing services.",
+        "Designed and validated ML and deep learning models using PyTorch, Keras, PySpark MLlib, and scikit-learn on AWS-hosted telecom data to improve bandwidth planning accuracy by 20%, reducing budgeting errors and improving network reliability for end customers.",
+
+        "Developed ML-driven network behavior and topology models (classification & clustering) to identify root causes such as server overload, configuration drift, and routing failures, improving diagnostic accuracy by 20% and enabling proactive remediation.",
+
+        "Implemented log-level error classification and distribution analysis to detect recurring failure patterns, enabling preventive fixes and reducing repeat production incidents by 20%, strengthening SLA compliance.",
+
+        "Built end-to-end backend analytics and ML services using Dockerized Python microservices, exposing secure REST APIs (log check, status check, health, inference) with API key–based access, enabling self-service diagnostics and cutting third-party escalation delays by 40%.",
+
+        "Developed LLM/NLP-powered analytics workflows using LangChain, NLTK, Ollama, FAISS, PyTorch, and PySpark to support natural-language log querying and customer support use cases, reducing analysis time by 30%.",
+
+        "Orchestrated Databricks Spark pipelines and ML workflows on Kubernetes, improving pipeline throughput, reliability, and execution efficiency by 25% for large-scale ops and customer-support workloads.",
+
+        "Led end-to-end solution delivery from customer requirements and problem framing through data ingestion, modeling, backend development, deployment, and monitoring, ensuring solutions addressed real operational and customer needs rather than offline-only metrics.",
+
+        "Built ML prototypes and proof-of-concepts (including Keras-based deep learning models and LLM-driven diagnostics) to rapidly validate ideas with stakeholders, accelerating adoption into production systems.",
+
+        "Applied security and compliance best practices across analytics and ML services, including authentication, role-based access, audit logging, and secure data handling to meet enterprise and telecom regulatory requirements.",
+
+        "Collaborated with cross-functional teams and mentored junior engineers and analysts, contributing to team capability building, code reviews, and adoption of ML, cloud, and DevOps best practices."
         ],
       "skills": [
         "Python",
@@ -89,12 +102,14 @@
       },
       "jobtype": "Remote",
       "tasks": [
-        "Built an AI-powered chatbot using Rasa, machine learning, and NLP, improving response accuracy by 20% and boosting user engagement by 50%.",
-        "Developed scalable frontend components with AngularJS, reducing load times by 35% and enhancing user experience.",
-        "Integrated MongoDB for efficient data storage, reducing query execution time by 40%.",
-        "Delivered a fully functional chatbot within 4 months, ahead of schedule, with comprehensive documentation for future upgrades.",
-        "Applied Python, Django, and Docker to streamline backend workflows and support seamless deployment."
-      ],
+        "Built a RASA-based conversational chatbot to clarify user doubts and persist interactions in a database, reducing manual review workload by 30% for support teams and improving response consistency.",
+
+        "Designed NLP-based intent classification and rule-driven evaluation pipelines using NLTK, standardizing response assessment and improving evaluation accuracy by 30% across user interactions.",
+        "Developed backend APIs and cloud workflows to upload, retrieve, and version chatbot responses, enabling comparison, auditing, and longitudinal analysis for quality monitoring.",
+
+        "Deployed chatbot services and analytics components on Kubernetes, ensuring scalable access, session persistence, and reliable retrieval of up-to-date responses for automated evaluation.",
+        "Built proof-of-concept ML and NLP prototypes to validate conversational understanding and automated assessment logic, accelerating stakeholder adoption and production readiness."
+          ],
       "skills": [
         "Python",
         "Teamwork",
@@ -123,12 +138,16 @@
   },
   "jobtype": "Remote",
   "tasks": [
-    "Analyzed sales and customer datasets using Python (Pandas, NumPy) and SQL to perform exploratory data analysis (EDA), uncovering trends in product demand and customer behavior.",
-    "Built data preprocessing and cleaning pipelines to handle missing values, inconsistencies, and outliers, improving data quality for downstream analysis.",
-    "Developed Python-based data visualization and reporting workflows to generate actionable business insights for internal stakeholders.",
-    "Conducted basic predictive and trend analysis to support data-driven decision-making and early forecasting initiatives.",
-    "Collaborated with cross-functional teams to translate business questions into analytical tasks and interpretable data outputs."
-  ],
+    "Developed NLP pipelines for instructional platforms, enabling 2,000+ learners to interact effectively with automated systems, resulting in faster response times and reduced input errors.",
+
+    "Improved intent detection accuracy by implementing text normalization, paraphrase handling, and semantic matching, ensuring robust understanding across diverse user queries.",
+
+    "Built cloud-enabled backend retrieval and comparison services to validate learner answers, track progress, and support data-driven feedback loops for instructors and learners.",
+
+    "Designed Spark-based data preparation and analytics workflows to analyze learner interaction data, improving system monitoring, iteration speed, and insight delivery for product and instructional teams.",
+
+    "Collaborated with product and instructional stakeholders to translate user learning needs into scalable NLP and analytics solutions, improving personalization and platform effectiveness."
+    ],
   "skills": [
     "Python",
     "Pandas",
