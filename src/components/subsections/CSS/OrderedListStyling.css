@@ -1,119 +1,135 @@
+/* =========================================================
+   OrderedList.css (FULL FILE)
+   - Responsive star marker (clamp-based)
+   - Vertical connector line aligned to star center
+   - Smooth fade-in animation + hover lift
+========================================================= */
+
+/* ===== Container ===== */
 .ordered-list {
-    list-style: none;
-    padding: 1 2rem;
-    margin: 0 auto;
-    position: relative;
+  list-style: none;
+  padding: 0 2rem;            /* ✅ fixed: "1 2rem" is invalid */
+  margin: 0 auto;
+  position: relative;
 }
+
 .ordered-item-list {
-    counter-reset: li;
-    padding: 1rem;
-  }
-  @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  counter-reset: li;
+  padding: 1rem;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .ordered-item {
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
   animation-delay: calc(var(--i) * 0.15s);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .ordered-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.10);
 }
 
-  .ordered-item-list > ul > li {
-    position: relative;
-  }
-  .ordered-item-list > ul > li::before {
-    background: green;
-    opacity: 0.95;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -15px;
-    width: 10px;
-    height: 100%;
-  }
-  .ordered-item-list > ul {
-    list-style: decimal;
-    padding: 0 0 0 2rem;
-    margin: 0;
-  }
-  .ordered-item-list > ul > ul {
-    margin: 0 0 0 1em;
-  }
-  .ordered-item-list > ul > li {
-    position: relative;
-    display: block;
-    padding: 0.5rem 0.5rem 0.5rem clamp(1.75rem, 3vw, 2rem);
-    margin: 0;
-    text-decoration: none;
-    border-radius: 1em;
-    transition: all 0.2s ease-in-out;
-    line-height: 1.4em;
-  }
-  
-  .ordered-item-list > ul > li:hover {
-    text-decoration: none;
-  }
-  /* Star icon as marker */
+/* ===== UL base ===== */
+.ordered-item-list > ul {
+  list-style: decimal;
+  padding: 0 0 0 2rem;
+  margin: 0;
+}
+
+.ordered-item-list > ul > ul {
+  margin: 0 0 0 1em;
+}
+
+/* ===== LI base ===== */
+.ordered-item-list > ul > li {
+  position: relative;
+  display: block;
+
+  /* ---- Responsive star system ---- */
+  --star: clamp(1.6rem, 2.2vw, 2.6rem);       /* ⭐ star size */
+  --star-gap: clamp(1.6rem, 2.6vw, 3.2rem);   /* distance outside list */
+
+  /* text padding so it never overlaps the star */
+  padding: 0.55rem 0.6rem 0.55rem clamp(2.4rem, 4vw, 3.4rem);
+
+  margin: 0 0 8px 0;
+  text-decoration: none;
+  border-radius: 1em;
+  line-height: 1.4em;
+  transition: background 0.2s ease-in-out;
+}
+
+/* ===== Star marker (icon) ===== */
 .ordered-item-list > ul > li::before {
   content: "";
   position: absolute;
-  z-index: 1;
+  z-index: 2;
+
   top: 50%;
-left: clamp(-3rem, -4vw, -1.5rem);
+  left: calc(var(--star-gap) * -1);
   transform: translateY(-50%);
-  background: url('../../Images/Logos/SubSectionLogo/Staricon.png') no-repeat center center;
-  background-size: cover;
-  width: 3rem;
-  height: 3rem;
-  display: grid;
-  place-content: center;
-  line-height: 1;
-  border: 0.15rem solid #b9b9b9;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 100%;
+
+  width: var(--star);
+  height: var(--star);
+
+  background: url("../../Images/Logos/SubSectionLogo/Staricon.png") no-repeat center center;
+  background-size: contain;                 /* ✅ no cropping */
+
+  border: 0.12rem solid #b9b9b9;
+  border-radius: 999px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
-/* Vertical line connecting items */
+/* ===== Connector line (behind star) ===== */
 .ordered-item-list > ul > li::after {
   content: "";
   position: absolute;
+  z-index: 1;
+
   top: 0;
-  bottom: -5px;
-  left: clamp(-1.75rem, calc(-4vw + 1.25rem), -0.25rem);
-  width: 0.5rem;
+  bottom: -6px;
+
+  /* center the line under the star */
+  left: calc(var(--star-gap) * -1 + (var(--star) / 2) - 0.18rem);
+
+  width: clamp(0.22rem, 0.35vw, 0.38rem);
   background: #d9d9d9;
-  z-index: 0;
+  border-radius: 999px;
 }
 
-  .ordered-item-list > ul > li:first-child:after {
-    top: 50%;
-  }
-  .ordered-item-list > ul > li:last-child:after {
-    top: 0;
-    bottom: 50%;
-  }
-  .ordered-item-list > ul > li {
-    margin-bottom: 5px;
-  }
-  .ordered-item-list > ul > hr:last-child:after {
-    display: none;
-  }
+/* Clean ends */
+.ordered-item-list > ul > li:first-child::after { top: 50%; }
+.ordered-item-list > ul > li:last-child::after { bottom: 50%; }
 
-
+/* Single item: no connector */
 .ordered-item-list > ul:only-child > li:only-child::after {
   display: none !important;
+}
+
+/* ===== Optional: keep hover clean ===== */
+.ordered-item-list > ul > li:hover {
+  text-decoration: none;
+}
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 767px) {
+  .ordered-list { padding: 0 1rem; }
+  .ordered-item-list { padding: 0.75rem; }
+
+  .ordered-item-list > ul { padding-left: 1.5rem; }
+
+  .ordered-item-list > ul > li {
+    margin-bottom: 6px;
+    padding: 0.5rem 0.55rem 0.5rem 2.2rem;
+    --star: clamp(1.4rem, 6vw, 2.1rem);
+    --star-gap: clamp(1.2rem, 6vw, 2.6rem);
+  }
 }

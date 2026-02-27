@@ -1,7 +1,299 @@
+/* =========================================================
+   Experience.css (COMPLETE) — matches your CURRENT JSX exactly
+   Classes covered:
+   experience-flex, experience-mobile-content, experience-mobile-det, img-icon-sty,
+   experience-left, experience-logo-sty, icon-wrapper, experience-icon,
+   experience-right, ordered-item-list, ordered-list, ordered-item,
+   exp-card, exp-header, exp-logo-wrap, exp-logo,
+   exp-headtext, exp-title-row, exp-title, exp-jobtype, exp-company,
+   exp-meta, exp-location, exp-duration,
+   exp-desc, exp-section, exp-section-title, exp-tasks,
+   experience-screen-content, exp-skills, skill-badge,
+   horizsontalsty
+========================================================= */
+
+/* -------------------------
+   Base
+------------------------- */
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+  color: #0f172a;
+  background: #ffffff;
+  font-style: italic;
 }
+
+/* -------------------------
+   Root Layout
+------------------------- */
+.experience-flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  height: 100%;
+  min-height: 400px;
+  font-style: italic;
+}
+
+.experience-left {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-logo-sty {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.experience-right {
+  flex: 0 0 75%;
+  position: relative;
+  color: black !important;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.experience-icon {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------
+   Mobile Header
+------------------------- */
+.experience-mobile-content {
+  display: none; /* enabled in mobile/tablet breakpoints */
+  width: 100%;
+  margin-bottom: 0.85rem;
+}
+
+.experience-mobile-det {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+img.img-icon-sty {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* -------------------------
+   List wrappers
+------------------------- */
+.ordered-item-list {
+  width: 100%;
+}
+
+.ordered-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ordered-item {
+  margin: 0;
+}
+
+/* -------------------------
+   Card (each experience)
+------------------------- */
+.exp-card {
+  background: transparent;
+  border-radius: 18px;
+  padding: 1rem 1rem;
+}
+
+
+/* -------------------------
+   Header inside card
+------------------------- */
+.exp-header {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.exp-logo-wrap {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0.15rem;
+}
+
+.exp-logo {
+  border-radius: 50%;
+  border: 0.12rem solid #0f172a;
+  object-fit: contain;
+  background: #fff;
+  padding: 0.35rem;
+  box-shadow: 0 10px 20px rgba(2, 6, 23, 0.10);
+  width: 5rem;
+  height: 5rem;
+}
+
+.exp-headtext {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.exp-title-row {
+  display: block;
+}
+
+.exp-title {
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  color: #0f172a;
+  line-height: 1.2;
+  font-style: normal; /* prevent italic heading even if container is italic */
+  font-size: 1.25rem;
+}
+
+.exp-jobtype {
+  font-weight: 800;
+  color: #2563eb;
+  font-style: normal;
+}
+
+.exp-company {
+  margin: 0.25rem 0 0.35rem 0;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.exp-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.exp-location {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-weight: 700;
+  color: #64748b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exp-duration {
+  flex: 0 0 auto;
+  margin-left: auto;
+  font-weight: 800;
+  color: #334155;
+  background: #f8fafc;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* -------------------------
+   Description
+------------------------- */
+.exp-desc p {
+  margin: 0.75rem 0 0 0;
+  color: #475569;
+  line-height: 1.65;
+  font-style: normal;
+}
+
+/* -------------------------
+   Sections (Tasks/Skills)
+------------------------- */
+.exp-section {
+  margin-top: 0.9rem;
+}
+
+.exp-section-title {
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  color: #0f172a;
+  margin-bottom: 0.45rem;
+}
+
+.exp-tasks {
+  margin: 0;
+  margin-top: 0.35rem;
+  padding-left: 1.2rem;
+  color: #0f172a;
+  line-height: 1.7;
+  font-style: normal;
+}
+
+.exp-tasks li {
+  margin-bottom: 0.55rem;
+  list-style-type: disc;
+}
+
+.exp-tasks li::marker {
+  color: #2563eb;
+}
+
+/* Skills container (desktop/tablet only controlled via breakpoints below) */
+.experience-screen-content {
+  display: block;
+}
+
+.exp-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.25rem;
+}
+
+.skill-badge {
+  font-style: normal;
+  background-color: #0f172a;
+  color: white;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.15px;
+  box-shadow: 0 10px 18px rgba(2, 6, 23, 0.08);
+}
+
+/* Divider under each list item */
+.horizsontalsty {
+  height: 0.2rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(148, 163, 184, 0.35),
+    rgba(148, 163, 184, 0.10)
+  );
+  margin: 0.9rem 0 0 0;
+}
+
+/* =========================================================
+   RESPONSIVE BREAKPOINTS (kept same as your OLD CSS)
+========================================================= */
 
 /* ✅ Mobile: <768px */
 @media (max-width: 767px) {
@@ -26,6 +318,7 @@ body {
 
   .experience-right {
     flex: 2 0 100%;
+    width: 100%;
   }
 
   .experience-mobile-content {
@@ -44,32 +337,29 @@ body {
     height: 2rem;
     object-fit: contain;
     border-radius: 50%;
+    box-shadow: 0 10px 22px rgba(2, 6, 23, 0.12);
   }
 
   .experience-screen-content {
     display: none;
   }
- .exp-locdursty {
-   display:flex;
-   width: 100%;
-     flex-direction: column;
-     align-items: flex-start;
+
+  /* stack meta area (location + duration) */
+  .exp-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
   }
 
-  .exp-locsty,
-  .exp-dursty {
-    flex: 1 1 100%;
-    width: 100%;
+  .exp-duration {
+    margin-left: 0;
   }
 
-  .exp-dursty {
-    text-align: right;
-    padding-right: 0.5rem;
-    margin-top: 0.25rem;
+  .exp-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.25rem;
   }
-  .exp-logo{
-  width:2.5rem;
-  height:2.5rem;}
 }
 
 /* ✅ Tab: 768px - 991px */
@@ -95,6 +385,7 @@ body {
 
   .experience-right {
     flex: 2 0 100%;
+    width: 100%;
   }
 
   .experience-mobile-content {
@@ -113,32 +404,29 @@ body {
     height: 3rem;
     object-fit: contain;
     border-radius: 50%;
+    box-shadow: 0 10px 22px rgba(2, 6, 23, 0.12);
   }
 
   .experience-screen-content {
     display: none;
   }
-  .exp-locdursty {
-    display: flex;
+
+  /* stack meta area (location + duration) */
+  .exp-meta {
     flex-direction: column;
-    width: 100%;
-    padding: 0.25rem;
+    align-items: flex-start;
+    gap: 0.25rem;
   }
 
-  .exp-locsty,
-  .exp-dursty {
-    flex: 1 1 100%;
-    width: 100%;
+  .exp-duration {
+    margin-left: 0;
   }
 
-  .exp-dursty {
-    text-align: right;
-    padding-right: 0.5rem;
-    margin-top: 0.25rem;
+  .exp-logo {
+    width: 3.25rem;
+    height: 3.25rem;
+    padding: 0.3rem;
   }
-    .exp-logo{
-    width:3.25rem;
-    height:3.25rem;}
 }
 
 /* ✅ Tablet: 992px - 1199px */
@@ -181,28 +469,10 @@ body {
   .experience-mobile-content {
     display: none;
   }
-  .exp-locdursty {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    padding: 0.25rem;
-  }
 
-  .exp-locsty {
-    flex: 0 0 65%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-.exp-logo{
-width:4.15rem;
-height:4.15rem;}
-  .exp-dursty {
-    flex: 0 0 35%;
-    text-align: right;
-    padding-right: 0.5rem;
-    white-space: nowrap;
+  .exp-logo {
+    width: 4.15rem;
+    height: 4.15rem;
   }
 }
 
@@ -211,9 +481,6 @@ height:4.15rem;}
   body {
     font-size: 15px;
   }
-  .exp-logo{
-  width:5rem;
-  height:5rem;}
 
   .experience-screen-content {
     display: block;
@@ -249,121 +516,90 @@ height:4.15rem;}
   .experience-mobile-content {
     display: none;
   }
-  .exp-locdursty {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    padding: 0.25rem;
-  }
 
-  .exp-locsty {
-    flex: 0 0 65%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .exp-dursty {
-    flex: 0 0 35%;
-    text-align: right;
-    padding-right: 0.5rem;
-    white-space: nowrap;
+  .exp-logo {
+    width: 5rem;
+    height: 5rem;
   }
 }
+/* ===== Reduce Experience card heading sizes (override) ===== */
 
-/* Common Layout Styles */
-.icon-wrapper {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  margin: auto;
-  padding: 2rem;
+/* Title */
+.exp-title{
+  font-size: 1.05rem;   /* was 1.25rem */
+  line-height: 1.15;
+  letter-spacing: 0.1px;
 }
 
-.experience-icon {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+/* jobtype next to title */
+.exp-jobtype{
+  font-size: 0.95rem;   /* slightly smaller */
 }
 
-.experience-right {
-  flex: 1;
-  position: relative;
-  color: black !important;
+/* Company */
+.exp-company{
+  font-size: 0.98rem;
+  margin: 0.2rem 0 0.25rem 0;
 }
 
-
-.text-bold {
-  font-style: bold;
-  font-weight: 700;
+/* Meta row */
+.exp-location,
+.exp-duration{
+  font-size: 0.92rem;
 }
 
-.exp-logo {
-  border-radius: 50%;
-  border: 0.1rem solid black;
-  object-fit: contain;
-  background: #fff;
-  padding: 0.25rem;
+/* Mobile tune */
+@media (max-width: 767px){
+  .exp-title{ font-size: 0.98rem; }
+  .exp-company{ font-size: 0.9rem; }
+  .exp-location, .exp-duration{ font-size: 0.85rem; }
 }
+/* =====================================================
+   Tasks: Always italic + responsive font sizing
+===================================================== */
 
-.experience-logsty {
-  display: flex;
-  gap: 1.25rem;
-  align-items: stretch;
-  color: black !important;
-}
-
-.exp-logoicon {
-  flex: 0 0 12.5%;
-  text-align: center;
-}
-
-.exp-compsty {
-  flex: 0 0 87.5%;
-}
-
-.experience-detail-sty {
-  padding: 0.5rem;
-}
-
+/* Base (Desktop default) */
 .exp-tasks {
-  margin-top: 1rem;
-  padding-left: 1.2rem;
-  color: black;
-  line-height: 1.5;
+  margin-top: 0.75rem;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+  color: #0f172a;
+  font-style: italic;           /* ALWAYS italic */
+  font-size: 0.95rem;           /* desktop size */
 }
 
 .exp-tasks li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.55rem;
   list-style-type: disc;
+  font-style: italic;           /* enforce italic */
 }
 
-.exp-skills {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  color: white;
+/* Mobile */
+@media (max-width: 767px) {
+  .exp-tasks {
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
 }
 
-.skill-headsty {
-  color: black;
-  font-style: italic;
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .exp-tasks {
+    font-size: 0.88rem;
+    line-height: 1.65;
+  }
 }
 
-.skill-badge {
-  font-style: italic;
-  background-color: #334155;
-  color: white;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.5rem;
-  font-size: 0.8rem;
+/* Medium screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .exp-tasks {
+    font-size: 0.92rem;
+  }
 }
 
-.horizsontalsty {
-  height: 0.325rem;
-  background-color: #737373;
+/* Large Desktop */
+@media (min-width: 1200px) {
+  .exp-tasks {
+    font-size: 0.95rem;
+  }
 }

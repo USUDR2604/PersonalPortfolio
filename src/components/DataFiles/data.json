@@ -5,10 +5,12 @@
   "ExperienceSectionBackgroundColor":"#ffccb3",
   "SkillSectionBackgroundColor":"#ccddff",
   "SummaryDetails":{
-  "Summary":"A highly motivated and results-oriented Master’s student in Computer Science at the University of Missouri - Kansas City, specializing in Data Analysis, Full-Stack Development and Artificial Intelligence. Demonstrates a wealth of experience in developing AI-powered solutions, implementing machine learning models, and advancing cutting-edge deep learning methodologies. Proficient in Python (Django, REST APIs), Java, and C++, with a robust foundation in full-stack development, seamless API integration, and cloud technologies. Known for deploying containerized applications using Docker, and recognized for driving operational excellence through innovative problem-solving. Committed to delivering high-impact, data-driven solutions that foster efficiency and scalability while actively pursuing continuous growth within a dynamic, fast-paced environment."},
+  "Summary":["Master’s graduate in Computer Science from the University of Missouri–Kansas City with hands-on industry experience building scalable big data and AI-driven systems. Experienced in processing large-scale datasets using distributed data pipelines and real-time streaming frameworks, while designing and deploying machine learning and deep learning models for production environments.",
+  "Skilled in developing LLM-powered applications including Retrieval-Augmented Generation (RAG), vector search integration, and conversational AI systems. Strong background in Python-based backend development (FastAPI, Django/DRF), cloud deployment on AWS, and containerized microservices using Docker with CI/CD integration.",
+  "Focused on building reliable, scalable, and production-ready AI systems that combine big data engineering, machine learning, cloud-native architecture, and modern software engineering practices."]},
   "experienceList": [
     {
-  "title": "Data Scientist",
+  "title": "Data Scientist & Analyst – Big Data Analytics",
   "company": "University of Missouri - Kansas City",
   "logo": "UMKCLogo",
   "type": "Part-time",
@@ -23,142 +25,176 @@
   },
   "jobtype": "Onsite",
   "tasks": [
-"Analyzed dining and recreation utilization data using SQL, Pandas, and EDA to identify peak-demand patterns, enabling staffing optimization and improving workforce efficiency by 15–20%.",
- "Developed analytical tables, KPI frameworks, and automated dashboards in Tableau and Power BI to monitor usage trends and anomalies, leading to more efficient shift planning and a 15% reduction in overtime and manual reporting.",
- "Conducted resource utilization and congestion analysis to optimize campus facility allocation, reducing wait times and improving student satisfaction with campus services.",
- "Designed and deployed an end-to-end cloud analytics platform by exposing SQL/Pandas-based analytical outputs through Python APIs and integrating them with a React frontend, enabling stakeholders to interactively explore utilization metrics, trends, and KPIs in real time.",
-"Implemented a cloud-hosted React dashboard backed by scalable data services (ETL pipelines, analytical tables, and APIs), supporting secure access, responsive visualizations, and on-demand insights for operations teams, which improved decision turnaround time and reduced dependency on manual reports."
+
+    "Built ETL pipelines using Python, SQL, and Pandas to ingest and transform Sodexo dining and campus recreation workforce and utilization datasets, enabling reliable operational analytics and reporting.",
+
+      "Analyzed campus recreation facility usage, staffing schedules, and Sodexo workforce demand patterns using advanced analytics, statistical modeling, and clustering techniques, improving staffing efficiency by 15–20%.",
+
+      "Designed KPI frameworks and dimensional analytical tables to monitor workforce utilization, peak demand periods, congestion patterns, and operational performance across campus facilities.",
+
+      "Developed interactive dashboards using Power BI, Tableau, and React integrated with backend analytics services, enabling real-time monitoring of utilization metrics, staffing needs, and operational trends.",
+
+      "Automated reporting workflows and analytics pipelines to support Sodexo operations and campus recreation management teams, improving decision-making speed and reducing manual reporting effort."
     ],
+
   "skills": [
-    "Data Analysis",
+    "Data Engineering",
     "SQL",
-    "Exploratory Data Analysis (EDA)",
-    "Reporting",
-    "Operational Analytics"
+    "Python",
+    "ETL Pipelines",
+    "Data Analytics",
+    "Business Intelligence",
+    "Business Analytics",
+    "Power BI",
+    "Tableau",
+    "Data Modeling",
+    "Machine Learning",
+    "Exploratory Data Analysis",
+    "REST APIs"
   ]
 },
-    {
-      "title": "Data Scientist",
-      "company": "Tata Consultancy Services",
-      "logo": "TcsLogo",
-      "type": "Full-time",
-      "Duration": {
-        "Start_Date": "Jul 2022",
-        "End_Date": "Dec 2023"
-      },
-      "Location": {
-        "City": "Hyderabad",
-        "State": "Telangana",
-        "Country": "India"
-      },
-      "jobtype": "Onsite",
-      "tasks": [
-        "Analyzed 50M+ telecom network events and system logs using Python, SQL, statistical profiling, and anomaly detection to reduce Mean Time to Diagnosis (MTTD) by 35% for operations and SRE teams, directly improving customer-impacting incident resolution.",
-        "Built scalable Spark (PySpark) data pipelines to process high-volume telecom telemetry, enabling large-scale feature generation and ML analysis while reducing incident analysis latency by 30% across customer-facing services.",
-        "Designed and validated ML and deep learning models using PyTorch, Keras, PySpark MLlib, and scikit-learn on AWS-hosted telecom data to improve bandwidth planning accuracy by 20%, reducing budgeting errors and improving network reliability for end customers.",
+{
+"title": "Software Engineer - Big Data & AI/ML",
+"company": "Tata Consultancy Services",
+"logo": "TcsLogo",
+"type": "Full-time",
+"Duration": {
+  "Start_Date": "Jul 2022",
+  "End_Date": "Dec 2023"
+},
+"Location": {
+  "City": "Hyderabad",
+  "State": "Telangana",
+  "Country": "India"
+},
+"jobtype": "Onsite",
+"tasks": [
 
-        "Developed ML-driven network behavior and topology models (classification & clustering) to identify root causes such as server overload, configuration drift, and routing failures, improving diagnostic accuracy by 20% and enabling proactive remediation.",
+  "Engineered real-time ETL and big data pipelines using Apache Spark (PySpark), Apache Airflow, and SQL to process 50M+ Vodacom network telemetry records daily, reducing incident analysis latency by ~30% and enabling scalable real-time network monitoring.",
 
-        "Implemented log-level error classification and distribution analysis to detect recurring failure patterns, enabling preventive fixes and reducing repeat production incidents by 20%, strengthening SLA compliance.",
+  "Designed and implemented enterprise data warehouse architecture with dimensional data models (star and snowflake schema) in PostgreSQL and Cassandra, improving analytical query performance by ~35% and enabling faster business intelligence reporting.",
 
-        "Built end-to-end backend analytics and ML services using Dockerized Python microservices, exposing secure REST APIs (log check, status check, health, inference) with API key–based access, enabling self-service diagnostics and cutting third-party escalation delays by 40%.",
+  "Built distributed data ingestion and transformation pipelines using Python, SQL, and REST APIs, improving data availability reliability by ~25% and enabling consistent downstream analytics and ML workflows across Vodacom datasets.",
 
-        "Developed LLM/NLP-powered analytics workflows using LangChain, NLTK, Ollama, FAISS, PyTorch, and PySpark to support natural-language log querying and customer support use cases, reducing analysis time by 30%.",
+  "Performed large-scale Vodacom network analysis on bandwidth, signal strength, and usage telemetry using statistical analysis and machine learning, improving anomaly detection accuracy by ~20% and reducing operational incident resolution time.",
 
-        "Orchestrated Databricks Spark pipelines and ML workflows on Kubernetes, improving pipeline throughput, reliability, and execution efficiency by 25% for large-scale ops and customer-support workloads.",
+  "Developed backend analytics services integrating SQL, PL/SQL, and distributed data storage systems, improving data retrieval performance by ~30% and enabling faster access to network operational analytics datasets.",
 
-        "Led end-to-end solution delivery from customer requirements and problem framing through data ingestion, modeling, backend development, deployment, and monitoring, ensuring solutions addressed real operational and customer needs rather than offline-only metrics.",
+  "Implemented Apache Airflow-based workflow orchestration and automated data pipeline scheduling, improving pipeline execution reliability by ~25% and reducing manual intervention in network analytics processing.",
 
-        "Built ML prototypes and proof-of-concepts (including Keras-based deep learning models and LLM-driven diagnostics) to rapidly validate ideas with stakeholders, accelerating adoption into production systems.",
+  "Built real-time BI dashboards and analytics interfaces using AngularJS integrated with data warehouse systems, enabling <5-second refresh latency and improving operational visibility across network performance metrics.",
 
-        "Applied security and compliance best practices across analytics and ML services, including authentication, role-based access, audit logging, and secure data handling to meet enterprise and telecom regulatory requirements.",
+  "Developed LLM-enabled log analytics pipelines using LangChain, FAISS, and machine learning models, reducing Vodacom network diagnostic analysis time by ~40% and improving automated root cause analysis efficiency.",
 
-        "Collaborated with cross-functional teams and mentored junior engineers and analysts, contributing to team capability building, code reviews, and adoption of ML, cloud, and DevOps best practices."
-        ],
-      "skills": [
-        "Python",
-        "MySQL",
-        "Django",
-        "Redis",
-        "AngularJS",
-        "Back-End Web Development",
-        "REST APIs",
-        "Django REST Framework"
-      ]
-    },
-    {
-      "title": "Data Scientist Intern",
-      "company": "Tata Consultancy Services",
-      "logo": "TcsLogo",
-      "type": "Internship",
-      "Duration": {
-        "Start_Date": "Feb 2022",
-        "End_Date": "May 2022"
-      },
-      "Location": {
-        "City": "Chennai",
-        "State": "Tamil Nadu",
-        "Country": "India"
-      },
-      "jobtype": "Remote",
-      "tasks": [
-        "Built a RASA-based conversational chatbot to clarify user doubts and persist interactions in a database, reducing manual review workload by 30% for support teams and improving response consistency.",
+  "Developed Java-based database-driven analytics and NLP systems processing 10K+ monthly network support and operational records, improving automated issue classification accuracy by ~25% and reducing manual troubleshooting workload."
+],
 
-        "Designed NLP-based intent classification and rule-driven evaluation pipelines using NLTK, standardizing response assessment and improving evaluation accuracy by 30% across user interactions.",
-        "Developed backend APIs and cloud workflows to upload, retrieve, and version chatbot responses, enabling comparison, auditing, and longitudinal analysis for quality monitoring.",
-
-        "Deployed chatbot services and analytics components on Kubernetes, ensuring scalable access, session persistence, and reliable retrieval of up-to-date responses for automated evaluation.",
-        "Built proof-of-concept ML and NLP prototypes to validate conversational understanding and automated assessment logic, accelerating stakeholder adoption and production readiness."
-          ],
-      "skills": [
-        "Python",
-        "Teamwork",
-        "MySQL",
-        "Artificial Intelligence (AI)",
-        "Databases",
-        "JavaScript",
-        "Rasa",
-        "MongoDB",
-        "Natural Language Processing (NLP)"
-      ]
-    },
-    {
-  "title": "Data Scientist",
-  "company": "TwoWaits",
-  "logo": "TwoWaitsLogo",
-  "type": "Full-time",
+"skills": [
+  "Apache Spark (PySpark)",
+  "Apache Airflow",
+  "Data Warehousing",
+  "Dimensional Data Modeling",
+  "Cassandra",
+  "PostgreSQL",
+  "Python",
+  "Java",
+  "SQL",
+  "PL/SQL",
+  "ETL/ELT Pipelines",
+  "Big Data Analytics",
+  "Machine Learning",
+  "LLMs",
+  "LangChain",
+  "FAISS",
+  "REST APIs",
+  "Business Intelligence"
+]
+},
+{
+  "title": "Software Developer Intern - Big Data & Applied AI/ML",
+  "company": "Tata Consultancy Services",
+  "logo": "TcsLogo",
+  "type": "Internship",
   "Duration": {
-    "Start_Date": "Jul 2020",
-    "End_Date": "Dec 2021"
+    "Start_Date": "Feb 2022",
+    "End_Date": "May 2022"
   },
   "Location": {
-    "City": "Remote",
-    "State": "",
-    "Country": ""
+    "City": "Chennai",
+    "State": "Tamil Nadu",
+    "Country": "India"
   },
   "jobtype": "Remote",
   "tasks": [
-    "Developed NLP pipelines for instructional platforms, enabling 2,000+ learners to interact effectively with automated systems, resulting in faster response times and reduced input errors.",
+    "Developed a RASA-based conversational AI system using Python, NLP, and machine learning pipelines, reducing manual query resolution effort by 30% and improving automated response accuracy across enterprise conversational datasets.",
 
-    "Improved intent detection accuracy by implementing text normalization, paraphrase handling, and semantic matching, ensuring robust understanding across diverse user queries.",
+    "Built scalable backend data pipelines integrating MySQL and MongoDB to store and process 100K+ chatbot interaction records, improving retrieval efficiency and enabling reliable analytics and conversational model training.",
 
-    "Built cloud-enabled backend retrieval and comparison services to validate learner answers, track progress, and support data-driven feedback loops for instructors and learners.",
+    "Implemented NLP-based intent classification and semantic analysis using NLTK and machine learning models, improving intent detection accuracy by 30% and enhancing conversational understanding and automated evaluation.",
 
-    "Designed Spark-based data preparation and analytics workflows to analyze learner interaction data, improving system monitoring, iteration speed, and insight delivery for product and instructional teams.",
+    "Designed and deployed RESTful backend APIs using Python microservices to enable real-time chatbot response retrieval and logging, reducing response latency and improving system responsiveness by 25%.",
 
-    "Collaborated with product and instructional stakeholders to translate user learning needs into scalable NLP and analytics solutions, improving personalization and platform effectiveness."
-    ],
+    "Deployed AI/ML conversational services on Kubernetes infrastructure, improving system scalability and availability by 35% and enabling reliable real-time processing of concurrent user interactions."
+  ],
   "skills": [
     "Python",
-    "Pandas",
-    "NumPy",
+    "Big Data",
+    "Machine Learning",
+    "Natural Language Processing",
+    "RASA",
     "SQL",
-    "Exploratory Data Analysis (EDA)",
-    "Data Cleaning",
-    "Data Visualization",
-    "Statistical Analysis",
-    "Business Analytics"
+    "MongoDB",
+    "MySQL",
+    "REST APIs",
+    "Kubernetes",
+    "Data Engineering",
+    "AI/ML"
   ]
+},
+{
+"title": "Software Engineer – Data & NLP Systems",
+"company": "TwoWaits Technologies",
+"logo": "TwoWaitsLogo",
+"type": "Full-time",
+"Duration": {
+  "Start_Date": "Jul 2020",
+  "End_Date": "Dec 2021"
+},
+"Location": {
+  "City": "Remote",
+  "State": "",
+  "Country": "India"
+},
+"jobtype": "Remote",
+"tasks": [
+
+  "Engineered scalable data ingestion and ETL pipelines using Python, MongoDB, and Redis supporting 2,000+ active learners, achieving <50ms retrieval latency and improving data access performance by ~40% across Android and web learning platforms.",
+
+  "Developed NLP-based classification and intent detection pipelines using Python and scikit-learn to analyze student queries, improving intent recognition accuracy by ~20% and reducing incorrect automated responses by ~25%.",
+
+  "Built backend analytics services and REST APIs processing learning activity from 40,000+ mobile app downloads across 150+ colleges, improving data availability reliability by ~30% and enabling scalable learner progress tracking.",
+
+  "Designed distributed backend data systems and validation workflows to store and retrieve structured and unstructured educational data, improving platform reliability by ~25% and ensuring consistent access across learning systems.",
+
+  "Implemented analytics pipelines and engagement monitoring workflows analyzing thousands of student interactions weekly, improving usage analytics accuracy by ~30% and enabling data-driven platform optimization.",
+
+  "Developed automated backend content retrieval and processing systems improving response efficiency by ~35%, reducing manual content management workload, and enabling scalable educational content delivery."
+],
+
+"skills": [
+  "Python",
+  "MongoDB",
+  "Redis",
+  "ETL Pipelines",
+  "Data Engineering",
+  "Natural Language Processing",
+  "Machine Learning",
+  "REST APIs",
+  "Data Analytics",
+  "Backend Engineering",
+  "Cloud Data Systems",
+  "Business Analytics"
+]
 }
   ],
   "educationList": [
@@ -324,27 +360,43 @@
       ]
     }
   },
-
-"Professional_summary_exp": [
+"summary_details":["Master’s graduate in Computer Science from the University of Missouri–Kansas City with hands-on industry experience building scalable big data and AI-driven systems. Experienced in processing large-scale datasets using distributed data pipelines and real-time streaming frameworks, while designing and deploying machine learning and deep learning models for production environments.",
+"Skilled in developing LLM-powered applications including Retrieval-Augmented Generation (RAG), vector search integration, and conversational AI systems. Strong background in Python-based backend development (FastAPI, Django/DRF), cloud deployment on AWS, and containerized microservices using Docker with CI/CD integration.",
+"Focused on building reliable, scalable, and production-ready AI systems that combine big data engineering, machine learning, cloud-native architecture, and modern software engineering practices. "],
+  "Professional_summary_exp": [
     {
-      "title": "Experience & Focus",
+      "title": "Experience & Technical Foundation",
       "lines": [
-        "2+ years at TCS as a Data Science Developer focused on Data Analysis with ML and NLP.",
-        "3–5+ years coding; Python & SQL specialist with a Data Science focus (ML, DL, AI/LLMs), scalable production pipelines, and full-stack web development with Django & Angular."
-      ]
+"2+ years at TCS developing scalable data analytics and ML-driven solutions for telecom-scale datasets (50M+ events).",
+"5+ years of programming experience with strong expertise in Python, SQL, and system design principles.",
+"Experience across Data Engineering, Machine Learning, Deep Learning, LLM systems, and full-stack AI development."
+          ]
     },
     {
-  "title": "Core Competencies",
-  "lines": [
-    "Design and ship end-to-end ML/LLM solutions: model development, MLOps, explainability (SHAP), and humanized response generation using LLMs (RAG, prompt engineering).",
-    "Production-grade data systems: automated ETL/ELT & streaming; Dockerized services; React UIs; robust APIs (Django/DRF, FastAPI)."
-  ]
-},
-    {
-      "title": "Deployment",
+      "title": "Data Engineering & Scalable Systems",
       "lines": [
-        "Production APIs with Python (Flask/ FastAPI/ Django-DRF) for Data Science & LLM/NLP services.",
-        "Containerization & CI/CD (Docker, GitLab CI) on AWS (S3, QuickSight) with observability and cost-aware scaling."
+"Designed automated ETL/ELT pipelines and real-time streaming systems using Kafka and PySpark.",
+"Built distributed data processing workflows with partitioning, indexing, and performance tuning strategies.",
+"Implemented dimensional data modeling (Star/Snowflake schemas) and optimized large-scale analytical tables.",
+"Developed production APIs (FastAPI, Django/DRF) supporting scalable AI-driven applications"
+          ]
+    },
+    {
+      "title": "Machine Learning, AI & LLM Systems",
+      "lines": [
+"Designed and deployed end-to-end ML workflows including feature engineering, model evaluation, explainability (SHAP), and performance optimization.",
+"Built Retrieval-Augmented Generation (RAG) systems using LangChain and FAISS-based vector search.",
+"Applied prompt engineering, conversational AI (RASA), and LLM tool-calling workflows for intelligent systems.",
+"Developed recommendation systems and NLP pipelines for real-world analytics use cases."
+          ]
+    },
+    {
+      "title": "Cloud, MLOps & Full-Stack Architecture",
+      "lines": [
+"Built containerized ML services using Docker with CI/CD pipelines (GitLab CI).",
+"Deployed AI systems on AWS (S3, QuickSight) with logging, monitoring, and cost-aware optimization.",
+"Architected full-stack AI applications integrating React frontends with backend ML/LLM services.",
+"Focused on production reliability, observability, scalability, and maintainability."
       ]
     }
   ],
@@ -356,10 +408,34 @@
       "color": "#306998"
     },
     {
+      "name": "Big Data",
+      "percentage": 90,
+      "logo": "BigDataLogo",
+      "color": "#00ace6"
+    },
+    {
       "name": "Data Science",
       "percentage": 84,
       "logo": "DSLogo",
       "color": "#ccc"
+    },
+    {
+      "name":"PyTorch",
+      "percentage":82,
+      "logo":"PyTorchLogo",
+      "color":"#ffb366"
+    },
+    {
+      "name":"Pyspark",
+      "percentage":90,
+      "logo":"PysparkLogo",
+      "color":"#8c8c8c"
+    },
+    {
+      "name":"Deep Learning(DL)",
+      "percentage":82,
+      "logo":"DLLogo",
+      "color":"#0073e6"
     },
     {
       "name": "AWS",
@@ -368,19 +444,31 @@
       "color": "#ccc"
     },
     {
-      "name": "ML",
+      "name":"LLM(Large Language Models)",
+      "percentage":82,
+      "logo":"LLMLogo",
+      "color":"#3377ff"
+    },
+    {
+      "name": "Machine Learning",
       "percentage": 84,
       "logo": "MLLogo",
       "color": "#ff5722"
     },
     {
-      "name": "Django",
-      "percentage": 91,
-      "logo": "DjangoLogo",
-      "color": "#092e20"
+      "name":"Natural Language Processing(NLP)",
+      "percentage":78,
+      "logo":"NLPLogo",
+      "color":"#008fb3"
     },
     {
-      "name": "AI",
+      "name":"Apache Kafka",
+      "logo":"ApachekafkaLogo",
+      "percentage":75,
+      "color":"#5cd6d6"
+    },
+    {
+      "name": "Artificial Intelligence (AI)",
       "percentage": 72,
       "logo": "AILogo",
       "color": "#9c27b0"
@@ -397,167 +485,136 @@
       "percentage": 95,
       "logo": "SQLLogo",
       "color": "#00758f"
-    }
-  ],
-  "supportingSkills": [
-    {
-      "name": "Rasa",
-      "percentage": 84,
-      "logo": "RasaLogo",
-      "color": "#7c29b9"
     },
     {
-      "name": "Docker",
-      "percentage": 65,
-      "logo": "DockerLogo",
-      "color": "#0db7ed"
+      "name":"Docker",
+      "percentage":80,
+      "logo":"DockerLogo",
+      "color":"#b3d9ff"
     },
     {
-      "name": "Kibana",
-      "percentage": 60,
-      "logo": "KibanaLogo",
-      "color": "#e8478b"
-    },
-    {
-      "name": "Cloud Computing",
-      "percentage": 70,
-      "logo": "CloudLogo",
-      "color": "#42a5f5"
-    },
-    {
-      "name": "Azure",
-      "percentage": 62,
-      "logo": "AzureLogo",
-      "color": "#007fff"
-    },
-    {
-      "name": "MongoDB",
-      "percentage": 95,
-      "logo": "MongodbLogo",
-      "color": "#4db33d"
-    },
-    {
-      "name": "Github",
-      "percentage": 76,
-      "logo": "GithubLogo",
-      "color": "#ccdfdd"
-    },
-    { "name": "Git", "percentage": 76, "logo": "GitLogo", "color": "#ccffff" },
-    {
-      "name": "Frontend Development",
+      "name": "ETL/ELT Pipelines",
       "percentage": 80,
-      "logo": "FrontendLogo",
-      "color": "#ccc"
+      "logo": "ETLELTPipelineLogo",
+      "color": "#4aafaa"
     },
     {
-      "name": "Backend Development",
-      "percentage": 84,
-      "logo": "BackendLogo",
-      "color": "#ccc"
+      "name":"Cloud Technologies",
+      "percentage":90,
+      "logo":"CloudComputingLogo",
+      "color":"#007399"
     }
   ],
   "ProgrammingSkills":[
-    {"name":"Python","logo":"PythonLogo"},
+    {"name":"Java","logo":"JavaLogo"},
+    {"name":"C++","logo":"CPPLogo"},
+    {"name":"C","logo":"CLogo"},
+    {"name":"PL/SQL","logo":"PLSQLLogo"},
+    {"name":"OOP","logo":"OOPLogo"},
     {"name":"ES6","logo":"ES6Logo"},
-    {"name":"OOP", "logo":"OOPLogo"},
-    {"name":"PLSQL", "logo":"PLSQLLogo"},
-    {"name":"Oracle SQL", "logo":"OracleSQLLogo"},
-    {"name":"My Sql", "logo":"SQLLogo"},
-    {"name":"Java", "logo":"JavaLogo"},
-    {"name":"C++", "logo":"CPPLogo"},
-    {"name":"C", "logo":"CLogo"}
+    {"name":"System Design","logo":"SkillLogo"},
+    {"name":"Concurrency & Multithreading","logo":"SkillLogo"}
   ],
-"AI_ML_Systems":[
-  {"name":"PyTorch","logo":"PyTorchLogo"},
-  {"name":"LLM(Large Language Models)","logo":"LLMLogo"},
-  {"name":"Natural Language Processing(NLP)","logo":"NLPLogo"},
-  {"name":"RASA","logo":"RasaLogo"},
-  {"name":"Clustering","logo":"ClusterLogo"},
-  {"name":"Machine Learning(ML)", "logo":"MLLogo"},
-  {"name":"Deep Learning(DL)", "logo":"DLLogo"},
-  {"name":"Recommendation Systems","logo":"RecommendSysLogo"},
-  {"name":"Artificial Intelligence(AI)", "logo":"AILogo"}
-],
-"Data_Streaming":[
-  {"name":"Apache Kafka","logo":"ApachekafkaLogo"},
-  {"name":"Pyspark", "logo":"PysparkLogo"},
-  {"name":"Hadoop","logo":"HadoopLogo"},
-  {"name":"ETL Pipelines","logo":"ETLLogo"},
-  {"name":"Map Reduce","logo":"MapReduceLogo"},
-  {"name":"Apache Hive", "logo":"ApacheHiveLogo"},
-  {"name":"Real Time Streaming Protocol(RTSP)","logo":"RTSPLogo"}
-],
-"Backend_Web_Frameworks": [
-    { "name": "Django", "logo": "DjangoLogo" },
-    { "name": "REST APIs", "logo": "RESTAPILogo" },
-    { "name": "DRF", "logo": "DRFLogo" },
-    { "name": "Web Scraping", "logo": "WebScrapeLogo" },
-    { "name": "Node.js", "logo": "NodeJSLogo" },
-    { "name": "Flask", "logo": "FlaskLogo" },
-    { "name": "Web Applications", "logo": "WebApplicationLogo" }
+
+  "AI_ML_Systems":[
+    {"name":"Clustering","logo":"ClusterLogo"},
+    {"name":"Recommendation Systems","logo":"RecommendSysLogo"},
+    {"name":"RASA","logo":"RasaLogo"},
+    {"name":"Feature Engineering","logo":"SkillLogo"},
+    {"name":"Model Evaluation","logo":"SkillLogo"},
+    {"name":"Hyperparameter Tuning","logo":"SkillLogo"},
+    {"name":"Explainable AI (SHAP/LIME)","logo":"SkillLogo"},
+    {"name":"A/B Testing","logo":"SkillLogo"},
+    {"name":"Time Series Analysis","logo":"SkillLogo"},
+    {"name":"Statistical Modeling","logo":"SkillLogo"}
   ],
+
+  "Data_Streaming":[
+    {"name":"Hadoop","logo":"HadoopLogo"},
+    {"name":"Apache Hive","logo":"ApacheHiveLogo"},
+    {"name":"MapReduce","logo":"MapReduceLogo"},
+    {"name":"Data Warehousing","logo":"SkillLogo"},
+    {"name":"Data Modeling (Star/Snowflake)","logo":"SkillLogo"},
+    {"name":"Lakehouse Architecture","logo":"SkillLogo"},
+    {"name":"Workflow Orchestration (Airflow)","logo":"SkillLogo"},
+    {"name":"Distributed Systems","logo":"SkillLogo"},
+    {"name":"Batch & Streaming Processing","logo":"SkillLogo"},
+    {"name":"Partitioning & Indexing","logo":"SkillLogo"}
+  ],
+
+  "Backend_Web_Frameworks": [
+    {"name":"Django","logo":"DjangoLogo"},
+    {"name":"Flask","logo":"FlaskLogo"},
+    {"name":"Node.js","logo":"NodeJSLogo"},
+    {"name":"REST APIs","logo":"RESTAPILogo"},
+    {"name":"DRF","logo":"DRFLogo"},
+    {"name":"FastAPI","logo":"SkillLogo"},
+    {"name":"Web Scraping","logo":"WebScrapeLogo"},
+    {"name":"Authentication & Authorization (JWT/OAuth)","logo":"SkillLogo"},
+    {"name":"Microservices Architecture","logo":"SkillLogo"}
+  ],
+
   "Front_End_UI": [
-    { "name": "ReactJS", "logo": "ReactLogo" },
-    { "name": "AngularJS", "logo": "AngularLogo" },
-    { "name": "HTML", "logo": "HTMLLogo" },
-    { "name": "CSS", "logo": "CSSLogo" },
-    { "name": "JavaScript (JS)", "logo": "JSLogo" },
-    { "name": "Bootstrap", "logo": "BootstrapLogo" },
-    { "name": "jQuery", "logo": "JqueryLogo" },
-    { "name": "Web Design", "logo": "WebdesignLogo" },
-    { "name": "Front-End Development", "logo": "FrontendLogo" }
+    {"name":"AngularJS","logo":"AngularLogo"},
+    {"name":"HTML","logo":"HTMLLogo"},
+    {"name":"CSS","logo":"CSSLogo"},
+    {"name":"JavaScript","logo":"JSLogo"},
+    {"name":"Bootstrap","logo":"BootstrapLogo"},
+    {"name":"jQuery","logo":"JqueryLogo"}
   ],
 
   "Monitoring_Databases": [
-    { "name": "Kibana", "logo": "KibanaLogo" },
-    { "name": "Logstash", "logo": "LogstashLogo" },
-    { "name": "Redis (Caching)", "logo": "RedisLogo" },
-    { "name": "MongoDB", "logo": "MongodbLogo" },
-    { "name": "Real-time Monitoring", "logo": "RTSPLogo" }
+    {"name":"MongoDB","logo":"MongodbLogo"},
+    {"name":"Redis (Caching)","logo":"RedisLogo"},
+    {"name":"Kibana","logo":"KibanaLogo"},
+    {"name":"Logstash","logo":"LogstashLogo"},
+    {"name":"Data Quality Validation","logo":"SkillLogo"},
+    {"name":"Model Monitoring","logo":"SkillLogo"},
+    {"name":"Drift Detection","logo":"SkillLogo"}
   ],
 
   "BI_Analytics": [
-    { "name": "Tableau", "logo": "TableauLogo" },
-    { "name": "Power BI", "logo": "BILogo" },
-    { "name": "AWS QuickSight", "logo": "AWSQuickInsightLogo" },
-    { "name": "Data Analysis", "logo": "DataAnalysisLogo" },
-    { "name": "Web Analytics", "logo": "WebAnalyticsLogo" }
+    {"name":"Pandas","logo":"SkillLogo"},
+    {"name":"NumPy","logo":"SkillLogo"},
+    {"name":"Exploratory Data Analysis (EDA)","logo":"SkillLogo"},
+    {"name":"Tableau","logo":"TableauLogo"},
+    {"name":"Power BI","logo":"BILogo"},
+    {"name":"AWS QuickSight","logo":"AWSQuickInsightLogo"},
+    {"name":"Matplotlib / Seaborn","logo":"SkillLogo"}
   ],
-"Cloud_Devops":[
-  {"name":"Cloud Computing","logo":"CloudComputingLogo"},
-  {"name":"AWS","logo":"AWSLogo"},
-  {"name":"Amazon S3","logo":"AmazonS3Logo"},
-  {"name":"Azure","logo":"AzureLogo"},
-  {"name":"Docker","logo":"DockerLogo"},
-  {"name":"CI/CD", "logo":"CICDLogo"},
-  {"name":"Gitlab","logo":"GitlabLogo"},
-  {"name":"Git","logo":"GitLogo"},
-  {"name":"OpenShift","logo":"OpenShiftLogo"},
-  {"name":"Kubernetes","logo":"KubernetesLogo"},
-  {"name":"Automation","logo":"AutomationprogLogo"}
-],
+
+  "Cloud_Devops":[
+    {"name":"Azure","logo":"AzureLogo"},
+    {"name":"Amazon S3","logo":"AmazonS3Logo"},
+    {"name":"Kubernetes","logo":"KubernetesLogo"},
+    {"name":"CI/CD","logo":"CICDLogo"},
+    {"name":"Git","logo":"GitLogo"},
+    {"name":"GitLab","logo":"GitlabLogo"},
+    {"name":"OpenShift","logo":"OpenShiftLogo"},
+    {"name":"Infrastructure as Code (Terraform)","logo":"SkillLogo"},
+    {"name":"MLOps","logo":"SkillLogo"},
+    {"name":"Model Deployment","logo":"SkillLogo"},
+    {"name":"Inference Pipelines","logo":"SkillLogo"}
+  ],
+
   "RemainingSkills": [
-    { "name": "GitLab", "logo": "GitlabLogo" },
-    { "name": "AngularJS", "logo": "AngularLogo" },
-    { "name": "Java", "logo": "JavaLogo" },
-    { "name": "JQuery", "logo": "JqueryLogo" },
-    { "name": "Web Design", "logo": "WebdesignLogo" },
-    { "name": "Web Development", "logo": "WebdevelopmentLogo" },
-    { "name": "Cryptography", "logo": "CryptoLogo" },
-    { "name": "Cyber Security", "logo": "CybersecurityLogo" }
+    {"name":"Event-Driven Architecture","logo":"SkillLogo"},
+    {"name":"Load Balancing","logo":"SkillLogo"},
+    {"name":"Caching Strategies","logo":"SkillLogo"},
+    {"name":"Cryptography","logo":"CryptoLogo"},
+    {"name":"Cyber Security","logo":"CybersecurityLogo"}
   ],
+
   "SoftSkills": [
-    "Group Communication",
-    "Good Communication Skills",
-    "Team Management",
     "Leadership",
-    "Learning Ability",
-    "Time Management",
+    "Team Management",
+    "Technical Communication",
+    "Decision-Making",
     "Creative Problem Solving",
     "Debugging",
-    "Teamwork",
-    "Decision-Making",
-    "Adaptability"
+    "Time Management",
+    "Adaptability",
+    "Teamwork"
   ],
   "ProjectDetails": [
     {

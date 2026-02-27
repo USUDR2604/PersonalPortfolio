@@ -1,109 +1,223 @@
-/* Root block (no page background here; we live inside your section) */
+/* =========================
+   Professional Summary (PSX)
+========================= */
+
+/* Root */
 .psx {
-  color: #0f172a; /* deep slate */
+  color: #0f172a;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  padding: clamp(1rem, 2.5vw, 1.5rem) 0;
+  padding: clamp(1rem, 2.2vw, 1.6rem) clamp(.75rem, 2vw, 1.2rem);
 }
 
-/* Title */
+/* =========================
+   Header
+========================= */
 .psx__head {
   display: grid;
   justify-items: center;
-  row-gap: .5rem;
-  margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+  row-gap: .55rem;
+  margin-bottom: clamp(1rem, 2.2vw, 1.4rem);
 }
+
 .psx__title {
   margin: 0;
   font-weight: 900;
-  letter-spacing: .3px;
-  font-size: clamp(1.4rem, 3.3vw, 2rem);
+  letter-spacing: .2px;
+  font-size: clamp(1.35rem, 2.4vw, 1.9rem);
   color: #0b1220;
-  text-shadow: 0 1px 0 rgba(255,255,255,.6);
+  line-height: 1.15;
 }
+
 .psx__underline {
-  width: min(160px, 40%);
+  width: min(190px, 42%);
   height: 4px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #22d3ee, #a78bfa); /* cyan → violet */
-  box-shadow: 0 0 14px rgba(34, 211, 238, .35);
-  opacity: 1;
+  background: linear-gradient(90deg, #22d3ee, #a78bfa);
+  box-shadow: 0 0 14px rgba(34, 211, 238, .28);
 }
 
-/* Cards grid: 1 / 2 / 3 columns */
+/* =========================
+   Grid (2 columns always, 1 only below 560px)
+========================= */
 .psx__grid {
   display: grid;
-  gap: clamp(.9rem, 2vw, 1.2rem);
-  grid-template-columns: 1fr;
+  gap: clamp(.85rem, 1.6vw, 1.15rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
 }
-@media (min-width: 768px)  { .psx__grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1200px) { .psx__grid { grid-template-columns: repeat(3, 1fr); } }
 
-/* Card */
+/* Phones only */
+@media (max-width: 559px) {
+  .psx__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   Card
+========================= */
 .psx__card {
   position: relative;
   background: #ffffff;
-  border: 1px solid #dbe3ee;         /* cool border */
-  border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(2, 6, 23, .06);
-  padding: clamp(.9rem, 2vw, 1.15rem) clamp(1rem, 2.2vw, 1.35rem);
+  border: 1px solid rgba(203, 213, 225, .85);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(2, 6, 23, .06);
+  padding: clamp(.95rem, 2vw, 1.2rem) clamp(1rem, 2.2vw, 1.35rem);
   overflow: hidden;
+
+  /* keep equal height behavior */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
+
 .psx__card:hover {
-  transform: translateY(-2px);
-  border-color: #c7d2fe;             /* soft indigo */
+  transform: translateY(-3px);
+  border-color: rgba(167, 139, 250, .55);
   box-shadow:
-    0 10px 22px rgba(2, 6, 23, .08),
-    0 0 0 3px rgba(167, 139, 250, .15); /* outer glow */
+    0 14px 26px rgba(2, 6, 23, .10),
+    0 0 0 3px rgba(34, 211, 238, .12);
 }
 
-/* Accent bar */
+/* Accent strip */
 .psx__accent {
-  position: absolute; left: 0; top: 0; bottom: 0; width: 10px;
-  background: linear-gradient(180deg, #22d3ee, #a78bfa); /* cyan → violet */
-  border-radius: 14px 0 0 14px;
-  box-shadow: inset 0 0 10px rgba(34, 211, 238, .25);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: linear-gradient(180deg, #22d3ee, #a78bfa);
+  border-radius: 16px 0 0 16px;
+  box-shadow: inset 0 0 10px rgba(34, 211, 238, .20);
 }
 
-/* Card title & list */
+/* =========================
+   Card Title
+========================= */
 .psx__cardTitle {
-  margin: 0 0 .5rem;
+  margin: 0 0 .55rem;
   color: #0f172a;
-  font-weight: 800;
+  font-weight: 850;
   letter-spacing: .2px;
-  font-size: clamp(1.05rem, 2.1vw, 1.25rem);
+  font-size: clamp(1.02rem, 1.8vw, 1.18rem);
+  line-height: 1.2;
 }
+
+/* =========================
+   List
+========================= */
 .psx__list {
   margin: .25rem 0 0;
-  padding-left: 1.15rem;
-  color: #334155;                    /* slate-700 */
+  padding-left: 1.05rem;
+  color: #334155;
   line-height: 1.65;
-  font-size: clamp(.95rem, 1.6vw, 1.05rem);
+  font-size: clamp(.92rem, 1.4vw, 1.02rem);
 }
-.psx__list li { margin: .22rem 0; }
-.psx__list li::marker { color: #06b6d4; } /* cyan bullet */
 
-/* Dark-mode variant if your section background is dark */
-.SummarySectionSty--dark .psx { color: #e5e7eb; }
-.SummarySectionSty--dark .psx__title { color: #e5e7eb; text-shadow: none; }
+.psx__list li {
+  margin: .28rem 0;
+}
+
+/* nicer bullets */
+.psx__list li::marker {
+  color: #06b6d4;
+  font-weight: 800;
+}
+
+/* =========================
+   Phone typography tuning
+========================= */
+@media (max-width: 559px) {
+  .psx {
+    padding: 1rem .75rem;
+  }
+
+  .psx__title {
+    font-size: 1.35rem;
+    text-align: center;
+  }
+
+  .psx__list {
+    font-size: .95rem;
+    line-height: 1.6;
+  }
+}
+
+/* =========================
+   Dark Mode (if parent has SummarySectionSty--dark)
+========================= */
+.SummarySectionSty--dark .psx {
+  color: #e5e7eb;
+}
+
+.SummarySectionSty--dark .psx__title {
+  color: #e5e7eb;
+}
+
 .SummarySectionSty--dark .psx__card {
   background: #0f172a;
-  border: 1px solid rgba(148,163,184,.25);
-  box-shadow: 0 6px 18px rgba(0,0,0,.25);
-}
-.SummarySectionSty--dark .psx__card:hover {
-  box-shadow:
-    0 10px 24px rgba(0,0,0,.35),
-    0 0 0 3px rgba(34, 211, 238, .18);
-}
-.SummarySectionSty--dark .psx__cardTitle { color: #e2e8f0; }
-.SummarySectionSty--dark .psx__list { color: #cbd5e1; }
-.SummarySectionSty--dark .psx__accent {
-  background: linear-gradient(180deg, #22d3ee, #a78bfa);
-  box-shadow: inset 0 0 12px rgba(34, 211, 238, .25);
+  border: 1px solid rgba(148, 163, 184, .25);
+  box-shadow: 0 10px 22px rgba(0,0,0,.30);
 }
 
-/* Reduced motion */
+.SummarySectionSty--dark .psx__card:hover {
+  box-shadow:
+    0 14px 26px rgba(0,0,0,.40),
+    0 0 0 3px rgba(34, 211, 238, .16);
+}
+
+.SummarySectionSty--dark .psx__cardTitle {
+  color: #e2e8f0;
+}
+
+.SummarySectionSty--dark .psx__list {
+  color: #cbd5e1;
+}
+
+.SummarySectionSty--dark .psx__accent {
+  background: linear-gradient(180deg, #22d3ee, #a78bfa);
+}
+.psx__card {
+  font-style: italic;
+}
+
+/* =========================
+   Reduced Motion
+========================= */
 @media (prefers-reduced-motion: reduce) {
-  .psx__card { transition: none; }
+  .psx__card {
+    transition: none;
+  }
+}
+/* Slight highlight effect */
+.psx__paragraph::first-letter {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #0f172a;
+}
+.psx__paraWrapper{
+  max-width: 1000px;
+  margin: 0 auto 1.6rem auto;
+  padding: 0 clamp(.75rem, 2vw, 1.1rem);
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+}
+
+.psx__paragraph{
+  margin: 0;
+  font-style: italic;
+  color: #334155;
+  line-height: 1.75;
+  font-size: clamp(1rem, 1.6vw, 1.12rem);
+  text-align: justify;
+}
+
+@media (max-width: 559px){
+  .psx__paragraph{
+    text-align: left;
+    font-size: .95rem;
+  }
 }

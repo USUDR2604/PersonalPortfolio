@@ -44,6 +44,8 @@ import CourseCertifyLogo from "../Images/Logos/OrganizationLogo/Certification_Co
 import VolunteerLogo from "../Images/Logos/SubSectionLogo/Volunteer_Logo.jpg";
 import ApachekafkaLogo from "../Images/Logos/ProgrammingIcon/ApachekafkaLogo.png"
 import ApacheHiveLogo from "../Images/Logos/ProgrammingIcon/ApacheHiveLogo.png"
+import BigDataLogo from "../Images/Logos/ProgrammingIcon/BigData_Logo.png"
+import ETLELTPipelineLogo from "../Images/Logos/ProgrammingIcon/ETL_ELT_pipeline_logo.png"
 import ETLLogo from "../Images/Logos/ProgrammingIcon/ETLLogo.png"
 import LLMLogo from "../Images/Logos/ProgrammingIcon/LLMLogo.png"
 import OracleSQLLogo from "../Images/Logos/ProgrammingIcon/OracleSQLLogo.png"
@@ -92,6 +94,8 @@ import PBDMLogo from "../Images/Logos/ProgrammingIcon/PBDMLogo.png"
 // import other logos here..
 
 const logoMap = {
+  "ETLELTPipelineLogo":ETLELTPipelineLogo,
+  "BigDataLogo":BigDataLogo,
   "VolunteerLogo":VolunteerLogo,
   "PBDMLogo":PBDMLogo,
   "IOTLogo":IOTLogo,

@@ -55,20 +55,21 @@ function Home() {
                 <br />
                 <span className="im-text">I'm</span>{' '}
                 <span className="name-animated">
-                  <span className="word delay-1">Uday</span>{' '}
-                  <span className="word delay-2">Deep</span>{' '}
-                  <span className="word delay-3">Reddy</span>
+                  <span className="word delay-1">Sai</span>{' '}
+                  <span className="word delay-2">Uday R</span>{' '}
+                  <span className="word delay-3">Udumula</span>
                 </span>
               </h1>
               <h4 className="taglinesty">
-                <i>Data Analyst | Full Stack Developer | AI Innovator</i>
-              </h4>
+              <i>Data Engineer | AI/ML & LLM Engineer | Data Scientist | Python Software Engineer</i></h4>
+
               <p>
-                <Tools className="icon-inline" /> Skilled in Python, React, MongoDB, and AI/ML tools — from backend APIs to frontend UI.
-              </p>
-              <p>
-                <Mortarboard className="icon-inline" /> Currently pursuing a Master’s in Computer Science at the University of Missouri–Kansas City (UMKC).
-              </p>
+  <Tools className="icon-inline" /> Build end-to-end solutions using Python, React, MongoDB, and AI/ML tools—covering data pipelines, backend APIs, and UI delivery.
+</p>
+<p>
+  <Mortarboard className="icon-inline" /> Master’s Graduate in Computer Science (UMKC) | Data Scientist & Analyst at Community Dream Foundation | Open to Full-Time Opportunities
+</p>
+
               <button className='btn btn-secondary w-50' onClick={scrollToSummary}>
                 Read More
               </button>

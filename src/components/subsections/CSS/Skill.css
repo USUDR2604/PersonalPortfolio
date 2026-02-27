@@ -1,144 +1,370 @@
-/* ========== Base ========== */
-body { font-family: Arial, Helvetica, sans-serif; font-size: 1rem; }
-.text-bold { font-weight: 700; }
+/* =========================================================
+   Skill.css  (Clean typography + Bootstrap row-wise cards)
+   - Fixes text sizing + font weights for Key Skills cards
+   - Keeps your left/right layout + mobile header behavior
+   - Compact padding, readable labels, no “huge” text
+========================================================= */
 
-/* ========== Shell (matches Experience layout) ========== */
+/* =========================
+   Base
+========================= */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+/* =========================
+   Shell Layout (Left icon + Right content)
+========================= */
 .skills-flex {
-  display: flex; align-items: center; gap: 1.5rem;
-  padding: 1.5rem 2rem; min-height: 25rem; font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  min-height: 25rem;
+  font-style: italic;
 }
-.skills-left { flex: 0 0 25%; display: flex; justify-content: center; align-items: center; }
-.icon-wrapper { display: flex; justify-content: center; height: 100%; margin: auto; padding: 2rem; }
+
+.skills-left {
+  flex: 0 0 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-logo-sty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: auto;
+  padding: 0.5rem;
+}
+
 .skills-icon {
-  width: 15rem; height: 15rem; border-radius: 50%; object-fit: cover;
-  box-shadow: 0 0 0.625rem rgba(0,0,0,0.2);
-}
-.skills-right { flex: 0 0 75%; position: relative; color: #000 !important; }
-.skills-mobile-content { display: none; }
-.skills-screen-content { display: block; }
-
-/* ========== Sections (NO CARD STYLE) ========== */
-.skills-sections { display: flex; flex-direction: column; gap: 1.25rem; }
-.skills-section { background: transparent !important; box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; border: none !important; }
-.skills-section-header { display: flex; align-items: baseline; gap: 0.5rem; margin: 0 0 0.625rem 0; padding: 0; }
-
-/* ========== Key Skills grid (max 4 → 3 → 2 → 1) ========== */
-.key-skills-wrapper {
-  display: grid; gap: 0.875rem;
-  grid-template-columns: repeat(5, minmax(0, 1fr)); /* Desktop max 4 */
-}
-@media (max-width: 991px) { .key-skills-wrapper { grid-template-columns: repeat(4, 1fr); } }
-@media (max-width: 767px) { .key-skills-wrapper { grid-template-columns: repeat(4, 1fr); gap: 0.75rem; } }
-@media (max-width: 479px) { .key-skills-wrapper { grid-template-columns: 1fr; } }
-
-/* Ensure KeySkillCard never inherits bar styles */
-.key-skills-wrapper .bar-background,
-.key-skills-wrapper .bar-fill { all: unset; }
-
-/* ========== Supporting Skills grid (5 → 4 → 3 → 2 → 1) ========== */
-.supporting-list{
-  display: grid;
-  gap: 0.75rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-content: start;   /* <-- key */
-  align-items: start;     /* keeps each row tight */
-}
-@media (max-width: 1199px){ .supporting-list { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 991px) { .supporting-list { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 767px) { .supporting-list { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 479px) { .supporting-list { grid-template-columns: 1fr; } }
-
-/* ========== Supporting Skill row (compact via font/width/margins only) ========== */
-.support-skill-bar {
-  display: flex; align-items: center; gap: 0.5rem;
-  padding: 0.22rem 0.625rem;
-  min-width: 0;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
 }
 
-/* Logo */
-.support-logo {
-  width: 1.75rem; height: 1.75rem; flex: 0 0 0.5rem;
-  object-fit: contain; border-radius: 50%;
-}
-/* Right side (name/% top row, bar bottom row) */
-.support-details { flex: 1 1 auto; min-width: 0; line-height: 1.1; }
-.support-top {
-  display: flex; justify-content: space-between; align-items: center;
-  gap: 0.625rem; margin-bottom: 0.15rem;  /* tighter top-to-bar spacing */
-}
-.support-label {
-  margin: 0; font-size: 0.95rem; font-weight: 700;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-}
-.percent-label {
-  margin: 0; font-size: 0.9rem; font-weight: 700;font-color:black;
-  white-space: nowrap; font-variant-numeric: tabular-nums;
-}
-/* Progress bar (solid, no stripes) */
-.progress {
-  height: 0.55rem; background: #e5e7eb;
-  border-radius: 999px; overflow: hidden;
+.skills-right {
+  flex: 0 0 75%;
+  position: relative;
+  color: #000 !important;
 }
 
-/* ========== Chips (Remaining / Soft) ========== */
-.chip-grid { display: flex; flex-wrap: wrap; gap: 0.625rem; }
-.chip {
-  display: inline-flex; align-items: center; padding: 0.375rem 0.5rem;
-  border-radius: 999px; border: 0.0625rem solid #e6e6e6; background: #fafafa;
-  font-size: .9rem; line-height: 1; white-space: nowrap;
+.skills-mobile-content {
+  display: none;
 }
 
-/* ========== Title swap helpers ========== */
-.only-on-xs { display: none; }
-.alt-hide-on-xs { display: inline-block; }
+/* Sections container */
+.skills-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
-/* ========== Responsive shell (px breakpoints) ========== */
+/* =========================
+   Key Skills (Row-wise Bootstrap Cards + Circular)
+========================= */
+.skills-key-wrapper {
+  margin-bottom: 0.35rem;
+}
+
+.skills-key-title {
+  font-weight: 800;
+  font-size: 1.05rem;       /* ✅ better heading size */
+  letter-spacing: 0.2px;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Keep last-row items aligned left */
+.skills-key-wrapper .row {
+  align-items: stretch;
+}
+
+/* Card look (compact + clean typography) */
+.skill-card {
+  width: 100%;
+  background: transparent;
+  border: 0px solid rgba(0,0,0,0.06);
+  border-radius: 12px;
+  padding: 0.6rem 0.55rem;   /* ✅ compact */
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.10);
+}
+
+/* Circle sizing wrapper */
+.skill-circle-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.skill-circle-wrapper .CircularProgressbar {
+  width: 120px !important;
+  height: 120px !important;
+}
+
+/* Logo inside circle (force size) */
+.skill-circle-icon {
+  width: 64px !important;
+  height: 64px !important;
+  max-width:64px !important;
+  max-height: 64px !important;
+  object-fit: contain !important;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Text below circle (outside) */
+.skill-circle-text {
+  margin-top: 0.45rem;        /* ✅ nice spacing */
+  text-align: center;
+  line-height: 1.15;
+}
+
+/* ✅ Better “highlight” (skill name) */
+.skill-circle-name {
+  font-size: 0.92rem;          /* ✅ readable but not huge */
+  font-weight: 800;            /* ✅ highlight */
+  color: #111;
+  letter-spacing: 0.2px;
+  margin: 0;
+  white-space: nowrap;         /* ✅ prevent ugly wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Optional: if you later add % back */
+.skill-circle-percent {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #444;
+  margin-top: 0.2rem;
+}
+
+/* =========================
+   Mobile / Tablet Responsive Shell
+========================= */
+
 /* Mobile: <768px */
-@media (max-width: 767px){
-  body { font-size: 0.6875rem; }
-  .skills-flex { flex-direction: column; gap: 0.55rem; padding: 1rem 0; min-height: 18.75rem; }
-  .skills-left { display: none; }
-  .skills-right { flex: 2 0 100%; }
-  .skills-mobile-content { display: flex; flex: 1 0 100%; margin-bottom: 0.85rem; font-size: 1.65rem; }
-  .skills-mobile-det { justify-content: start; }
-  .skills-mobile-det img.img-icon-sty { width: 2rem; height: 2rem; object-fit: contain; border-radius: 50%; }
-  .skills-screen-content { display: none; }
-  .only-on-xs { display: inline-block; }
-  .alt-hide-on-xs { display: none; }
+@media (max-width: 767px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  .skills-flex {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 0.75rem;
+    min-height: 18.75rem;
+  }
+
+  .skills-left {
+    display: none;
+  }
+
+  .skills-right {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .skills-mobile-content {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  .skills-mobile-det {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .skills-mobile-det img.img-icon-sty {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  /* Key title smaller on mobile */
+  .skills-key-title {
+    font-size: 0.98rem;
+    margin-bottom: 0.45rem;
+  }
+
+  /* Circle scaling on mobile */
+  .skill-circle-wrapper {
+    width: 86px;
+    height: 86px;
+  }
+
+  .skill-circle-wrapper .CircularProgressbar {
+    width: 86px !important;
+    height: 86px !important;
+  }
+
+  .skill-circle-icon {
+    width: 45px !important;
+    height: 45px !important;
+    max-width: 45px !important;
+    max-height: 45px !important;
+  }
+
+  .skill-circle-name {
+    font-size: 0.82rem;        /* ✅ not too big */
+    font-weight: 800;
+  }
 }
 
 /* Tablet portrait: 768–991px */
-@media (min-width: 768px) and (max-width: 991px){
-  body { font-size: 0.8125rem; }
-  .skills-flex { flex-direction: column; gap: 0.75rem; padding: 1rem 0; min-height: 18.75rem; }
-  .skills-left { display: none; }
-  .skills-right { flex: 2 0 100%; }
-  .skills-mobile-content { display: flex; margin-bottom: 1rem; font-size: 2.5rem; }
-  .skills-mobile-det { justify-content: start; }
-  .skills-mobile-det img.img-icon-sty { width: 3rem; height: 3rem; object-fit: contain; border-radius: 50%; }
-  .skills-screen-content { display: none; }
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 0.92rem;
+  }
+
+  .skills-flex {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    min-height: 20rem;
+  }
+
+  .skills-left {
+    display: none;
+  }
+
+  .skills-right {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .skills-mobile-content {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .skills-mobile-det {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .skills-mobile-det img.img-icon-sty {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  /* Tablet circle size */
+  .skill-circle-wrapper {
+    width: 92px;
+    height: 92px;
+  }
+
+  .skill-circle-wrapper .CircularProgressbar {
+    width: 92px !important;
+    height: 92px !important;
+  }
+
+  .skill-circle-icon {
+    width: 52px !important;
+    height: 52px !important;
+    max-width: 52px !important;
+    max-height: 52px !important;
+  }
+
+  .skill-circle-name {
+    font-size: 0.88rem;
+    font-weight: 800;
+  }
 }
 
 /* Tablet landscape: 992–1199px */
-@media (min-width: 992px) and (max-width: 1199px){
-  body { font-size: 0.9375rem; }
-  .skills-flex { gap: 1.25rem; padding: 1.2rem 1.65rem; }
-  .skills-left { flex: 0 0 32.5%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
-  .skills-right { flex: 0 0 67.5%; }
-  .skills-mobile-content { display: none; }
-  .skills-screen-content { display: block; }
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .skills-flex {
+    gap: 0.75rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .skills-left {
+    flex: 0 0 32.5%;
+    display: flex;
+  }
+
+  .skills-right {
+    flex: 0 0 67.5%;
+  }
+
+  .skills-mobile-content {
+    display: none;
+  }
+
+  .skill-circle-name {
+    font-size: 0.9rem;
+  }
+  .skill-circle-wrapper {
+    width: 92px;
+    height: 92px;
+  }
+
+  .skill-circle-wrapper .CircularProgressbar {
+    width: 92px !important;
+    height: 92px !important;
+  }
+
+  .skill-circle-icon {
+    width: 45px !important;
+    height: 45px !important;
+    max-width: 45px !important;
+    max-height: 45px !important;
+  }
 }
 
 /* Desktop: ≥1200px */
-@media (min-width: 1200px){
-  body { font-size: 0.9375rem; }
-  .skills-left { flex: 0 0 25%; }
-  .skills-right { flex: 0 0 75%; }
-  .skills-mobile-content { display: none; }
-  .skills-screen-content { display: block; }
-}
-.circle-logo{
-  width: clamp(2.4rem, 7vw, 5rem);
-  height: clamp(2.4rem, 7vw, 5rem);
-  object-fit: contain; border-radius: 50%; display: block; margin: 0 auto;
+@media (min-width: 1200px) {
+  body {
+    font-size: 0.98rem;
+  }
+
+  .skills-left {
+    flex: 0 0 25%;
+  }
+
+  .skills-right {
+    flex: 0 0 75%;
+  }
+
+  .skills-mobile-content {
+    display: none;
+  }
 }

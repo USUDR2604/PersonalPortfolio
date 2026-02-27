@@ -10,109 +10,109 @@ const Experience = () => {
 
   const logoMap = {
     TcsLogo: TcsLogo,
-    UMKCLogo:UMKCLogo,
-    // Add more mappings as needed
+    UMKCLogo: UMKCLogo,
   };
 
   return (
     <div className="experience-flex">
-      {/* ✅ Mobile Header */}
+      {/* Mobile Header */}
       <div className="experience-mobile-content">
         <div className="experience-mobile-det">
-          <img src={WorkIcon} alt="Work Icon" className="image-fluid img-icon-sty" />
-          &nbsp;
+          <img src={WorkIcon} alt="Work Icon" className="img-icon-sty" />
           <span>Experience Details</span>
         </div>
       </div>
 
-      {/* ✅ Desktop/Tablet Left Icon */}
-      <div className="experience-left">
+      {/* Desktop/Tablet Left Icon */}
+      <aside className="experience-left">
         <div className="experience-logo-sty">
           <div className="icon-wrapper">
             <img src={WorkIcon} alt="Work Icon" className="experience-icon" />
           </div>
-          <h4>Experience Details</h4>
+          <h4 className="experience-left-title">Experience Details</h4>
         </div>
-      </div>
+      </aside>
 
-      {/* ✅ Right Side Experience Details */}
-      <div className="experience-right">
+      {/* Right Side Experience Details */}
+      <main className="experience-right">
         <div className="ordered-item-list">
           <ul className="ordered-list">
             {experienceList.map((exp, index) => (
-              <li className="ordered-item" key={index} style={{ "--i": index }}>
-                <div className="experience-detail-sty">
-                  {/* 🔷 Logo and Header */}
-                  <div className="experience-logsty">
-                    <div className="exp-logoicon">
+              <li className="ordered-item" key={index}>
+                <article className="exp-card">
+                  {/* Header */}
+                  <header className="exp-header">
+                    <div className="exp-logo-wrap">
                       <img
                         src={logoMap[exp.logo] || WorkIcon}
-                        alt="exp-logo"
+                        alt={`${exp.company} logo`}
                         className="exp-logo"
                       />
                     </div>
-                    <div className="exp-compsty">
-                      <div className="text-bold">
-                        {exp.title}
-                        {exp.jobtype && (
-                          <span className="exp-jobtype"> ({exp.jobtype})</span>
-                        )}
-                      </div>
-                      <div className="exp-company-title">
-                        <p>{exp.company}</p>
+
+                    <div className="exp-headtext">
+                      <div className="exp-title-row">
+                      <h3 className="exp-title">
+{exp.title}
+{/* {exp.jobtype && (
+    <span className="exp-jobtype"> • {exp.jobtype}</span>
+)} */}
+</h3>
                       </div>
 
-                      {/* 🔷 Location + Duration (inline) */}
-                      <div className="exp-locdursty">
-                        <div className="exp-locsty">
+                      <p className="exp-company">{exp.company}</p>
+
+                      <div className="exp-meta">
+                        <span className="exp-location">
                           {exp.Location.City}, {exp.Location.State}, {exp.Location.Country}
-                        </div>
-                        <div className="exp-dursty">
+                        </span>
+                        <span className="exp-duration">
                           {exp.Duration.Start_Date} – {exp.Duration.End_Date}
-                        </div>
+                        </span>
                       </div>
                     </div>
-                  </div>
+                  </header>
 
-                  {/* 🔷 Description */}
+                  {/* Description */}
                   {exp.Description && (
-                    <div className="exp-desc">
+                    <section className="exp-desc">
                       <p>{exp.Description}</p>
-                    </div>
+                    </section>
                   )}
 
-                  {/* 🔷 Tasks */}
+                  {/* Tasks */}
                   {exp.tasks && exp.tasks.length > 0 && (
-                    <div className="exp-task-sty">
-                      <p className="text-bold">Tasks and Responsibilities:</p>
+                    <section className="exp-section">
+                      <div className="exp-section-title">Tasks and Responsibilities</div>
                       <ul className="exp-tasks">
                         {exp.tasks.map((task, i) => (
                           <li key={i}>{task}</li>
                         ))}
                       </ul>
-                    </div>
+                    </section>
                   )}
 
-                  {/* 🔷 Skills (only on desktop/tablet) */}
-                  <div className="experience-screen-content">
-                    {exp.skills && exp.skills.length > 0 && (
+                  {/* Skills */}
+                  {exp.skills && exp.skills.length > 0 && (
+                    <section className="exp-section experience-screen-content">
+                      <div className="exp-section-title">Skills</div>
                       <div className="exp-skills">
-                        <span className="skill-headsty">Skills:</span>
                         {exp.skills.map((skill, i) => (
                           <span className="skill-badge" key={i}>
                             {skill}
                           </span>
                         ))}
                       </div>
-                    )}
-                  </div>
-                </div>
+                    </section>
+                  )}
+                </article>
+
                 <hr className="horizsontalsty" />
               </li>
             ))}
           </ul>
         </div>
-      </div>
+      </main>
     </div>
   );
 };
