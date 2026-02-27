@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PersonalPortfolio/static/css/main.ee9f91b3.css",
-    "main.js": "/PersonalPortfolio/static/js/main.24c25817.js",
+    "main.css": "/PersonalPortfolio/static/css/main.08b9a75c.css",
+    "main.js": "/PersonalPortfolio/static/js/main.04ab7276.js",
     "static/js/453.c937a3a2.chunk.js": "/PersonalPortfolio/static/js/453.c937a3a2.chunk.js",
     "static/media/Bag1.png": "/PersonalPortfolio/static/media/Bag1.1a2225ee6c7d6ac567de.png",
     "static/media/PBDMLogo.png": "/PersonalPortfolio/static/media/PBDMLogo.194817462313ecb92c30.png",
@@ -48,6 +48,7 @@
     "static/media/CSSLogo.png": "/PersonalPortfolio/static/media/CSSLogo.ceb78c619eb7255ea5d2.png",
     "static/media/WebAnalyticsLogo.png": "/PersonalPortfolio/static/media/WebAnalyticsLogo.346e9379a3f771f8abe6.png",
     "static/media/TableauLogo.png": "/PersonalPortfolio/static/media/TableauLogo.1a321a5613fff3e7787d.png",
+    "static/media/ETL_ELT_pipeline_logo.png": "/PersonalPortfolio/static/media/ETL_ELT_pipeline_logo.f70cf5952708b1aa283f.png",
     "static/media/OracleSQLLogo.png": "/PersonalPortfolio/static/media/OracleSQLLogo.1acec382f9543b29f1d4.png",
     "static/media/PLSQLLogo.png": "/PersonalPortfolio/static/media/PLSQLLogo.565e90726574eeba97cd.png",
     "static/media/ETLLogo.png": "/PersonalPortfolio/static/media/ETLLogo.fe82d8358a975c75edde.png",
@@ -56,6 +57,7 @@
     "static/media/fa-solid-900.ttf": "/PersonalPortfolio/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/UdayPic.png": "/PersonalPortfolio/static/media/UdayPic.1005403d0ef1405a2804.png",
     "static/media/DataScience_Logo.png": "/PersonalPortfolio/static/media/DataScience_Logo.0e1116099d5a91e166f3.png",
+    "static/media/BigData_Logo.png": "/PersonalPortfolio/static/media/BigData_Logo.86891888fce717824866.png",
     "static/media/Frontend_Logo.png": "/PersonalPortfolio/static/media/Frontend_Logo.1977ac1511f47508d7e8.png",
     "static/media/CyberSecurity_Logo.png": "/PersonalPortfolio/static/media/CyberSecurity_Logo.3cd6e71e1f14a1c2d0a9.png",
     "static/media/TCS_Logo.png": "/PersonalPortfolio/static/media/TCS_Logo.f0f48e5aeedc99356db0.png",
@@ -106,12 +108,12 @@
     "static/media/crypto_logo.jpg": "/PersonalPortfolio/static/media/crypto_logo.278e356d5943df6a358b.jpg",
     "static/media/fa-v4compatibility.woff2": "/PersonalPortfolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/PersonalPortfolio/index.html",
-    "main.ee9f91b3.css.map": "/PersonalPortfolio/static/css/main.ee9f91b3.css.map",
-    "main.24c25817.js.map": "/PersonalPortfolio/static/js/main.24c25817.js.map",
+    "main.08b9a75c.css.map": "/PersonalPortfolio/static/css/main.08b9a75c.css.map",
+    "main.04ab7276.js.map": "/PersonalPortfolio/static/js/main.04ab7276.js.map",
     "453.c937a3a2.chunk.js.map": "/PersonalPortfolio/static/js/453.c937a3a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee9f91b3.css",
-    "static/js/main.24c25817.js"
+    "static/css/main.08b9a75c.css",
+    "static/js/main.04ab7276.js"
   ]
 }
