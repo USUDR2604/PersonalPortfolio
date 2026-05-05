@@ -40,6 +40,7 @@ const Experience = () => {
             {experienceList.map((exp, index) => (
               <li className="ordered-item" key={index}>
                 <article className="exp-card">
+
                   {/* Header */}
                   <header className="exp-header">
                     <div className="exp-logo-wrap">
@@ -52,12 +53,9 @@ const Experience = () => {
 
                     <div className="exp-headtext">
                       <div className="exp-title-row">
-                      <h3 className="exp-title">
-{exp.title}
-{/* {exp.jobtype && (
-    <span className="exp-jobtype"> • {exp.jobtype}</span>
-)} */}
-</h3>
+                        <h3 className="exp-title">
+                          {exp.title}
+                        </h3>
                       </div>
 
                       <p className="exp-company">{exp.company}</p>
@@ -73,20 +71,45 @@ const Experience = () => {
                     </div>
                   </header>
 
-                  {/* Description */}
-                  {exp.Description && (
-                    <section className="exp-desc">
-                      <p>{exp.Description}</p>
+                  {/* Overview */}
+                  {exp.Overview && (
+                    <section className="exp-section">
+                      <div className="exp-overview">
+                        {Array.isArray(exp.Overview)
+                          ? exp.Overview.map((para, i) => (
+                              <p key={i} className="exp-overview-para">{para}</p>
+                            ))
+                          : <p className="exp-overview-para">{exp.Overview}</p>
+                        }
+                      </div>
                     </section>
                   )}
 
-                  {/* Tasks */}
-                  {exp.tasks && exp.tasks.length > 0 && (
+                  {/* Responsibilities */}
+                  {exp.Responsibilities && exp.Responsibilities.length > 0 && (
                     <section className="exp-section">
-                      <div className="exp-section-title">Tasks and Responsibilities</div>
+                      <div className="exp-section-title exp-section-title--italic">Responsibilities</div>
                       <ul className="exp-tasks">
-                        {exp.tasks.map((task, i) => (
-                          <li key={i}>{task}</li>
+                        {exp.Responsibilities.map((item, i) => (
+                          <li key={i}>
+                            <span className="exp-star" aria-hidden="true">★</span>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  )}
+
+                  {/* Achievements */}
+                  {exp.Achievements && exp.Achievements.length > 0 && (
+                    <section className="exp-section">
+                      <div className="exp-section-title exp-section-title--italic">Achievements</div>
+                      <ul className="exp-tasks">
+                        {exp.Achievements.map((item, i) => (
+                          <li key={i}>
+                            <span className="exp-star" aria-hidden="true">★</span>
+                            {item}
+                          </li>
                         ))}
                       </ul>
                     </section>
@@ -95,7 +118,7 @@ const Experience = () => {
                   {/* Skills */}
                   {exp.skills && exp.skills.length > 0 && (
                     <section className="exp-section experience-screen-content">
-                      <div className="exp-section-title">Skills</div>
+                      <div className="exp-section-title exp-section-title--italic">Skills</div>
                       <div className="exp-skills">
                         {exp.skills.map((skill, i) => (
                           <span className="skill-badge" key={i}>
@@ -105,6 +128,7 @@ const Experience = () => {
                       </div>
                     </section>
                   )}
+
                 </article>
 
                 <hr className="horizsontalsty" />

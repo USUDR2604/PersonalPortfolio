@@ -10,7 +10,7 @@
   "Focused on building reliable, scalable, and production-ready AI systems that combine big data engineering, machine learning, cloud-native architecture, and modern software engineering practices."]},
   "experienceList": [
     {
-  "title": "Data Scientist & Analyst – Big Data Analytics",
+  "title": "Big Data & Operations Analyst – Data Engineering",
   "company": "University of Missouri - Kansas City",
   "logo": "UMKCLogo",
   "type": "Part-time",
@@ -24,19 +24,19 @@
     "Country": "United States"
   },
   "jobtype": "Onsite",
-  "tasks": [
-
-    "Built ETL pipelines using Python, SQL, and Pandas to ingest and transform Sodexo dining and campus recreation workforce and utilization datasets, enabling reliable operational analytics and reporting.",
-
-      "Analyzed campus recreation facility usage, staffing schedules, and Sodexo workforce demand patterns using advanced analytics, statistical modeling, and clustering techniques, improving staffing efficiency by 15–20%.",
-
-      "Designed KPI frameworks and dimensional analytical tables to monitor workforce utilization, peak demand periods, congestion patterns, and operational performance across campus facilities.",
-
-      "Developed interactive dashboards using Power BI, Tableau, and React integrated with backend analytics services, enabling real-time monitoring of utilization metrics, staffing needs, and operational trends.",
-
-      "Automated reporting workflows and analytics pipelines to support Sodexo operations and campus recreation management teams, improving decision-making speed and reducing manual reporting effort."
-    ],
-
+  "Overview": [
+    "Served as Big Data & Operations Analyst at UMKC, designing and operating 20+ Airflow ETL/ELT pipelines on Snowflake and Databricks Lakehouse to ingest real-time university dining and facility operational data.",
+    "Built scalable dimensional data models using Spark, dbt, and star/snowflake schema designs, enabling 15+ live Tableau and Power BI dashboards — reducing reporting latency by 20% and manual data preparation by 30% across campus operations."
+  ],
+  "Responsibilities": [
+    "Designed and operated 20+ Airflow-based ETL/ELT pipelines on Snowflake and Databricks Lakehouse, automating real-time ingestion of university dining and facility operational data with automated validation checks, schema enforcement, and SLA monitoring.",
+    "Analyzed large-scale operational datasets — food consumption, footfall, facility usage, and scheduling — using PySpark and SQL with complex joins, window functions, and query optimization; applied ANSI SQL and T-SQL for performance tuning and data quality compliance.",
+    "Built scalable dimensional data models using star schema and snowflake schema designs with Spark, Airflow, and dbt across Parquet and JSON/CSV datasets, enabling 15+ real-time Tableau and Power BI dashboards delivering live scheduling insights across campus facilities."
+  ],
+   "Achievements": [
+   "Reduced manual data preparation by 30% through fully automated ingestion and monitoring pipelines, improving resource allocation and schedule management accuracy by 15–20%.",
+   "Delivered 15+ live Tableau and Power BI dashboards — reducing reporting latency by 20% and improving overall operational efficiency by 15% through optimized dimensional data models."
+ ],
   "skills": [
     "Data Engineering",
     "SQL",
@@ -54,7 +54,7 @@
   ]
 },
 {
-"title": "Software Engineer - Big Data & AI/ML",
+"title": "Data Engineer – Big Data & Cloud Systems",
 "company": "Tata Consultancy Services",
 "logo": "TcsLogo",
 "type": "Full-time",
@@ -68,133 +68,156 @@
   "Country": "India"
 },
 "jobtype": "Onsite",
-"tasks": [
-
-  "Engineered real-time ETL and big data pipelines using Apache Spark (PySpark), Apache Airflow, and SQL to process 50M+ Vodacom network telemetry records daily, reducing incident analysis latency by ~30% and enabling scalable real-time network monitoring.",
-
-  "Designed and implemented enterprise data warehouse architecture with dimensional data models (star and snowflake schema) in PostgreSQL and Cassandra, improving analytical query performance by ~35% and enabling faster business intelligence reporting.",
-
-  "Built distributed data ingestion and transformation pipelines using Python, SQL, and REST APIs, improving data availability reliability by ~25% and enabling consistent downstream analytics and ML workflows across Vodacom datasets.",
-
-  "Performed large-scale Vodacom network analysis on bandwidth, signal strength, and usage telemetry using statistical analysis and machine learning, improving anomaly detection accuracy by ~20% and reducing operational incident resolution time.",
-
-  "Developed backend analytics services integrating SQL, PL/SQL, and distributed data storage systems, improving data retrieval performance by ~30% and enabling faster access to network operational analytics datasets.",
-
-  "Implemented Apache Airflow-based workflow orchestration and automated data pipeline scheduling, improving pipeline execution reliability by ~25% and reducing manual intervention in network analytics processing.",
-
-  "Built real-time BI dashboards and analytics interfaces using AngularJS integrated with data warehouse systems, enabling <5-second refresh latency and improving operational visibility across network performance metrics.",
-
-  "Developed LLM-enabled log analytics pipelines using LangChain, FAISS, and machine learning models, reducing Vodacom network diagnostic analysis time by ~40% and improving automated root cause analysis efficiency.",
-
-  "Developed Java-based database-driven analytics and NLP systems processing 10K+ monthly network support and operational records, improving automated issue classification accuracy by ~25% and reducing manual troubleshooting workload."
+"Overview":[
+"Served as Data Engineer at TCS within a 7+ engineer team, designing and deploying distributed PySpark pipelines and ETL/ELT workflows on Databricks Lakehouse processing 50M+ daily Vodacom network events across AWS and GCP.",
+" Built end-to-end data solutions spanning Medallion Architecture, Snowflake data modeling, cloud infrastructure provisioning, full-stack backend development, and AI/RAG-powered chatbot systems — reducing pipeline latency by 30% and enabling real-time telecom analytics at scale."],
+"Responsibilities": [
+  "Built distributed PySpark pipelines on Databricks Lakehouse using Medallion Architecture (Bronze/Silver/Gold), processing 50M+ daily Vodacom network events using Parquet/JSON formats, Delta Lake ACID transactions, fault-tolerant architecture, and schema evolution strategies — reducing pipeline latency by 30%.",
+  "Engineered 10+ Airflow, Azure Data Factory, SSIS, and dbt ETL/ELT pipelines on AWS S3 and GCP Data Lake, orchestrating cross-cloud data movement, standardizing telecom source feeds, and implementing CDC and SCD Type 1/2 patterns — improving pipeline reliability by 25%.",
+  "Designed and optimized 50+ Snowflake data models using star and snowflake schema designs with complex joins, window functions, REST API integrations, and query optimization across 50M+ daily records — ensuring full data lineage, governance auditability, and enabling cost-optimization and network-capacity planning.",
+  "Developed a Python Django backend with service-layer connectors integrating PL/SQL, MongoDB, Oracle SQL, and Redis, and built an Angular/React frontend into a unified service layer — enabling real-time telecom data extraction, issue resolution workflows, and personalized server management, improving response latency by 20%.",
+  "Provisioned and managed cloud infrastructure using Terraform and CloudFormation (IaC) across AWS (S3, EMR, Glue, Lambda, Redshift) and GCP (Dataflow, BigQuery), deploying and scaling 10+ containerized microservices via Docker and Kubernetes within a 7+ engineer team — improving scalability by 30%.",
+  "Integrated service logs into the ELK Stack (Logstash, Elasticsearch, Kibana) for centralized monitoring and real-time alerting; used Python, SQL, Tableau, and Power BI to analyze telecom data across network performance, bandwidth, and recharge workloads — improving reporting accuracy by 20% and reducing incident detection time by 25–30%."
 ],
-
+"Achievements": [
+  "Architected a self-driven AI chatbot integrated with Big Data pipelines and RAG-based systems using LangChain, LangGraph, and Vector Databases — enabling automated customer detail analysis and real-time query resolution on Vodacom telecom account and network data, reducing support load by 25%.",
+  "Followed full SDLC from requirements gathering and design through development, testing, release, and production maintenance — collaborating on user requirements and test plan validation within a 7+ engineer team, improving overall delivery reliability across Vodacom network workloads."
+],
 "skills": [
-  "Apache Spark (PySpark)",
-  "Apache Airflow",
-  "Data Warehousing",
-  "Dimensional Data Modeling",
-  "Cassandra",
-  "PostgreSQL",
   "Python",
-  "Java",
-  "SQL",
-  "PL/SQL",
+  "PySpark",
+  "Databricks Lakehouse",
+  "Delta Lake",
+  "Apache Airflow",
+  "dbt",
+  "Snowflake",
   "ETL/ELT Pipelines",
-  "Big Data Analytics",
-  "Machine Learning",
-  "LLMs",
+  "CDC",
+  "SCD Type 1/2",
+  "Dimensional Data Modeling",
+  "Django",
+  "MongoDB",
+  "AWS",
+  "GCP",
+  "Terraform",
+  "Docker",
+  "Kubernetes",
+  "ELK Stack",
+  "Tableau",
+  "Power BI",
   "LangChain",
-  "FAISS",
-  "REST APIs",
-  "Business Intelligence"
+  "RAG",
+  "Agentic AI"
 ]
 },
 {
-  "title": "Software Developer Intern - Big Data & Applied AI/ML",
+  "title": "Software Engineer Intern - Data Engineering & Big Data",
   "company": "Tata Consultancy Services",
   "logo": "TcsLogo",
   "type": "Internship",
   "Duration": {
     "Start_Date": "Feb 2022",
-    "End_Date": "June 2022"
+    "End_Date": "Jun 2022"
   },
   "Location": {
     "City": "Chennai",
     "State": "Tamil Nadu",
     "Country": "India"
   },
-  "jobtype": "Remote",
-  "tasks": [
-    "Developed a RASA-based conversational AI system using Python, NLP, and machine learning pipelines, reducing manual query resolution effort by 30% and improving automated response accuracy across enterprise conversational datasets.",
-
-    "Built scalable backend data pipelines integrating MySQL and MongoDB to store and process 100K+ chatbot interaction records, improving retrieval efficiency and enabling reliable analytics and conversational model training.",
-
-    "Implemented NLP-based intent classification and semantic analysis using NLTK and machine learning models, improving intent detection accuracy by 30% and enhancing conversational understanding and automated evaluation.",
-
-    "Designed and deployed RESTful backend APIs using Python microservices to enable real-time chatbot response retrieval and logging, reducing response latency and improving system responsiveness by 25%.",
-
-    "Deployed AI/ML conversational services on Kubernetes infrastructure, improving system scalability and availability by 35% and enabling reliable real-time processing of concurrent user interactions."
+  "jobtype": "Onsite",
+  "Overview": [
+    "Served as Software Engineer Intern at TCS, building an AI-powered subject knowledge assessment chatbot using RASA, LangChain, and LangGraph with Angular/React frontend and Python backend.",
+    "Designed and managed Data Lake architecture on AWS and GCP using Snowflake, dbt, and Airflow — achieving under 3 second analytics latency and under 50ms retrieval latency through MongoDB and Redis caching pipelines."
+  ],
+  "Responsibilities": [
+    "Built an AI-powered assessment chatbot using RASA, LangChain, and LangGraph with Angular/React frontend and Python backend — guiding users through topic selections, coding challenges, and tests with adaptive difficulty, error explanation, and personalized performance reports, improving automated query resolution by 30%.",
+    "Built real-time data pipelines using PySpark and AWS to process user interaction and assessment data, and designed a dynamic pass/fail evaluation engine using RAG and prompt engineering on Databricks Lakehouse — enabling low-latency analytics under 3 seconds with 25% improved feedback accuracy.",
+    "Designed and managed Data Lake architecture on AWS and GCP using Apache Spark, PySpark, Snowflake, dbt, and Airflow, orchestrating ETL/ELT workflows and Streaming & Batch Processing across assessment and user interaction datasets — ensuring data quality, schema enforcement, and under 50ms retrieval latency through MongoDB and Redis caching pipelines."
+  ],
+  "Achievements": [
+    "Built and deployed a fully functional AI assessment chatbot serving real users with adaptive difficulty, error explanation, and personalized performance reports — increasing user completion rates and improving automated feedback accuracy by 25%.",
+    "Architected a scalable Data Lake backend on AWS and GCP using Apache Spark and PySpark to extract subject-specific assessment datasets on demand — achieving under 50ms retrieval latency through MongoDB and Redis caching pipelines."
   ],
   "skills": [
     "Python",
-    "Big Data",
-    "Machine Learning",
-    "Natural Language Processing",
     "RASA",
-    "SQL",
+    "LangChain",
+    "LangGraph",
+    "RAG",
+    "Prompt Engineering",
+    "Agentic AI",
+    "Deep Learning",
+    "Predictive Modeling",
+    "PySpark",
+    "Apache Spark",
+    "Databricks Lakehouse",
+    "Apache Airflow",
+    "dbt",
+    "Snowflake",
+    "AWS",
+    "GCP",
     "MongoDB",
-    "MySQL",
-    "REST APIs",
-    "Kubernetes",
-    "Data Engineering",
-    "AI/ML"
+    "Redis",
+    "SQL",
+    "Angular",
+    "ReactJS",
+    "ETL/ELT Pipelines",
+    "Streaming & Batch Processing",
+    "Data Lake Architecture",
+    "Vector Databases"
   ]
 },
 {
-"title": "Software Engineer – Data & NLP Systems",
-"company": "TwoWaits Technologies",
-"logo": "TwoWaitsLogo",
-"type": "Full-time",
-"Duration": {
-  "Start_Date": "Jul 2020",
-  "End_Date": "Dec 2021"
-},
-"Location": {
-  "City": "Remote",
-  "State": "",
-  "Country": "India"
-},
-"jobtype": "Remote",
-"tasks": [
-
-  "Engineered scalable data ingestion and ETL pipelines using Python, MongoDB, and Redis supporting 2,000+ active learners, achieving <50ms retrieval latency and improving data access performance by ~40% across Android and web learning platforms.",
-
-  "Developed NLP-based classification and intent detection pipelines using Python and scikit-learn to analyze student queries, improving intent recognition accuracy by ~20% and reducing incorrect automated responses by ~25%.",
-
-  "Built backend analytics services and REST APIs processing learning activity from 40,000+ mobile app downloads across 150+ colleges, improving data availability reliability by ~30% and enabling scalable learner progress tracking.",
-
-  "Designed distributed backend data systems and validation workflows to store and retrieve structured and unstructured educational data, improving platform reliability by ~25% and ensuring consistent access across learning systems.",
-
-  "Implemented analytics pipelines and engagement monitoring workflows analyzing thousands of student interactions weekly, improving usage analytics accuracy by ~30% and enabling data-driven platform optimization.",
-
-  "Developed automated backend content retrieval and processing systems improving response efficiency by ~35%, reducing manual content management workload, and enabling scalable educational content delivery."
-],
-
-"skills": [
-  "Python",
-  "MongoDB",
-  "Redis",
-  "ETL Pipelines",
-  "Data Engineering",
-  "Natural Language Processing",
-  "Machine Learning",
-  "REST APIs",
-  "Data Analytics",
-  "Backend Engineering",
-  "Cloud Data Systems",
-  "Business Analytics"
-]
+  "title": "Software Engineer – Data Engineering & Backend Systems",
+  "company": "TwoWaits",
+  "logo": "TwoWaitsLogo",
+  "type": "Full-time",
+  "Duration": {
+    "Start_Date": "Jul 2020",
+    "End_Date": "Dec 2021"
+  },
+  "Location": {
+    "City": "Hyderabad",
+    "State": "Telangana",
+    "Country": "India"
+  },
+  "jobtype": "Onsite",
+  "Overview": [
+    "Served as Software Engineer at TwoWaits, architecting scalable Big Data and microservices infrastructure using Apache Spark, Kafka, Airflow, and Kubernetes on AWS — building 10+ ETL/ELT pipelines orchestrating answer submission, validation, scoring, and report generation.",
+    "Built an NLP-driven educational chatbot using RASA and intent classification serving 2,000+ users, and real-time data pipelines using PySpark, MongoDB, and Redis caching on AWS — enabling sub-50ms feedback latency and improving system reliability by 25%."
+  ],
+  "Responsibilities": [
+    "Architected scalable Big Data and microservices infrastructure using Apache Spark, Kafka, Airflow, and Kubernetes on AWS, building 10+ ETL/ELT pipelines orchestrating answer submission, validation, scoring, and report generation across Parquet/JSON/CSV sources with Snowflake and dbt — improving pipeline reliability by 25%.",
+    "Built 10+ backend data ingestion pipelines using Python, Django, and MongoDB across multiple data sources (Parquet, JSON/CSV), achieving sub-50ms data retrieval latency for high-volume user interaction and chatbot systems. Enabled real-time data streaming and API-driven integrations improving system reliability by 25%.",
+    "Built an NLP-driven educational chatbot using RASA and intent classification serving 2,000+ users, improving automated query resolution by 20% through structured conversational flows and real-time response handling — delivering adaptive difficulty levels, doubt answering, incorrect answer explanations, and personalized performance reports."
+  ],
+  "Achievements": [
+    "Built and deployed an NLP-driven educational chatbot serving 2,000+ users with adaptive difficulty, doubt answering, and personalized performance reports — improving automated query resolution by 20%.",
+    "Architected scalable Big Data and microservices infrastructure on AWS using Apache Spark, Kafka, and Kubernetes — improving pipeline reliability by 25% and enabling sub-50ms feedback latency across high-volume user interaction and assessment datasets."
+  ],
+  "skills": [
+    "Python",
+    "Django",
+    "RASA",
+    "NLP",
+    "RAG",
+    "Vector Databases",
+    "Deep Learning",
+    "Predictive Modeling",
+    "ETL/ELT Pipelines",
+    "Apache Spark",
+    "Apache Kafka",
+    "Apache Airflow",
+    "MongoDB",
+    "Redis",
+    "Snowflake",
+    "dbt",
+    "AWS",
+    "Kubernetes",
+    "Parquet",
+    "JSON/CSV",
+    "Data Lake Architecture"
+  ]
 }
   ],
   "educationList": [
@@ -360,43 +383,46 @@
       ]
     }
   },
-"summary_details":["Master’s graduate in Computer Science from the University of Missouri–Kansas City with hands-on industry experience building scalable big data and AI-driven systems. Experienced in processing large-scale datasets using distributed data pipelines and real-time streaming frameworks, while designing and deploying machine learning and deep learning models for production environments.",
+"summary_details":["Master's graduate in Computer Science from the University of Missouri–Kansas City with hands-on industry experience building scalable big data and AI-driven systems. Experienced in processing large-scale datasets using distributed data pipelines and real-time streaming frameworks, while designing and deploying machine learning and deep learning models for production environments.",
 "Skilled in developing LLM-powered applications including Retrieval-Augmented Generation (RAG), vector search integration, and conversational AI systems. Strong background in Python-based backend development (FastAPI, Django/DRF), cloud deployment on AWS, and containerized microservices using Docker with CI/CD integration.",
-"Focused on building reliable, scalable, and production-ready AI systems that combine big data engineering, machine learning, cloud-native architecture, and modern software engineering practices. "],
+"Focused on building reliable, scalable, and production-ready AI systems that combine big data engineering, machine learning, cloud-native architecture, and modern software engineering practices.",
+"Currently building an end-to-end AI platform combining Agentic AI, Retrieval-Augmented Generation (RAG), and multimodal data analysis with real-time and batch processing pipelines — engineered for scale on AWS. The system powers an ATS Resume Builder and an AI Code Reviewer that analyzes every line, bringing together big data engineering and intelligent automation in a single production-ready architecture."
+  ],
   "Professional_summary_exp": [
     {
       "title": "Experience & Technical Foundation",
       "lines": [
-"2+ years at TCS developing scalable data analytics and ML-driven solutions for telecom-scale datasets (50M+ events).",
-"5+ years of programming experience with strong expertise in Python, SQL, and system design principles.",
-"Experience across Data Engineering, Machine Learning, Deep Learning, LLM systems, and full-stack AI development."
+        "4+ years building large-scale data platforms across telecom, cloud, and academia with 5+ years of programming expertise in Python, SQL, and Scala.",
+"2+ years at TCS processing 50M+ daily Vodacom network events using Databricks Lakehouse and PySpark pipelines.",
+"Experience across Data Engineering, Machine Learning, Deep Learning, LLM systems, and full-stack AI development.",
+"Strong foundation in system design, distributed computing, data modeling, and production-ready software engineering principles."
           ]
     },
     {
       "title": "Data Engineering & Scalable Systems",
       "lines": [
-"Designed automated ETL/ELT pipelines and real-time streaming systems using Kafka and PySpark.",
-"Built distributed data processing workflows with partitioning, indexing, and performance tuning strategies.",
-"Implemented dimensional data modeling (Star/Snowflake schemas) and optimized large-scale analytical tables.",
-"Developed production APIs (FastAPI, Django/DRF) supporting scalable AI-driven applications"
+        "Built distributed PySpark pipelines on Databricks Lakehouse using Medallion Architecture (Bronze/Silver/Gold) with Delta Lake ACID transactions, reducing latency by 30%.",
+"Designed 20+ Airflow ETL/ELT pipelines on Snowflake and Databricks with automated ingestion, schema enforcement, CDC, and SCD Type 1/2 patterns.",
+"Optimized 50+ Snowflake data models using complex joins, window functions, and query optimization across 50M+ daily records on AWS S3 and GCP Data Lake.",
+"Built scalable data models using Spark, Airflow, and dbt enabling 15+ real-time Tableau dashboards, reducing reporting latency by 20%."
           ]
     },
     {
       "title": "Machine Learning, AI & LLM Systems",
       "lines": [
-"Designed and deployed end-to-end ML workflows including feature engineering, model evaluation, explainability (SHAP), and performance optimization.",
-"Built Retrieval-Augmented Generation (RAG) systems using LangChain and FAISS-based vector search.",
-"Applied prompt engineering, conversational AI (RASA), and LLM tool-calling workflows for intelligent systems.",
-"Developed recommendation systems and NLP pipelines for real-world analytics use cases."
+        "Architected RAG-based AI chatbots integrated with Big Data pipelines using LangChain, LangGraph, and FAISS vector search for real-time telecom query resolution.",
+        "Built AI-powered assessment and educational chatbots with RASA and intent classification serving 2,000+ users with adaptive difficulty and personalized performance reports.",
+        "Developed end-to-end ML workflows including feature engineering, model evaluation, explainability (SHAP), deep learning, and predictive modeling.",
+        "Built recommendation systems using collaborative filtering, NLP-based feature engineering, K-Means clustering, PCA, and Agentic AI workflows with prompt engineering."
           ]
     },
     {
       "title": "Cloud, MLOps & Full-Stack Architecture",
       "lines": [
-"Built containerized ML services using Docker with CI/CD pipelines (GitLab CI).",
-"Deployed AI systems on AWS (S3, QuickSight) with logging, monitoring, and cost-aware optimization.",
-"Architected full-stack AI applications integrating React frontends with backend ML/LLM services.",
-"Focused on production reliability, observability, scalability, and maintainability."
+        "Provisioned cloud infrastructure using Terraform and CloudFormation on AWS (S3, EMR, Glue, Lambda, Redshift) and GCP (Dataflow, BigQuery).",
+        "Deployed 10+ microservices with Docker and Kubernetes, built CI/CD pipelines with Jenkins and GitLab CI, monitored with ELK Stack reducing incident detection by 25–30%.",
+        "Developed full-stack applications with Python Django/FastAPI backend and Angular/React frontend integrating PostgreSQL, MongoDB, and Redis databases.",
+        "Built REST APIs supporting scalable AI-driven applications with logging, monitoring, cost optimization, and observability across AWS and GCP deployments."
       ]
     }
   ],

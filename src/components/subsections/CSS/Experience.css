@@ -1,15 +1,5 @@
 /* =========================================================
-   Experience.css (COMPLETE) — matches your CURRENT JSX exactly
-   Classes covered:
-   experience-flex, experience-mobile-content, experience-mobile-det, img-icon-sty,
-   experience-left, experience-logo-sty, icon-wrapper, experience-icon,
-   experience-right, ordered-item-list, ordered-list, ordered-item,
-   exp-card, exp-header, exp-logo-wrap, exp-logo,
-   exp-headtext, exp-title-row, exp-title, exp-jobtype, exp-company,
-   exp-meta, exp-location, exp-duration,
-   exp-desc, exp-section, exp-section-title, exp-tasks,
-   experience-screen-content, exp-skills, skill-badge,
-   horizsontalsty
+   Experience.css — Star bullet version
 ========================================================= */
 
 /* -------------------------
@@ -62,22 +52,23 @@ body {
   justify-content: center;
   height: 100%;
   margin: auto;
-  padding: 2rem;
+  padding: 0.75rem;
 }
 
 .experience-icon {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 16px;
   object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 18px rgba(2, 6, 23, 0.12);
+  border: 0.12rem solid rgba(15, 23, 42, 0.08);
 }
 
 /* -------------------------
    Mobile Header
 ------------------------- */
 .experience-mobile-content {
-  display: none; /* enabled in mobile/tablet breakpoints */
+  display: none;
   width: 100%;
   margin-bottom: 0.85rem;
 }
@@ -113,7 +104,7 @@ img.img-icon-sty {
 }
 
 /* -------------------------
-   Card (each experience)
+   Card
 ------------------------- */
 .exp-card {
   background: transparent;
@@ -121,9 +112,8 @@ img.img-icon-sty {
   padding: 1rem 1rem;
 }
 
-
 /* -------------------------
-   Header inside card
+   Header
 ------------------------- */
 .exp-header {
   display: flex;
@@ -161,12 +151,12 @@ img.img-icon-sty {
 
 .exp-title {
   margin: 0;
+  font-size: 1.05rem;
   font-weight: 900;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
   color: #0f172a;
   line-height: 1.2;
-  font-style: normal; /* prevent italic heading even if container is italic */
-  font-size: 1.25rem;
+  font-style: normal;
 }
 
 .exp-jobtype {
@@ -176,7 +166,8 @@ img.img-icon-sty {
 }
 
 .exp-company {
-  margin: 0.25rem 0 0.35rem 0;
+  margin: 0.2rem 0 0.25rem 0;
+  font-size: 0.98rem;
   font-weight: 700;
   color: #0f172a;
 }
@@ -192,6 +183,7 @@ img.img-icon-sty {
 .exp-location {
   flex: 1 1 auto;
   min-width: 0;
+  font-size: 0.92rem;
   font-weight: 700;
   color: #64748b;
   white-space: nowrap;
@@ -202,6 +194,7 @@ img.img-icon-sty {
 .exp-duration {
   flex: 0 0 auto;
   margin-left: auto;
+  font-size: 0.92rem;
   font-weight: 800;
   color: #334155;
   background: #f8fafc;
@@ -222,7 +215,7 @@ img.img-icon-sty {
 }
 
 /* -------------------------
-   Sections (Tasks/Skills)
+   Sections
 ------------------------- */
 .exp-section {
   margin-top: 0.9rem;
@@ -236,25 +229,39 @@ img.img-icon-sty {
   margin-bottom: 0.45rem;
 }
 
+/* -------------------------
+   Tasks — Star Bullets
+------------------------- */
 .exp-tasks {
+  list-style: none;
   margin: 0;
   margin-top: 0.35rem;
-  padding-left: 1.2rem;
+  padding-left: 0;
   color: #0f172a;
   line-height: 1.7;
-  font-style: normal;
+  font-style: italic;
+  font-size: 0.95rem;
 }
 
 .exp-tasks li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
   margin-bottom: 0.55rem;
-  list-style-type: disc;
+  font-style: italic;
 }
 
-.exp-tasks li::marker {
+.exp-star {
+  flex: 0 0 auto;
   color: #2563eb;
+  font-size: 0.75rem;
+  margin-top: 0.32rem;
+  line-height: 1;
 }
 
-/* Skills container (desktop/tablet only controlled via breakpoints below) */
+/* -------------------------
+   Skills
+------------------------- */
 .experience-screen-content {
   display: block;
 }
@@ -278,7 +285,9 @@ img.img-icon-sty {
   box-shadow: 0 10px 18px rgba(2, 6, 23, 0.08);
 }
 
-/* Divider under each list item */
+/* -------------------------
+   Divider
+------------------------- */
 .horizsontalsty {
   height: 0.2rem;
   border: none;
@@ -292,29 +301,22 @@ img.img-icon-sty {
 }
 
 /* =========================================================
-   RESPONSIVE BREAKPOINTS (kept same as your OLD CSS)
+   RESPONSIVE BREAKPOINTS
 ========================================================= */
 
-/* ✅ Mobile: <768px */
+/* Mobile: <768px */
 @media (max-width: 767px) {
-  body {
-    font-size: 11px;
-  }
+  body { font-size: 11px; }
 
   .experience-flex {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.55rem;
     padding: 1rem 0;
-    height: 100%;
     min-height: 300px;
-    font-style: italic;
   }
 
-  .experience-left {
-    display: none;
-  }
+  .experience-left { display: none; }
 
   .experience-right {
     flex: 2 0 100%;
@@ -328,9 +330,7 @@ img.img-icon-sty {
     font-size: 1.65rem;
   }
 
-  .experience-mobile-det {
-    justify-content: start;
-  }
+  .experience-mobile-det { justify-content: start; }
 
   .experience-mobile-det img.img-icon-sty {
     width: 2rem;
@@ -340,48 +340,38 @@ img.img-icon-sty {
     box-shadow: 0 10px 22px rgba(2, 6, 23, 0.12);
   }
 
-  .experience-screen-content {
-    display: none;
-  }
+  .experience-screen-content { display: none; }
 
-  /* stack meta area (location + duration) */
   .exp-meta {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
   }
 
-  .exp-duration {
-    margin-left: 0;
-  }
+  .exp-duration { margin-left: 0; }
 
-  .exp-logo {
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 0.25rem;
-  }
+  .exp-logo { width: 2.5rem; height: 2.5rem; padding: 0.25rem; }
+
+  .exp-title { font-size: 0.98rem; }
+  .exp-company { font-size: 0.9rem; }
+  .exp-location, .exp-duration { font-size: 0.85rem; }
+
+  .exp-tasks { font-size: 0.82rem; line-height: 1.6; }
 }
 
-/* ✅ Tab: 768px - 991px */
+/* Tab: 768px - 991px */
 @media (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 13px;
-  }
+  body { font-size: 13px; }
 
   .experience-flex {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
     padding: 1rem 0;
-    height: 100%;
     min-height: 300px;
-    font-style: italic;
   }
 
-  .experience-left {
-    display: none;
-  }
+  .experience-left { display: none; }
 
   .experience-right {
     flex: 2 0 100%;
@@ -395,9 +385,7 @@ img.img-icon-sty {
     font-size: 2.5rem;
   }
 
-  .experience-mobile-det {
-    justify-content: start;
-  }
+  .experience-mobile-det { justify-content: start; }
 
   .experience-mobile-det img.img-icon-sty {
     width: 3rem;
@@ -407,51 +395,35 @@ img.img-icon-sty {
     box-shadow: 0 10px 22px rgba(2, 6, 23, 0.12);
   }
 
-  .experience-screen-content {
-    display: none;
-  }
+  .experience-screen-content { display: none; }
 
-  /* stack meta area (location + duration) */
   .exp-meta {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
   }
 
-  .exp-duration {
-    margin-left: 0;
-  }
+  .exp-duration { margin-left: 0; }
 
-  .exp-logo {
-    width: 3.25rem;
-    height: 3.25rem;
-    padding: 0.3rem;
-  }
+  .exp-logo { width: 3.25rem; height: 3.25rem; padding: 0.3rem; }
+
+  .exp-tasks { font-size: 0.88rem; line-height: 1.65; }
 }
 
-/* ✅ Tablet: 992px - 1199px */
+/* Tablet: 992px - 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
-  body {
-    font-size: 15px;
-  }
+  body { font-size: 15px; }
 
-  .experience-screen-content {
-    display: block;
-  }
+  .experience-screen-content { display: block; }
 
   .experience-flex {
-    display: flex;
-    align-items: center;
     gap: 1.25rem;
     padding: 1.2rem 1.65rem;
-    height: 100%;
     min-height: 400px;
-    font-style: italic;
   }
 
   .experience-left {
     flex: 0 0 32.5%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -462,43 +434,29 @@ img.img-icon-sty {
     text-align: center;
   }
 
-  .experience-right {
-    flex: 0 0 67.5%;
-  }
+  .experience-right { flex: 0 0 67.5%; }
 
-  .experience-mobile-content {
-    display: none;
-  }
+  .experience-mobile-content { display: none; }
 
-  .exp-logo {
-    width: 4.15rem;
-    height: 4.15rem;
-  }
+  .exp-logo { width: 4.15rem; height: 4.15rem; }
+
+  .exp-tasks { font-size: 0.92rem; }
 }
 
-/* ✅ Desktop: 1200px and above */
+/* Desktop: 1200px+ */
 @media (min-width: 1200px) {
-  body {
-    font-size: 15px;
-  }
+  body { font-size: 15px; }
 
-  .experience-screen-content {
-    display: block;
-  }
+  .experience-screen-content { display: block; }
 
   .experience-flex {
-    display: flex;
-    align-items: center;
     gap: 1.5rem;
     padding: 1.5rem 2rem;
-    height: 100%;
     min-height: 400px;
-    font-style: italic;
   }
 
   .experience-left {
     flex: 0 0 25%;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -509,97 +467,14 @@ img.img-icon-sty {
     text-align: center;
   }
 
-  .experience-right {
-    flex: 0 0 75%;
-  }
+  .experience-right { flex: 0 0 75%; }
 
-  .experience-mobile-content {
-    display: none;
-  }
+  .experience-mobile-content { display: none; }
 
-  .exp-logo {
-    width: 5rem;
-    height: 5rem;
-  }
+  .exp-logo { width: 4.35rem; height: 4.35rem; }
+
+  .exp-tasks { font-size: 0.95rem; }
 }
-/* ===== Reduce Experience card heading sizes (override) ===== */
-
-/* Title */
-.exp-title{
-  font-size: 1.05rem;   /* was 1.25rem */
-  line-height: 1.15;
-  letter-spacing: 0.1px;
-}
-
-/* jobtype next to title */
-.exp-jobtype{
-  font-size: 0.95rem;   /* slightly smaller */
-}
-
-/* Company */
-.exp-company{
-  font-size: 0.98rem;
-  margin: 0.2rem 0 0.25rem 0;
-}
-
-/* Meta row */
-.exp-location,
-.exp-duration{
-  font-size: 0.92rem;
-}
-
-/* Mobile tune */
-@media (max-width: 767px){
-  .exp-title{ font-size: 0.98rem; }
-  .exp-company{ font-size: 0.9rem; }
-  .exp-location, .exp-duration{ font-size: 0.85rem; }
-}
-/* =====================================================
-   Tasks: Always italic + responsive font sizing
-===================================================== */
-
-/* Base (Desktop default) */
-.exp-tasks {
-  margin-top: 0.75rem;
-  padding-left: 1.25rem;
-  line-height: 1.7;
-  color: #0f172a;
-  font-style: italic;           /* ALWAYS italic */
-  font-size: 0.95rem;           /* desktop size */
-}
-
-.exp-tasks li {
-  margin-bottom: 0.55rem;
-  list-style-type: disc;
-  font-style: italic;           /* enforce italic */
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-  .exp-tasks {
-    font-size: 0.82rem;
-    line-height: 1.6;
-  }
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 991px) {
-  .exp-tasks {
-    font-size: 0.88rem;
-    line-height: 1.65;
-  }
-}
-
-/* Medium screens */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .exp-tasks {
-    font-size: 0.92rem;
-  }
-}
-
-/* Large Desktop */
-@media (min-width: 1200px) {
-  .exp-tasks {
-    font-size: 0.95rem;
-  }
+.exp-section-title--italic {
+  font-style: italic;
 }

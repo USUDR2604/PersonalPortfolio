@@ -3,7 +3,7 @@ import './Home.css';
 import ProfilePicture from '../Images/Logos/UdayDeepPic.png';
 import programIcon from '../Images/Logos/SubSectionLogo/Prog-icon.png';
 import { Tools, Mortarboard } from 'react-bootstrap-icons';
-
+import { useEffect } from "react";
 import Experience from '../subsections/Experience';
 import Education from '../subsections/Education';
 import Skill from '../subsections/Skill';
@@ -28,6 +28,10 @@ function Home() {
     CourseDetailBackgroundColor,
     ReferenceDetailbackgoundColor
   } = data;
+
+  useEffect(() => {
+     document.title = "Sai Uday R Portfolio"; // change text as needed
+   }, []);
 
   const scrollToSummary = () => {
     const section = document.querySelector(".SummarySectionSty");
@@ -61,13 +65,13 @@ function Home() {
                 </span>
               </h1>
               <h4 className="taglinesty">
-              <i>Data Engineer | AI/ML & LLM Engineer | Data Scientist | Python Software Engineer</i></h4>
+              <i>Data Engineer | Big Data & Operations Analyst | AI/ML & LLM Engineer | Python Software Engineer</i></h4>
 
               <p>
-  <Tools className="icon-inline" /> Build end-to-end solutions using Python, React, MongoDB, and AI/ML tools—covering data pipelines, backend APIs, and UI delivery.
+  <Tools className="icon-inline" /> Data Engineer with 4+ years of experience building large-scale data platforms across telecom, cloud, and academia — specialized in PySpark/Databricks pipelines, ETL/ELT orchestration with Airflow and dbt, and multi-cloud deployments on AWS and GCP.
 </p>
 <p>
-  <Mortarboard className="icon-inline" /> Master’s Graduate in Computer Science (UMKC) | Data Scientist & Analyst at Community Dream Foundation | Open to Full-Time Opportunities
+  <Mortarboard className="icon-inline" /> Master's Graduate in Computer Science (UMKC) | Proven impact reducing pipeline latency by 30% and enabling real-time analytics at scale | Open to Full-Time Opportunities
 </p>
 
               <button className='btn btn-secondary w-50' onClick={scrollToSummary}>
