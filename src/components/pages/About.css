@@ -1,3 +1,7 @@
+/* =========================================================
+   About.css
+========================================================= */
+
 .about-container {
   display: flex;
   flex-direction: row;
@@ -12,10 +16,10 @@
   flex: 0 0 30%;
   text-align: center;
   display: flex;
-  flex-direction: column; /* Important: stack vertically */
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 1rem; /* spacing between image and button */
+  gap: 1rem;
 }
 
 .about-img {
@@ -50,6 +54,11 @@
   margin-bottom: 1rem;
 }
 
+.about-right h3 {
+  margin-top: 1.5rem;
+  color: #0f172a;
+}
+
 .about-right h4 {
   margin-top: 1.5rem;
   color: #0f172a;
@@ -65,6 +74,174 @@
   line-height: 1.5;
 }
 
+/* =========================================================
+   Career Timeline
+========================================================= */
+
+.ct-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding: 1rem 0 2rem;
+}
+
+.ct-timeline-track {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-width: 820px;
+  height: 320px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ── Spine — sits at exactly 160px from top (center of 320px) ── */
+.ct-spine {
+  position: absolute;
+  top: 160px;
+  left: 1rem;
+  right: 1rem;
+  height: 2px;
+  background: rgba(136, 135, 128, 0.3);
+  border-radius: 2px;
+  z-index: 0;
+}
+
+/* ── Each node wrapper ── */
+.ct-node-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+  flex: 1;
+  /* total height = top card area + spine + bottom card area */
+  height: 320px;
+}
+
+/* ── TOP nodes: card at top, stem grows down to spine ── */
+.ct-top .ct-card {
+  position: absolute;
+  top: 0;
+}
+
+.ct-top .ct-stem {
+  position: absolute;
+  top: 110px;
+  height: 50px;
+}
+
+/* ── BOTTOM nodes: card at bottom, stem grows up from spine ── */
+.ct-bottom .ct-card {
+  position: absolute;
+  bottom: 0;
+}
+
+.ct-bottom .ct-stem {
+  position: absolute;
+  bottom: 110px;
+  height: 50px;
+}
+
+/* ── Dot — always pinned to spine (top: 160px - 7px = 153px) ── */
+.ct-dot {
+  position: absolute;
+  top: 153px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2.5px solid #f1f5f9;
+  box-shadow: 0 0 0 1.5px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease;
+  z-index: 2;
+}
+
+.ct-node-wrap:hover .ct-dot {
+  transform: scale(1.25);
+}
+
+/* ── Stem ── */
+.ct-stem {
+  width: 0;
+  border-left: 1.5px solid;
+  opacity: 0.45;
+  flex-shrink: 0;
+}
+
+/* ── Card ── */
+.ct-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 0.5px solid rgba(0,0,0,0.1);
+  background: #ffffff;
+  width: 150px;
+  min-height: 110px;
+  justify-content: center;
+  gap: 3px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-style: normal;
+  flex-shrink: 0;
+}
+
+.ct-node-wrap:hover .ct-card,
+.ct-card--active {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ── Card color borders ── */
+.node-teal   { border-color: rgba(29,158,117,0.4);  }
+.node-blue   { border-color: rgba(23,142,175,0.4);  }
+.node-amber  { border-color: rgba(186,117,23,0.4);  }
+.node-purple { border-color: rgba(83,58,183,0.4);   }
+
+.node-teal   .ct-company { color: #0F6E56; }
+.node-blue   .ct-company { color: #185FA5; }
+.node-amber  .ct-company { color: #854F0B; }
+.node-purple .ct-company { color: #3C3489; }
+
+/* ── Card typography ── */
+.ct-period {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: #64748b;
+  font-style: normal;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+
+.ct-company {
+  font-size: 0.82rem;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+.ct-title {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #0f172a;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+.ct-subtitle {
+  font-size: 0.68rem;
+  color: #64748b;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
@@ -78,4 +255,265 @@
   .about-right {
     width: 100%;
   }
+
+  /* Vertical timeline on mobile */
+  .ct-timeline-track {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1rem 1rem 2.5rem;
+    min-width: unset;
+    gap: 0;
+  }
+
+  .ct-spine {
+    top: 0;
+    bottom: 0;
+    left: 2.5rem;
+    right: unset;
+    width: 2px;
+    height: 100%;
+    transform: none;
+  }
+
+  .ct-node-wrap {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .ct-top .ct-card,
+  .ct-bottom .ct-card {
+    order: 3;
+    text-align: left;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 260px;
+    min-height: unset;
+  }
+
+  .ct-top .ct-stem,
+  .ct-bottom .ct-stem {
+    order: 2;
+    width: 20px;
+    height: 0;
+    border-left: none;
+    border-top: 1.5px solid;
+    flex-shrink: 0;
+  }
+
+  .ct-top .ct-dot,
+  .ct-bottom .ct-dot {
+    order: 1;
+    flex-shrink: 0;
+  }
+
+  .ct-node-wrap:hover .ct-card,
+  .ct-card--active {
+    transform: translateX(3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+}
+
+/* =========================================================
+   Left Side — Cards, Skills, Volunteer, Testimonials
+========================================================= */
+
+.about-left-card {
+  width: 100%;
+  background: #ffffff;
+  border: 0.5px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.about-left-inline {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.25rem 0;
+}
+
+.about-left-heading {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  margin: 0 0 0.35rem 0;
+  font-style: normal;
+}
+
+/* Open To */
+.about-open-badge {
+  display: inline-block;
+  background: #e1f5ee;
+  color: #0F6E56;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-style: normal;
+  width: fit-content;
+}
+
+.about-open-sub {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Location */
+.about-location-item {
+  font-size: 0.82rem;
+  color: #0f172a;
+  margin: 0;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Top Skills */
+.about-skills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+.about-skill-tag {
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-style: normal;
+  letter-spacing: 0.01em;
+}
+
+/* Volunteer */
+.about-vol-org {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #533AB7;
+  margin: 0;
+  font-style: normal;
+}
+
+.about-vol-role {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+  font-style: normal;
+}
+
+.about-vol-period {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+  font-style: italic;
+}
+
+.about-vol-desc {
+  font-size: 0.78rem;
+  color: #475569;
+  margin: 0.25rem 0 0;
+  line-height: 1.55;
+  font-style: italic;
+}
+
+/* Testimonials */
+.about-testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.about-testimonial-quote {
+  font-size: 0.8rem;
+  color: #334155;
+  font-style: italic;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.about-testimonial-name {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #0a66c2;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.about-testimonial-name:hover {
+  text-decoration: underline;
+}
+
+.about-testimonial-title {
+  font-size: 0.72rem;
+  color: #64748b;
+  margin: 0;
+  font-style: normal;
+}
+
+.about-testimonial-relation {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin: 0;
+  font-style: italic;
+}
+
+.about-testimonial-divider {
+  border: none;
+  border-top: 0.5px solid rgba(0,0,0,0.08);
+  margin: 0.6rem 0;
+}
+
+/* Resume Download Button */
+.about-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  font-style: normal;
+}
+
+.about-resume-btn:hover {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+/* Connect Links */
+.about-connect-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #0f172a;
+  text-decoration: none;
+  font-style: normal;
+  padding: 0.2rem 0;
+  transition: color 0.2s;
+}
+
+.about-connect-link:hover {
+  color: #0a66c2;
 }
