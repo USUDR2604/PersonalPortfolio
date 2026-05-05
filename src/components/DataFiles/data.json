@@ -531,15 +531,37 @@
       "color":"#007399"
     }
   ],
+  "Data_Engineering":[
+    {"name":"Hadoop","logo":"HadoopLogo"},
+    {"name":"Apache Hive","logo":"ApacheHiveLogo"},
+    {"name":"Data Warehousing","logo":"SkillLogo"},
+    {"name":"Data Modeling (Star/Snowflake)","logo":"SkillLogo"},
+    {"name": "Databricks Lakehouse", "logo": "SkillLogo"},
+    {"name": "Delta Lake", "logo": "SkillLogo"},
+    {"name": "Medallion Architecture", "logo": "SkillLogo"},
+    {"name": "Snowflake", "logo": "SkillLogo"},
+    {"name": "dbt", "logo": "SkillLogo"},
+    {"name": "Apache Flink", "logo": "SkillLogo"},
+    {"name": "Apache Beam", "logo": "SkillLogo"},
+    {"name": "CDC (Change Data Capture)", "logo": "SkillLogo"},
+    {"name": "SCD Types", "logo": "SkillLogo"},
+    {"name": "Data Lineage", "logo": "SkillLogo"},
+    {"name": "Data Governance", "logo": "SkillLogo"},
+    {"name": "SSIS", "logo": "SkillLogo"},
+    {"name": "Azure Data Factory", "logo": "SkillLogo"},
+    {"name":"Lakehouse Architecture","logo":"SkillLogo"},
+    {"name":"Workflow Orchestration (Airflow)","logo":"SkillLogo"},
+    {"name":"Distributed Systems","logo":"SkillLogo"},
+    {"name":"Batch & Streaming Processing","logo":"SkillLogo"},
+    {"name":"Partitioning & Indexing","logo":"SkillLogo"}
+  ],
+
   "ProgrammingSkills":[
     {"name":"Java","logo":"JavaLogo"},
-    {"name":"C++","logo":"CPPLogo"},
-    {"name":"C","logo":"CLogo"},
     {"name":"PL/SQL","logo":"PLSQLLogo"},
-    {"name":"OOP","logo":"OOPLogo"},
-    {"name":"ES6","logo":"ES6Logo"},
-    {"name":"System Design","logo":"SkillLogo"},
-    {"name":"Concurrency & Multithreading","logo":"SkillLogo"}
+    {"name":"Scala","logo":"SkillLogo"},
+    {"name":"Oracle SQL", "logo":"SkillLogo"},
+    {"name":"T-SQL / ANSI SQL", "logo":"SkillLogo"}
   ],
 
   "AI_ML_Systems":[
@@ -551,22 +573,16 @@
     {"name":"Hyperparameter Tuning","logo":"SkillLogo"},
     {"name":"Explainable AI (SHAP/LIME)","logo":"SkillLogo"},
     {"name":"A/B Testing","logo":"SkillLogo"},
-    {"name":"Time Series Analysis","logo":"SkillLogo"},
-    {"name":"Statistical Modeling","logo":"SkillLogo"}
+    {"name":"Statistical Modeling","logo":"SkillLogo"},
+    {"name":"LangChain", "logo":"SkillLogo"},
+    {"name":"LangGraph", "logo":"SkillLogo"},
+    {"name":"RAG","logo":"SkillLogo"},
+    {"name":"Agentic AI", "logo":"SkillLogo"},
+    {"name":"Vector Databases","logo":"SkillLogo"},
+    {"name":"Prompt Engineer", "logo":"SkillLogo"},
+    {"name":"Predictive Modeling", "logo":"SkillLogo"}
   ],
 
-  "Data_Streaming":[
-    {"name":"Hadoop","logo":"HadoopLogo"},
-    {"name":"Apache Hive","logo":"ApacheHiveLogo"},
-    {"name":"MapReduce","logo":"MapReduceLogo"},
-    {"name":"Data Warehousing","logo":"SkillLogo"},
-    {"name":"Data Modeling (Star/Snowflake)","logo":"SkillLogo"},
-    {"name":"Lakehouse Architecture","logo":"SkillLogo"},
-    {"name":"Workflow Orchestration (Airflow)","logo":"SkillLogo"},
-    {"name":"Distributed Systems","logo":"SkillLogo"},
-    {"name":"Batch & Streaming Processing","logo":"SkillLogo"},
-    {"name":"Partitioning & Indexing","logo":"SkillLogo"}
-  ],
 
   "Backend_Web_Frameworks": [
     {"name":"Django","logo":"DjangoLogo"},
@@ -575,8 +591,6 @@
     {"name":"REST APIs","logo":"RESTAPILogo"},
     {"name":"DRF","logo":"DRFLogo"},
     {"name":"FastAPI","logo":"SkillLogo"},
-    {"name":"Web Scraping","logo":"WebScrapeLogo"},
-    {"name":"Authentication & Authorization (JWT/OAuth)","logo":"SkillLogo"},
     {"name":"Microservices Architecture","logo":"SkillLogo"}
   ],
 
@@ -584,9 +598,7 @@
     {"name":"AngularJS","logo":"AngularLogo"},
     {"name":"HTML","logo":"HTMLLogo"},
     {"name":"CSS","logo":"CSSLogo"},
-    {"name":"JavaScript","logo":"JSLogo"},
-    {"name":"Bootstrap","logo":"BootstrapLogo"},
-    {"name":"jQuery","logo":"JqueryLogo"}
+    {"name":"JavaScript","logo":"JSLogo"}
   ],
 
   "Monitoring_Databases": [
@@ -595,8 +607,13 @@
     {"name":"Kibana","logo":"KibanaLogo"},
     {"name":"Logstash","logo":"LogstashLogo"},
     {"name":"Data Quality Validation","logo":"SkillLogo"},
-    {"name":"Model Monitoring","logo":"SkillLogo"},
-    {"name":"Drift Detection","logo":"SkillLogo"}
+    {"name": "PostgreSQL", "logo": "SkillLogo"},
+{"name": "MySQL", "logo": "SkillLogo"},
+{"name": "Parquet", "logo": "SkillLogo"},
+{"name": "Avro", "logo": "SkillLogo"},
+{"name": "ORC", "logo": "SkillLogo"},
+{"name": "ELK Stack", "logo": "SkillLogo"},
+{"name": "Elasticsearch", "logo": "SkillLogo"}
   ],
 
   "BI_Analytics": [
@@ -609,26 +626,23 @@
     {"name":"Matplotlib / Seaborn","logo":"SkillLogo"}
   ],
 
-  "Cloud_Devops":[
-    {"name":"Azure","logo":"AzureLogo"},
-    {"name":"Amazon S3","logo":"AmazonS3Logo"},
-    {"name":"Kubernetes","logo":"KubernetesLogo"},
-    {"name":"CI/CD","logo":"CICDLogo"},
-    {"name":"Git","logo":"GitLogo"},
-    {"name":"GitLab","logo":"GitlabLogo"},
-    {"name":"OpenShift","logo":"OpenShiftLogo"},
-    {"name":"Infrastructure as Code (Terraform)","logo":"SkillLogo"},
-    {"name":"MLOps","logo":"SkillLogo"},
-    {"name":"Model Deployment","logo":"SkillLogo"},
-    {"name":"Inference Pipelines","logo":"SkillLogo"}
-  ],
-
-  "RemainingSkills": [
-    {"name":"Event-Driven Architecture","logo":"SkillLogo"},
-    {"name":"Load Balancing","logo":"SkillLogo"},
-    {"name":"Caching Strategies","logo":"SkillLogo"},
-    {"name":"Cryptography","logo":"CryptoLogo"},
-    {"name":"Cyber Security","logo":"CybersecurityLogo"}
+  "Cloud_Devops": [
+    {"name": "AWS", "logo": "AWSLogo"},
+    {"name": "GCP (Dataflow, BigQuery)", "logo": "SkillLogo"},
+    {"name": "Azure", "logo": "AzureLogo"},
+    {"name": "Amazon S3", "logo": "AmazonS3Logo"},
+    {"name": "Kubernetes", "logo": "KubernetesLogo"},
+    {"name": "Docker", "logo": "DockerLogo"},
+    {"name": "Terraform", "logo": "SkillLogo"},
+    {"name": "CloudFormation", "logo": "SkillLogo"},
+    {"name": "CI/CD", "logo": "CICDLogo"},
+    {"name": "Jenkins", "logo": "SkillLogo"},
+    {"name": "Git", "logo": "GitLogo"},
+    {"name": "GitHub", "logo": "SkillLogo"},
+    {"name": "ELK Stack", "logo": "SkillLogo"},
+    {"name": "Kibana", "logo": "KibanaLogo"},
+    {"name": "Logstash", "logo": "LogstashLogo"},
+    {"name": "Elasticsearch", "logo": "SkillLogo"}
   ],
 
   "SoftSkills": [

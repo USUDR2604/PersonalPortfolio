@@ -21,7 +21,8 @@ const Skill = () => {
     keySkills = [],
     ProgrammingSkills = [],
     AI_ML_Systems = [],
-    Data_Streaming = [],
+    Cloud_Devops = [],
+    Data_Engineering = [],
     Backend_Web_Frameworks = [],
     Front_End_UI = [],
     Monitoring_Databases = [],
@@ -107,13 +108,14 @@ const Skill = () => {
 
 
           {/* 🔹 Skill Tag Sections */}
+          <SkillTagging title="Data Engineering" items={Data_Engineering} className="skills-section--programming" />
+          <SkillTagging title="Cloud Devops & Infrastructure" items={Cloud_Devops} className="skills-section--programming" />
           <SkillTagging title="Programming Skills" items={ProgrammingSkills} className="skills-section--programming" />
           <SkillTagging title="AI & Machine Learning Systems" items={AI_ML_Systems} className="skills-section--programming" />
-          <SkillTagging title="Data Streaming Tools" items={Data_Streaming} className="skills-section--programming" />
+          <SkillTagging title="Databases & Storage" items={Monitoring_Databases} className="skills-section--programming" />
+          <SkillTagging title="BI & Analytics" items={BI_Analytics} className="skills-section--programming" />
           <SkillTagging title="Backend & Web Frameworks" items={Backend_Web_Frameworks} className="skills-section--programming" />
           <SkillTagging title="Frontend & UI" items={Front_End_UI} className="skills-section--programming" />
-          <SkillTagging title="Database Monitoring" items={Monitoring_Databases} className="skills-section--programming" />
-          <SkillTagging title="BI & Analytics" items={BI_Analytics} className="skills-section--programming" />
 
           {/* 🔹 Soft Skills */}
           <SkillTagging title="Soft Skills" items={SoftSkills} className="skills-section--soft" />
