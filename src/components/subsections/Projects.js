@@ -2,142 +2,153 @@ import React from "react";
 import "./CSS/Projects.css";
 import data from "../DataFiles/data.json";
 import ProjectIcon from "../Images/Logos/SubSectionLogo/ProjectDetailLogo.jpg";
-import logoMap from "./logoMap"; // Maps logo keys to image imports
+import logoMap from "./logoMap";
 import PersonIcon from "../Images/Logos/SubSectionLogo/PersonIcon.jpg";
 
 const Projects = () => {
-  const { ProjectDetails, ProjectSectionBackgroundColor } = data;
+  const { ProjectDetails } = data;
 
   return (
-    <div className="project-flex" style={{ backgroundColor: ProjectSectionBackgroundColor }}>
-      {/* ✅ Mobile Title View */}
+    <div className="project-flex">
+
+      {/* Mobile Header */}
       <div className="project-mobile-content">
         <div className="project-mobile-det">
           <img src={ProjectIcon} alt="Project Icon" className="img-icon-sty" />
-          &nbsp;<span>Project Details</span>
+          <span>Project Details</span>
         </div>
       </div>
 
-      {/* ✅ Left Side Icon and Title */}
-      <div className="project-left">
+      {/* Desktop/Tablet Left Icon */}
+      <aside className="project-left">
         <div className="project-logo-sty">
-          <div className="proj-icon-wrapper">
+          <div className="icon-wrapper">
             <img src={ProjectIcon} alt="Project Icon" className="project-icon" />
           </div>
-          <h4>Project Details</h4>
+          <h4 className="project-left-title">Project Details</h4>
         </div>
-      </div>
+      </aside>
 
-      {/* ✅ Right Side Content */}
-      <div className="project-right">
+      {/* Right Side */}
+      <main className="project-right">
         <div className="ordered-item-list">
           <ul className="ordered-list">
             {ProjectDetails.filter((proj) => proj.is_published === "True").map((proj, index) => (
               <li className="ordered-item" key={index}>
-                <div className="project-detail-sty">
-                  {/* 🔷 Project Title */}
-                  <h3 className="proj-title-sty text-bold">{proj.name}</h3>
+                <article className="proj-card">
 
-                  {/* 🔷 Associated Organization */}
-                  {proj.associated_with && proj.Associated_Comp_Logo && (
-                    <div className="proj-associate">
+                  {/* Header */}
+                  <header className="proj-header">
+                    <div className="proj-logo-wrap">
                       <img
                         src={logoMap[proj.Associated_Comp_Logo]}
                         alt="Associated Logo"
-                        className="proj-associ-logo"
+                        className="proj-logo"
                       />
-                      <span>Associated with {proj.associated_with}</span>
                     </div>
-                  )}
+                    <div className="proj-headtext">
 
-                  {/* 🔷 Location and Duration */}
-                  <div className="proj-locdur-sty">
-                    <div className="proj-loc-sty">
-                      {proj.Location.City}, {proj.Location.State_SF}, {proj.Location.Country_SF}
-                    </div>
-                    <div className="proj-dur-sty">
-                      {proj.Duration.Start_Date} –{" "}
-                      {proj.Duration.is_present === "True" ? "Present" : proj.Duration.End_Date}
-                    </div>
-                  </div>
+                      {/* Title */}
+                      <h3 className="proj-title">{proj.name}</h3>
 
-                  {/* 🔷 Project URL */}
-                  {proj.proj_url?.trim() && (
-                    <div className="proj-url-sty">
-                      <div className="proj-url-block">
-                        <span className="proj-url-label">🔗 Project URL:</span>
-                        <a href={proj.proj_url} target="_blank" rel="noopener noreferrer">
-                          {proj.proj_url}
-                        </a>
+                      {/* Associated With */}
+                      {proj.associated_with && (
+                        <div className="proj-associate">
+                          <span>Associated with {proj.associated_with}</span>
+                        </div>
+                      )}
+
+                      {/* Meta — location left, duration right */}
+                      <div className="proj-meta">
+                        <span className="proj-location">
+                          {proj.Location.City}, {proj.Location.State_SF}, {proj.Location.Country_SF}
+                        </span>
+                        <span className="proj-duration">
+                          {proj.Duration.Start_Date} –{" "}
+                          {proj.Duration.is_present === "True" ? "Present" : proj.Duration.End_Date}
+                        </span>
                       </div>
+
                     </div>
+                  </header>
+
+                  {/* Description */}
+                  {proj.project_description && (
+                    <section className="proj-section">
+                      <p className="proj-desc">{proj.project_description}</p>
+                    </section>
                   )}
 
-                  {/* 🔷 Contributors */}
+                  {/* Tasks */}
+                  {proj.project_tasks && proj.project_tasks.length > 0 && (
+                    <section className="proj-section">
+                      <div className="proj-section-title proj-section-title--italic">Tasks & Responsibilities</div>
+                      <ul className="proj-tasks">
+                        {proj.project_tasks.map((task, i) => (
+                          <li key={i}>
+                            <span className="proj-star" aria-hidden="true">★</span>
+                            {task}
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  )}
+
+                  {/* Contributors */}
                   {proj.project_contrib_mem > 0 && proj.projects_contributors?.length > 0 && (
-                    <div className="proj-contrib-inline">
-                      <span className="proj-contrib-label">👥 Contributors:</span>
+                    <section className="proj-section">
+                      <div className="proj-section-title proj-section-title--italic">Contributors</div>
                       <div className="proj-contrib-list">
                         {proj.projects_contributors.map((name, i) => (
                           <span key={i} className="contrib-badge">
-                            <img
-                              src={PersonIcon}
-                              className="person-logo-icon"
-                              alt="person-icon"
-                            />
+                            <img src={PersonIcon} className="person-logo-icon" alt="person" />
                             {name}
                           </span>
                         ))}
                       </div>
-                    </div>
+                    </section>
                   )}
 
-                  {/* 🔷 Description */}
-                  <div className="proj-description font-italic">
-                    <b>Description: </b>{proj.project_description}
-                  </div>
-
-                  {/* 🔷 Tasks, Skills (Shown only on large screen) */}
-                  <div className="project-screen-content">
-                    {proj.project_tasks?.length > 0 && (
-                      <div className="proj-task-sty">
-                        <div className="text-italic"><b>Tasks and Responsibilities:</b></div>
-                        <ul className="proj-tasks">
-                          {proj.project_tasks.map((task, i) => (
-                            <li key={i}>{task}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-
-                    {proj.skills_used?.length > 0 && (
-                      <div className="proj-skills">
-                        <span className="skill-headsty">Skills:</span>
-                        <div className="skill-badge-container">
-                          {proj.skills_used.map((skill, i) => (
-                            <span key={i} className="skill-badge">{skill}</span>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* 🔷 Tags */}
-                  {proj.tags?.length > 0 && (
-                    <div className="proj-tag-content">
-                      <span className="text-bold">Tags:</span>
-                      {proj.tags.map((tag, i) => (
-                        <span key={i} className="proj-tag-badge">#{tag}</span>
-                      ))}
-                    </div>
+                  {/* Project URL */}
+                  {proj.proj_url?.trim() && (
+                    <section className="proj-section">
+                      <div className="proj-section-title proj-section-title--italic">Project URL</div>
+                      <a href={proj.proj_url} target="_blank" rel="noopener noreferrer" className="proj-url">
+                        {proj.proj_url}
+                      </a>
+                    </section>
                   )}
-                </div>
+
+                  {/* Skills */}
+                  {proj.skills_used && proj.skills_used.length > 0 && (
+                    <section className="proj-section project-screen-content">
+                      <div className="proj-section-title proj-section-title--italic">Skills Used</div>
+                      <div className="proj-badges">
+                        {proj.skills_used.map((skill, i) => (
+                          <span key={i} className="skill-badge">{skill}</span>
+                        ))}
+                      </div>
+                    </section>
+                  )}
+
+                  {/* Tags */}
+                  {proj.tags && proj.tags.length > 0 && (
+                    <section className="proj-section">
+                      <div className="proj-tags">
+                        {proj.tags.map((tag, i) => (
+                          <span key={i} className="proj-tag-badge">#{tag}</span>
+                        ))}
+                      </div>
+                    </section>
+                  )}
+
+                </article>
                 <hr className="horizsontalsty" />
               </li>
             ))}
           </ul>
         </div>
-      </div>
+      </main>
     </div>
   );
 };
