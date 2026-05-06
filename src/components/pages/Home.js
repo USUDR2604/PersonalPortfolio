@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import ProfilePicture from '../Images/Logos/UdayDeepPic.png';
+import ProfilePicture from '../Images/Logos/USUDReddy_Pic.png';
 import programIcon from '../Images/Logos/SubSectionLogo/Prog-icon.png';
 import { Tools, Mortarboard } from 'react-bootstrap-icons';
 import { useEffect } from "react";
@@ -12,7 +12,7 @@ import LicenseCertifys from '../subsections/LicenseCertify';
 import Volunteer from "../subsections/Volunteer.js";
 import CourseDetails from "../subsections/CourseDetail.js";
 import References from "../subsections/ReferenceDetail.js";
-import ProfessionalSummary from "../subsections/ProfessionalSummary.js"
+import ProfessionalSummary from "../subsections/ProfessionalSummary.js";
 import Footer from './Footer';
 import data from '../DataFiles/data.json';
 
@@ -30,8 +30,8 @@ function Home() {
   } = data;
 
   useEffect(() => {
-     document.title = "Sai Uday R Portfolio"; // change text as needed
-   }, []);
+    document.title = "Sai Uday R Portfolio";
+  }, []);
 
   const scrollToSummary = () => {
     const section = document.querySelector(".SummarySectionSty");
@@ -42,99 +42,99 @@ function Home() {
 
   return (
     <>
+      {/* ── Hero Section ── */}
       <div className="home-section">
-        <div className="left">
+
+        {/* Left — Profile Photo */}
+        <div className="home-left">
           <div className="image-wrapper">
-            <img src={ProfilePicture} alt="Profile" className="profile-img" />
+            <img src={ProfilePicture} alt="Sai Uday R Udumula" className="profile-img" />
           </div>
         </div>
-        <div className="right mobile-content">
+
+        {/* Right — Content */}
+        <div className="home-right">
           <div className="text-content">
-            <div className='IconSty'>
+
+            {/* Icon */}
+            <div className="IconSty">
               <img src={programIcon} alt="Logo" className="profile-log-img" />
             </div>
-            <div className="ProfileContentSty">
-              <h1>
-                <span className="hello">Hello <span className="handwave">👋</span>,</span>
-                <br />
-                <span className="im-text">I'm</span>{' '}
-                <span className="name-animated">
-                  <span className="word delay-1">Sai</span>{' '}
-                  <span className="word delay-2">Uday R</span>{' '}
-                  <span className="word delay-3">Udumula</span>
-                </span>
-              </h1>
-              <h4 className="taglinesty">
-              <i>Data Engineer | Big Data & Operations Analyst | AI/ML & LLM Engineer | Python Software Engineer</i></h4>
 
-              <p>
-  <Tools className="icon-inline" /> Data Engineer with 4+ years of experience building large-scale data platforms across telecom, cloud, and academia — specialized in PySpark/Databricks pipelines, ETL/ELT orchestration with Airflow and dbt, and multi-cloud deployments on AWS and GCP.
-</p>
-<p>
-  <Mortarboard className="icon-inline" /> Master's Graduate in Computer Science (UMKC) | Proven impact reducing pipeline latency by 30% and enabling real-time analytics at scale | Open to Full-Time Opportunities
-</p>
+            {/* Greeting + Name */}
+            <h1>
+              <span className="hello">Hello <span className="handwave">👋</span>,</span>
+              <br />
+              <span className="im-text">I'm </span>
+              <span className="name-animated">
+                <span className="word delay-1">Sai</span>{' '}
+                <span className="word delay-2">Uday R</span>{' '}
+                <span className="word delay-3">Udumula</span>
+              </span>
+            </h1>
 
-              <button className='btn btn-secondary w-50' onClick={scrollToSummary}>
-                Read More
-              </button>
-            </div>
+            {/* Tagline */}
+            <h4 className="taglinesty">
+              <i>Data Engineer | Big Data &amp; Operations Analyst | AI/ML &amp; LLM Engineer | Python Software Engineer</i>
+            </h4>
+
+            {/* Description */}
+            <p>
+              <Tools className="icon-inline" />{' '}
+              Data Engineer with 4+ years of experience building large-scale data platforms across telecom, cloud, and academia — specialized in PySpark/Databricks pipelines, ETL/ELT orchestration with Airflow and dbt, and multi-cloud deployments on AWS and GCP.
+            </p>
+            <p>
+              <Mortarboard className="icon-inline" />{' '}
+              Master's Graduate in Computer Science (UMKC) | Proven impact reducing pipeline latency by 30% and enabling real-time analytics at scale | Open to Full-Time Opportunities
+            </p>
+
+            {/* CTA Button */}
+            <button className="btn btn-secondary read-more-btn" onClick={scrollToSummary}>
+              Read More
+            </button>
+
           </div>
         </div>
       </div>
 
+      {/* ── Sections ── */}
       <section className="SummarySectionSty" style={{ backgroundColor: SummarySectionBackgroundColor }}>
-        <div className="container">
-          <ProfessionalSummary />
-        </div>
+        <div className="container"><ProfessionalSummary /></div>
       </section>
 
       <section className="WorkExperienceSectionSty" style={{ backgroundColor: ExperienceSectionBackgroundColor }}>
-        <div className="container">
-          <Experience />
-        </div>
+        <div className="container"><Experience /></div>
       </section>
 
       <section className="EducationSectionSty" style={{ backgroundColor: EducationSectionBackgroundColor }}>
-        <div className="container">
-          <Education />
-        </div>
+        <div className="container"><Education /></div>
       </section>
 
       <section className="SkillSectionSty" style={{ backgroundColor: SkillSectionBackgroundColor }}>
-        <div className="container">
-          <Skill />
-        </div>
+        <div className="container"><Skill /></div>
       </section>
 
       <section className="ProjectSectionSty" style={{ backgroundColor: ProjectSectionBackgroundColor }}>
-        <div className="container">
-          <Projects />
-        </div>
+        <div className="container"><Projects /></div>
       </section>
 
       <section className="LicenseCertificationSectionSty" style={{ backgroundColor: LicenseCertificationBGColor }}>
-        <div className="container">
-          <LicenseCertifys />
-        </div>
+        <div className="container"><LicenseCertifys /></div>
       </section>
 
       <section className="VolunteerSectionSty" style={{ backgroundColor: VolunteerContentbackground }}>
-        <div className="container">
-          <Volunteer />
-        </div>
+        <div className="container"><Volunteer /></div>
       </section>
 
-      <section className="CourseSectionSty" style={{ backgroundColor: CourseDetailBackgroundColor}}>
-       <div className="container">
-         <CourseDetails />
-       </div>
+      <section className="CourseSectionSty" style={{ backgroundColor: CourseDetailBackgroundColor }}>
+        <div className="container"><CourseDetails /></div>
       </section>
-          <section className ="ReferenceSectionSty" style = {{backgroundColor : ReferenceDetailbackgoundColor}}>
-          <div className = "container">
-          <References/>
-          </div>
+
+      <section className="ReferenceSectionSty" style={{ backgroundColor: ReferenceDetailbackgoundColor }}>
+        <div className="container"><References /></div>
       </section>
-      <Footer/>
+
+      <Footer />
     </>
   );
 }
