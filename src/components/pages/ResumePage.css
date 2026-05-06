@@ -1,0 +1,49 @@
+/* ResumePage.css */
+.resume-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f1f5f9;
+}
+
+.resume-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.resume-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.resume-download-btn {
+  background: #1D9E75;
+  color: #ffffff;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.resume-download-btn:hover {
+  background: #0F6E56;
+  color: #ffffff;
+}
+
+.resume-viewer {
+  flex: 1;
+  overflow: hidden;
+}
+
+.resume-viewer iframe {
+  border: none;
+  display: block;
+}

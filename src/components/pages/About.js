@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './About.css';
 import ProfileImage from '../Images/Logos/SubSectionLogo/UdayPic.png';
 import { Linkedin, Github, GeoAltFill, Download, EnvelopeFill } from 'react-bootstrap-icons';
-
+import Footer from './Footer';
 const timelineData = [
   { id: 1, period: "2020 – 2021", company: "TwoWaits", title: "Software Engineer", subtitle: "Data Eng & Backend Systems", position: "top", color: "#1D9E75", colorClass: "node-teal" },
   { id: 2, period: "Feb – Jun 2022", company: "TCS — Intern", title: "Software Eng Intern", subtitle: "Data Eng & Big Data", position: "bottom", color: "#178EAF", colorClass: "node-blue" },
@@ -38,6 +38,7 @@ const AboutMe = () => {
   const [active, setActive] = useState(null);
 
   return (
+    <>
     <div className="about-container">
 
       {/* ══════════════════════════════
@@ -246,9 +247,12 @@ const AboutMe = () => {
           <li>Lead innovation in Data Engineering and LLM-powered intelligent systems with global accessibility and enterprise impact.</li>
         </ul>
 
-      </div>
-    </div>
-  );
-};
+        </div>
+       </div>
+       <Footer />
+       </>
+     );
+   };
+
 
 export default AboutMe;

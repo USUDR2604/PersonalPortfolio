@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { HouseDoorFill, PersonLinesFill, EnvelopeFill, PersonCircle } from 'react-bootstrap-icons';
+import { HouseDoorFill, PersonLinesFill, EnvelopeFill, PersonCircle, FileEarmarkPerson, FileEarmarkText, FileText, FilePdf } from 'react-bootstrap-icons';
 
 function PortfolioNavbar() {
   return (
@@ -15,11 +15,14 @@ function PortfolioNavbar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="portfolio-navbar" />
         <Navbar.Collapse id="portfolio-navbar">
-          <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/"><HouseDoorFill /> Home</Nav.Link>
-            <Nav.Link as={Link} to="/about"><PersonLinesFill /> About Me</Nav.Link>
-            <Nav.Link as={Link} to="/contact"><EnvelopeFill /> Contact Us</Nav.Link>
-          </Nav>
+        <Nav className="ms-auto">
+<Nav.Link as={Link} to="/"><HouseDoorFill /> Home</Nav.Link>
+<Nav.Link as={Link} to="/about"><PersonLinesFill /> About Me</Nav.Link>
+<Nav.Link as={Link} to="/resume">
+  <FileEarmarkPerson /> Resume
+</Nav.Link>
+<Nav.Link as={Link} to="/contact"><EnvelopeFill /> Contact Us</Nav.Link>
+</Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

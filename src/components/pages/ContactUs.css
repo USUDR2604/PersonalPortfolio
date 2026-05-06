@@ -1,88 +1,308 @@
-/* Root container spacing */
-.container {
-  max-width: 1140px;
+/* =========================================================
+   ContactUs.css
+========================================================= */
+
+.cu-wrapper {
+  background: #f1f5f9;
+  padding: 3rem 1.5rem;
+  min-height: 100vh;
+  font-style: normal;
 }
 
-/* Developer info box on the left */
-.contactUsLeft {
-  background-color: #1e293b;
-  color: #ffffff;
-  border-radius: 1rem;
-}
-.contactUsLeft{height:auto;
-min-height: 60vh;
-background-color: #6c757d;}
-.contactUsLeft h4 {
-  font-weight: bold;
-  color: #fff;
+.cu-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
 }
 
-.contactUsLeft ul {
-  padding-left: 1rem;
+/* ── LEFT PANEL ── */
+.cu-left {
+  flex: 0 0 340px;
+  background: #0f172a;
+  border-radius: 16px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #cbd5e1;
 }
 
-.contactUsLeft ul li {
-  font-size: 0.95rem;
-  line-height: 1.5;
+.cu-left-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0;
+  font-style: normal;
 }
 
-/* Icon spacing inside list items */
-.contactUsLeft i {
+.cu-left-desc {
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Offer items */
+.cu-offers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.cu-offer-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.cu-offer-icon {
+  flex-shrink: 0;
+  margin-top: 3px;
   font-size: 1rem;
-  width: 1.5rem;
 }
 
-/* Heading in form */
-.contactUsRight h3 {
-  font-weight: bold;
-  color: #0f172a;
+.cu-icon-blue  { color: #378ADD; }
+.cu-icon-green { color: #1D9E75; }
+.cu-icon-amber { color: #EF9F27; }
+.cu-icon-teal  { color: #178EAF; }
+
+.cu-offer-item strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  font-style: normal;
+  margin-bottom: 2px;
 }
 
-/* Contact icon (avatar) */
-.contactUsRight img {
-  width: 4rem;
-  height: 4rem;
-  object-fit: cover;
+.cu-offer-item p {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Contact info */
+.cu-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 0.5px solid rgba(255,255,255,0.06);
+}
+
+.cu-contact-info p,
+.cu-contact-info a {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-style: normal;
+  transition: color 0.2s;
+}
+
+.cu-contact-info a:hover {
+  color: #1D9E75;
+}
+
+/* ── RIGHT PANEL ── */
+.cu-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cu-form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.cu-icon-img {
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(0,0,0,0.08);
 }
 
-/* Character counter */
-.form-text {
+.cu-form-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  font-style: normal;
+}
+
+.cu-form-sub {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin: 0;
+  font-style: italic;
+}
+
+/* ── Form ── */
+.cu-form {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 0.5px solid rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.cu-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.cu-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.cu-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #334155;
+  font-style: normal;
+}
+
+.cu-optional {
+  font-weight: 400;
+  color: #94a3b8;
   font-size: 0.75rem;
-  color: #6c757d;
 }
 
-/* Error state (provided by Bootstrap classes) remains untouched */
+.cu-input {
+  padding: 0.55rem 0.85rem;
+  border: 0.5px solid rgba(0,0,0,0.15);
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: #0f172a;
+  background: #f8fafc;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-style: normal;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-/* Form field adjustments */
-input[type="text"],
-input[type="email"],
-textarea {
-  font-size: 0.95rem;
+.cu-input:focus {
+  border-color: #178EAF;
+  box-shadow: 0 0 0 3px rgba(23,142,175,0.1);
+  background: #ffffff;
+}
+
+.cu-input--error {
+  border-color: #E24B4A;
+}
+
+.cu-textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.cu-error {
+  font-size: 0.75rem;
+  color: #E24B4A;
+  font-style: normal;
+}
+
+.cu-counter {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  text-align: right;
+  font-style: normal;
+}
+
+/* Status messages */
+.cu-status {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cu-status--success {
+  background: #E1F5EE;
+  color: #0F6E56;
+  border: 0.5px solid #1D9E75;
+}
+
+.cu-status--error {
+  background: #FCEBEB;
+  color: #A32D2D;
+  border: 0.5px solid #E24B4A;
 }
 
 /* Submit button */
-.btn.btn-primary {
-  font-weight: bold;
-  padding: 0.5rem 1.5rem;
-  transition: background-color 0.3s ease;
+.cu-submit-wrap {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.btn.btn-primary:hover {
-  background-color: #2563eb;
+.cu-submit-btn {
+  background: #0f172a;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.75rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-style: normal;
 }
 
-/* Responsive Design */
+.cu-submit-btn:hover {
+  background: #1e293b;
+}
+
+.cu-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+  .cu-container {
+    flex-direction: column;
+  }
+
+  .cu-left {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
-  .contactUsLeft {
-    margin-bottom: 2rem;
+  .cu-wrapper {
+    padding: 1.5rem 1rem;
   }
 
-  .contactUsRight h3 {
-    font-size: 1.5rem;
+  .cu-row {
+    grid-template-columns: 1fr;
   }
 
-  .contactUsLeft ul li {
-    font-size: 0.85rem;
+  .cu-form {
+    padding: 1.25rem;
   }
 }

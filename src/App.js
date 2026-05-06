@@ -10,6 +10,7 @@ import PortfolioNavbar from './components/Navbar';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import ContactUS from './components/pages/ContactUs';
+import ResumePage from './components/pages/ResumePage';
 
 // Set the base URL for the router.
 // process.env.PUBLIC_URL is the value you set in the "homepage" field in package.json
@@ -33,7 +34,7 @@ function App() {
           {/* Ensure child paths are defined correctly */}
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactUS />} />
-
+          <Route path="/resume" element={<ResumePage />} />
           {/* Optional: Add a catch-all 404 route at the very end.
             <Route path="*" element={<NotFound />} />
           */}

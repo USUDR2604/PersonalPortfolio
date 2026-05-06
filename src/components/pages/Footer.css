@@ -1,0 +1,157 @@
+/* =========================================================
+   Footer.css
+========================================================= */
+
+.footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 3rem 0 0;
+  font-style: normal;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(255,255,255,0.08);
+}
+
+/* ── Brand ── */
+.footer-brand {
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-company {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0;
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
+
+.footer-founded {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+  font-style: italic;
+}
+
+.footer-founder {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin: 0.25rem 0 0;
+  font-style: normal;
+}
+
+.footer-founder strong {
+  color: #e2e8f0;
+}
+
+.footer-role {
+  color: #1D9E75;
+  font-weight: 600;
+}
+
+.footer-desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0.5rem 0 0;
+  font-style: italic;
+  max-width: 300px;
+}
+
+/* ── Quick Links ── */
+.footer-links {
+  flex: 0 1 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-heading {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #475569;
+  margin: 0 0 0.35rem;
+  font-style: normal;
+}
+
+.footer-link {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  text-decoration: none;
+  font-style: normal;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: #1D9E75;
+}
+
+/* ── Connect ── */
+.footer-connect {
+  flex: 0 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: #94a3b8;
+  text-decoration: none;
+  font-style: normal;
+  transition: color 0.2s;
+}
+
+.footer-social:hover {
+  color: #1D9E75;
+}
+
+/* ── Copyright bar ── */
+.footer-bottom {
+  background: #080f1e;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.footer-bottom p {
+  font-size: 0.78rem;
+  color: #475569;
+  margin: 0;
+  font-style: normal;
+}
+
+.footer-bottom strong {
+  color: #64748b;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-links,
+  .footer-connect {
+    flex: 1 1 100%;
+  }
+}

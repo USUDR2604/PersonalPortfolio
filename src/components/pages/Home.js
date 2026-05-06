@@ -13,7 +13,7 @@ import Volunteer from "../subsections/Volunteer.js";
 import CourseDetails from "../subsections/CourseDetail.js";
 import References from "../subsections/ReferenceDetail.js";
 import ProfessionalSummary from "../subsections/ProfessionalSummary.js"
-
+import Footer from './Footer';
 import data from '../DataFiles/data.json';
 
 function Home() {
@@ -134,6 +134,7 @@ function Home() {
           <References/>
           </div>
       </section>
+      <Footer/>
     </>
   );
 }
