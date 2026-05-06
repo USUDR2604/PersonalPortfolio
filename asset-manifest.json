@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PersonalPortfolio/static/css/main.b12887ba.css",
-    "main.js": "/PersonalPortfolio/static/js/main.ce8fab79.js",
+    "main.css": "/PersonalPortfolio/static/css/main.4e33047c.css",
+    "main.js": "/PersonalPortfolio/static/js/main.95627810.js",
     "static/js/453.c937a3a2.chunk.js": "/PersonalPortfolio/static/js/453.c937a3a2.chunk.js",
     "static/media/Bag1.png": "/PersonalPortfolio/static/media/Bag1.1a2225ee6c7d6ac567de.png",
     "static/media/PBDMLogo.png": "/PersonalPortfolio/static/media/PBDMLogo.194817462313ecb92c30.png",
@@ -61,6 +61,7 @@
     "static/media/Frontend_Logo.png": "/PersonalPortfolio/static/media/Frontend_Logo.1977ac1511f47508d7e8.png",
     "static/media/CyberSecurity_Logo.png": "/PersonalPortfolio/static/media/CyberSecurity_Logo.3cd6e71e1f14a1c2d0a9.png",
     "static/media/TCS_Logo.png": "/PersonalPortfolio/static/media/TCS_Logo.f0f48e5aeedc99356db0.png",
+    "static/media/USUDReddy_Pic.png": "/PersonalPortfolio/static/media/USUDReddy_Pic.6fa7a4354ee22a9ad8ad.png",
     "static/media/fa-brands-400.ttf": "/PersonalPortfolio/static/media/fa-brands-400.1815e00441357e01619e.ttf",
     "static/media/Coursera_Logo.png": "/PersonalPortfolio/static/media/Coursera_Logo.27441355bb795f0595e0.png",
     "static/media/Python_Logo.jpg": "/PersonalPortfolio/static/media/Python_Logo.a0f0e7dd003eeeef72d7.jpg",
@@ -68,7 +69,6 @@
     "static/media/TwoWaitsLogo.png": "/PersonalPortfolio/static/media/TwoWaitsLogo.cab067eee4be2657477f.png",
     "static/media/gitlab_logo.png": "/PersonalPortfolio/static/media/gitlab_logo.b09b042718b8c4239412.png",
     "static/media/Skill_Icon.jpg": "/PersonalPortfolio/static/media/Skill_Icon.80af50ef21c8a0552081.jpg",
-    "static/media/UdayDeepPic.png": "/PersonalPortfolio/static/media/UdayDeepPic.e52936ff0715a5834f67.png",
     "static/media/CloudComputingLogo.png": "/PersonalPortfolio/static/media/CloudComputingLogo.a91fc2e49a23f598da4a.png",
     "static/media/Azure_Logo.png": "/PersonalPortfolio/static/media/Azure_Logo.e56a8388ec9e0497058d.png",
     "static/media/Django_Logo.png": "/PersonalPortfolio/static/media/Django_Logo.78cc14dd6cbe74b3016f.png",
@@ -109,12 +109,12 @@
     "static/media/crypto_logo.jpg": "/PersonalPortfolio/static/media/crypto_logo.278e356d5943df6a358b.jpg",
     "static/media/fa-v4compatibility.woff2": "/PersonalPortfolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/PersonalPortfolio/index.html",
-    "main.b12887ba.css.map": "/PersonalPortfolio/static/css/main.b12887ba.css.map",
-    "main.ce8fab79.js.map": "/PersonalPortfolio/static/js/main.ce8fab79.js.map",
+    "main.4e33047c.css.map": "/PersonalPortfolio/static/css/main.4e33047c.css.map",
+    "main.95627810.js.map": "/PersonalPortfolio/static/js/main.95627810.js.map",
     "453.c937a3a2.chunk.js.map": "/PersonalPortfolio/static/js/453.c937a3a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b12887ba.css",
-    "static/js/main.ce8fab79.js"
+    "static/css/main.4e33047c.css",
+    "static/js/main.95627810.js"
   ]
 }
