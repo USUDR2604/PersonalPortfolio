@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PersonalPortfolio/static/css/main.b5c1af93.css",
-    "main.js": "/PersonalPortfolio/static/js/main.b977b3cf.js",
+    "main.css": "/PersonalPortfolio/static/css/main.c40e100a.css",
+    "main.js": "/PersonalPortfolio/static/js/main.f3af3ab1.js",
     "static/js/453.c937a3a2.chunk.js": "/PersonalPortfolio/static/js/453.c937a3a2.chunk.js",
     "static/media/Bag1.png": "/PersonalPortfolio/static/media/Bag1.1a2225ee6c7d6ac567de.png",
     "static/media/PBDMLogo.png": "/PersonalPortfolio/static/media/PBDMLogo.194817462313ecb92c30.png",
@@ -108,12 +108,12 @@
     "static/media/crypto_logo.jpg": "/PersonalPortfolio/static/media/crypto_logo.278e356d5943df6a358b.jpg",
     "static/media/fa-v4compatibility.woff2": "/PersonalPortfolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/PersonalPortfolio/index.html",
-    "main.b5c1af93.css.map": "/PersonalPortfolio/static/css/main.b5c1af93.css.map",
-    "main.b977b3cf.js.map": "/PersonalPortfolio/static/js/main.b977b3cf.js.map",
+    "main.c40e100a.css.map": "/PersonalPortfolio/static/css/main.c40e100a.css.map",
+    "main.f3af3ab1.js.map": "/PersonalPortfolio/static/js/main.f3af3ab1.js.map",
     "453.c937a3a2.chunk.js.map": "/PersonalPortfolio/static/js/453.c937a3a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5c1af93.css",
-    "static/js/main.b977b3cf.js"
+    "static/css/main.c40e100a.css",
+    "static/js/main.f3af3ab1.js"
   ]
 }
