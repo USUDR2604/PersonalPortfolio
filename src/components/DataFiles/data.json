@@ -33,10 +33,24 @@
     "Analyzed large-scale operational datasets — food consumption, footfall, facility usage, and scheduling — using PySpark and SQL with complex joins, window functions, and query optimization; applied ANSI SQL and T-SQL for performance tuning and data quality compliance.",
     "Built scalable dimensional data models using star schema and snowflake schema designs with Spark, Airflow, and dbt across Parquet and JSON/CSV datasets, enabling 15+ real-time Tableau and Power BI dashboards delivering live scheduling insights across campus facilities."
   ],
-   "Achievements": [
-   "Reduced manual data preparation by 30% through fully automated ingestion and monitoring pipelines, improving resource allocation and schedule management accuracy by 15–20%.",
-   "Delivered 15+ live Tableau and Power BI dashboards — reducing reporting latency by 20% and improving overall operational efficiency by 15% through optimized dimensional data models."
- ],
+  "Team_Scale": {
+  "team_size": "10 Members",
+  "scale": "University-wide Campus Operations",
+  "cloud": "Snowflake & Databricks",
+  "scope": "Rotating Shift · Data Analysis & Reporting",
+  "overview": "10-member rotating shift team analyzing university dining and facility operational data — each shift ingests, stores, and analyzes historical and new data to deliver updated reports and operational insights."
+},
+"Key_Deliverables": [
+  "20+ Airflow-based ETL/ELT pipelines on Snowflake and Databricks Lakehouse with automated ingestion, data validation checks, schema enforcement, and SLA monitoring.",
+  "Scalable dimensional data models using star schema and snowflake schema designs with Spark, Airflow, and dbt across Parquet and JSON/CSV datasets.",
+  "15+ real-time Tableau and Power BI dashboards delivering live scheduling insights and operational analysis across campus facilities.",
+  "Automated data quality monitoring and schema enforcement pipelines ensuring reliable, analytics-ready datasets."
+],
+"Achievements": [
+  "Reduced manual data preparation by 30% through fully automated ingestion and monitoring pipelines.",
+  "Improved resource allocation and schedule management accuracy by 15–20% through data-driven analysis.",
+  "Reduced reporting latency by 20% and improved overall operational efficiency by 15% through live dashboards and optimized dimensional data models."
+],
   "skills": [
     "Data Engineering",
     "SQL",
@@ -79,9 +93,32 @@
   "Provisioned and managed cloud infrastructure using Terraform and CloudFormation (IaC) across AWS (S3, EMR, Glue, Lambda, Redshift) and GCP (Dataflow, BigQuery), deploying and scaling 10+ containerized microservices via Docker and Kubernetes within a 7+ engineer team — improving scalability by 30%.",
   "Integrated service logs into the ELK Stack (Logstash, Elasticsearch, Kibana) for centralized monitoring and real-time alerting; used Python, SQL, Tableau, and Power BI to analyze telecom data across network performance, bandwidth, and recharge workloads — improving reporting accuracy by 20% and reducing incident detection time by 25–30%."
 ],
+"Team_Scale": {
+  "team_size": "4 Members",
+  "scale": "Vodacom Telecom · 50M+ Daily Events",
+  "cloud": "AWS & GCP",
+  "scope": "Cross-functional · Full SDLC",
+  "overview": "4-member Data Engineering team delivering end-to-end Vodacom telecom data solutions — processing 50M+ daily events across AWS and GCP following full SDLC from requirements through production."
+},
+"Key_Deliverables": [
+  "Medallion Architecture (Bronze/Silver/Gold) PySpark pipeline on Databricks Lakehouse processing Vodacom network events using Parquet/JSON formats and Delta Lake ACID transactions.",
+  "50+ Snowflake data models using star schema and snowflake schema designs with complex joins, window functions, REST API integrations, query optimization — ensuring full data lineage and governance auditability.",
+  "10+ Airflow, Azure Data Factory, SSIS, and dbt ETL/ELT pipelines on AWS S3 and GCP Data Lake implementing CDC and SCD Type 1/2 patterns.",
+  "RAG-based AI chatbot integrated with Big Data pipelines using LangChain, LangGraph, and Vector Databases — enabling automated customer detail analysis and real-time telecom query resolution.",
+  "Full-stack Python Django backend with service-layer connectors integrating PL/SQL, MongoDB, Oracle SQL, and Redis + Angular/React frontend unified service layer.",
+  "10+ containerized microservices via Docker and Kubernetes using Terraform and CloudFormation (IaC) across AWS (S3, EMR, Glue, Lambda) and GCP (Dataflow, BigQuery).",
+  "ELK Stack (Logstash, Elasticsearch, Kibana) centralized monitoring and observability system across Vodacom network workloads.",
+  "Tableau and Power BI dashboards analyzing real-time Vodacom telecom data across network performance, bandwidth, and recharge workloads."
+],
 "Achievements": [
-  "Architected a self-driven AI chatbot integrated with Big Data pipelines and RAG-based systems using LangChain, LangGraph, and Vector Databases — enabling automated customer detail analysis and real-time query resolution on Vodacom telecom account and network data, reducing support load by 25%.",
-  "Followed full SDLC from requirements gathering and design through development, testing, release, and production maintenance — collaborating on user requirements and test plan validation within a 7+ engineer team, improving overall delivery reliability across Vodacom network workloads."
+  "Reduced pipeline latency by 30% processing 50M+ daily Vodacom network events using Delta Lake ACID transactions and fault-tolerant distributed architecture.",
+  "Improved pipeline reliability by 25% through automated ingestion, CDC and SCD Type 1/2 patterns across AWS S3 and GCP Data Lake.",
+  "Reduced Vodacom support load by 25% through RAG-based AI chatbot with LangChain, LangGraph, and Vector Databases.",
+  "Improved system response latency by 20% through unified Django/React service layer integrating MongoDB, Oracle SQL, and Redis.",
+  "Improved scalability by 30% and optimized cloud costs deploying 10+ microservices via Docker and Kubernetes on AWS and GCP.",
+  "Reduced incident detection and troubleshooting time by 25–30% through ELK Stack centralized monitoring.",
+  "Improved reporting accuracy by 20% through real-time Tableau and Power BI dashboards.",
+  "Followed full SDLC from requirements gathering through production maintenance within a 4-member cross-functional team."
 ],
 "skills": [
   "Python",
@@ -134,10 +171,24 @@
     "Built real-time data pipelines using PySpark and AWS to process user interaction and assessment data, and designed a dynamic pass/fail evaluation engine using RAG and prompt engineering on Databricks Lakehouse — enabling low-latency analytics under 3 seconds with 25% improved feedback accuracy.",
     "Designed and managed Data Lake architecture on AWS and GCP using Apache Spark, PySpark, Snowflake, dbt, and Airflow, orchestrating ETL/ELT workflows and Streaming & Batch Processing across assessment and user interaction datasets — ensuring data quality, schema enforcement, and under 50ms retrieval latency through MongoDB and Redis caching pipelines."
   ],
-  "Achievements": [
-    "Built and deployed a fully functional AI assessment chatbot serving real users with adaptive difficulty, error explanation, and personalized performance reports — increasing user completion rates and improving automated feedback accuracy by 25%.",
-    "Architected a scalable Data Lake backend on AWS and GCP using Apache Spark and PySpark to extract subject-specific assessment datasets on demand — achieving under 50ms retrieval latency through MongoDB and Redis caching pipelines."
-  ],
+  "Team_Scale": {
+  "team_size": "5 Members",
+  "scale": "Assessment Platform · Sub-3s Latency",
+  "cloud": "AWS & GCP",
+  "scope": "Backend Lead · Full Stack Integration",
+  "overview": "5-member team — 4 on frontend and cloud connectivity, I led the backend integration layer connecting all components end-to-end including PySpark data pipelines, RAG evaluation engine, Data Lake architecture, and full analysis layer."
+},
+"Key_Deliverables": [
+  "AI-powered assessment chatbot using RASA, LangChain, and LangGraph with Angular/React frontend and Python backend — adaptive difficulty, error explanation, and personalized performance reports.",
+  "Dynamic pass/fail evaluation engine using RAG and prompt engineering across Big Data pipelines on Databricks Lakehouse.",
+  "Real-time PySpark data pipelines on AWS processing user interaction and assessment data.",
+  "Data Lake architecture on AWS and GCP using Apache Spark, PySpark, Snowflake, dbt, and Airflow with MongoDB and Redis caching pipelines."
+],
+"Achievements": [
+  "Improved automated query resolution by 30% through structured intent detection and contextual response handling.",
+  "Cut response latency to under 3 seconds with 25% improved feedback accuracy through RAG and prompt engineering on Databricks Lakehouse.",
+  "Achieved under 50ms retrieval latency through MongoDB and Redis caching pipelines, improving data pipeline reliability by 25%."
+],
   "skills": [
     "Python",
     "RASA",
@@ -191,10 +242,25 @@
     "Built 10+ backend data ingestion pipelines using Python, Django, and MongoDB across multiple data sources (Parquet, JSON/CSV), achieving sub-50ms data retrieval latency for high-volume user interaction and chatbot systems. Enabled real-time data streaming and API-driven integrations improving system reliability by 25%.",
     "Built an NLP-driven educational chatbot using RASA and intent classification serving 2,000+ users, improving automated query resolution by 20% through structured conversational flows and real-time response handling — delivering adaptive difficulty levels, doubt answering, incorrect answer explanations, and personalized performance reports."
   ],
-  "Achievements": [
-    "Built and deployed an NLP-driven educational chatbot serving 2,000+ users with adaptive difficulty, doubt answering, and personalized performance reports — improving automated query resolution by 20%.",
-    "Architected scalable Big Data and microservices infrastructure on AWS using Apache Spark, Kafka, and Kubernetes — improving pipeline reliability by 25% and enabling sub-50ms feedback latency across high-volume user interaction and assessment datasets."
-  ],
+  "Team_Scale": {
+  "team_size": "4 Members",
+  "scale": "2,000+ Users · Sub-50ms Latency",
+  "cloud": "AWS",
+  "scope": "Data Engineering · AI & Backend",
+  "overview": "4-member team collaborating across backend, data engineering, and AI — building Big Data infrastructure and NLP chatbot systems serving 2,000+ users with sub-50ms feedback latency."
+},
+"Key_Deliverables": [
+  "NLP-driven educational chatbot using RASA and intent classification — adaptive difficulty levels, doubt answering, incorrect answer explanations, and personalized performance reports.",
+  "10+ ETL/ELT pipelines using Apache Spark, Kafka, Airflow, and Kubernetes on AWS orchestrating answer submission, validation, scoring, and report generation across Parquet/JSON/CSV sources with Snowflake and dbt.",
+  "10+ backend data ingestion pipelines using Python, Django, and MongoDB across Parquet, JSON/CSV sources.",
+  "Real-time data pipelines using PySpark, MongoDB, and Redis caching on AWS processing user response data from submission to scoring."
+],
+"Achievements": [
+  "Served 2,000+ users improving automated query resolution by 20% through structured conversational flows and real-time response handling.",
+  "Achieved sub-50ms data retrieval latency across high-volume user interaction and chatbot systems.",
+  "Improved pipeline reliability by 25% orchestrating 10+ ETL/ELT pipelines across Parquet/JSON/CSV sources.",
+  "Improved system reliability by 25% enabling sub-50ms feedback latency through PySpark, MongoDB, and Redis caching pipelines."
+],
   "skills": [
     "Python",
     "Django",
@@ -683,7 +749,7 @@
     "is_published": "True",
     "name": "AI Platform — Agentic AI, RAG & Multimodal Analysis",
     "proj_url": "",
-    "Associated_Comp_Logo": "UltraUnityVerseLogo",
+    "Associated_Comp_Logo": "ProjectDetailLogo",
     "Duration": { "Start_Date": "Jan 2026", "End_Date": "", "is_present": "True" },
     "Location": { "City": "Kansas City", "State": "Missouri", "State_SF": "MO", "Country": "United States of America", "Country_SF": "USA", "ZipCode": "64111" },
     "associated_with": "UltraUnityVerse Hub",
@@ -702,7 +768,7 @@
     "is_published": "True",
     "name": "ATS Resume Builder",
     "proj_url": "",
-    "Associated_Comp_Logo": "UltraUnityVerseLogo",
+    "Associated_Comp_Logo": "ProjectDetailLogo",
     "Duration": { "Start_Date": "Jan 2026", "End_Date": "", "is_present": "True" },
     "Location": { "City": "Kansas City", "State": "Missouri", "State_SF": "MO", "Country": "United States of America", "Country_SF": "USA", "ZipCode": "64111" },
     "associated_with": "UltraUnityVerse Hub",
@@ -721,7 +787,7 @@
     "is_published": "True",
     "name": "AI Code Reviewer",
     "proj_url": "",
-    "Associated_Comp_Logo": "UltraUnityVerseLogo",
+    "Associated_Comp_Logo": "ProjectDetailLogo",
     "Duration": { "Start_Date": "Jan 2026", "End_Date": "", "is_present": "True" },
     "Location": { "City": "Kansas City", "State": "Missouri", "State_SF": "MO", "Country": "United States of America", "Country_SF": "USA", "ZipCode": "64111" },
     "associated_with": "UltraUnityVerse Hub",

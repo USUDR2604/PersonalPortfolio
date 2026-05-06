@@ -91,9 +91,11 @@ import DataAnalysisLogo from "../Images/Logos/ProgrammingIcon/DataAnalysisLogo.p
 import IBMLogo from "../Images/Logos/OrganizationLogo/IBMLogo.png"
 import IOTLogo from "../Images/Logos/ProgrammingIcon/IOTLogo.png"
 import PBDMLogo from "../Images/Logos/ProgrammingIcon/PBDMLogo.png"
+import ProjectDetailLogo from "../Images/Logos/SubSectionLogo/ProjectDetailLogo.jpg"
 // import other logos here..
 
 const logoMap = {
+  "ProjectDetailLogo":ProjectDetailLogo,
   "ETLELTPipelineLogo":ETLELTPipelineLogo,
   "BigDataLogo":BigDataLogo,
   "VolunteerLogo":VolunteerLogo,

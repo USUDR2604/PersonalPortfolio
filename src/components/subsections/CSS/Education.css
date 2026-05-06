@@ -1,5 +1,5 @@
 /* =========================================================
-   Education.css — matches Experience.css structure
+   Education.css â€” matches Experience.css structure
 ========================================================= */
 
 /* -------------------------
@@ -204,8 +204,55 @@ img.img-icon-sty {
 }
 
 /* -------------------------
-   Overview
+   Toggle Button
 ------------------------- */
+.edu-more-hint {
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.edu-more-text {
+  font-size: 0.82rem;
+  color: #178EAF;
+  font-style: italic;
+}
+
+.edu-toggle-btn {
+  margin-top: 0.75rem;
+  background: none;
+  border: 0.5px solid rgba(15, 23, 42, 0.2);
+  border-radius: 999px;
+  padding: 0.3rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #178EAF;
+  cursor: pointer;
+  font-style: normal;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.edu-toggle-btn:hover {
+  background: #f1f5f9;
+  border-color: #178EAF;
+}
+
+/* -------------------------
+   Expanded Content
+------------------------- */
+.edu-expanded {
+  margin-top: 0.5rem;
+  animation: eduFadeIn 0.2s ease;
+}
+
+@keyframes eduFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
 .edu-overview {
   font-style: italic;
   color: #475569;

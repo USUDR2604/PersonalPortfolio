@@ -126,18 +126,18 @@ img.img-icon-sty {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 0.15rem;
+  padding-top: 0.1rem;
 }
 
 .exp-logo {
-  border-radius: 50%;
-  border: 0.12rem solid #0f172a;
+  border-radius: 10px;
+  border: 0.08rem solid rgba(15, 23, 42, 0.12);
   object-fit: contain;
   background: #fff;
-  padding: 0.35rem;
-  box-shadow: 0 10px 20px rgba(2, 6, 23, 0.10);
-  width: 5rem;
-  height: 5rem;
+  padding: 0.25rem;
+  box-shadow: 0 4px 12px rgba(2, 6, 23, 0.08);
+  width: 3rem;
+  height: 3rem;
 }
 
 .exp-headtext {
@@ -350,7 +350,7 @@ img.img-icon-sty {
 
   .exp-duration { margin-left: 0; }
 
-  .exp-logo { width: 2.5rem; height: 2.5rem; padding: 0.25rem; }
+  .exp-logo { width: 2rem; height: 2rem; padding: 0.2rem; border-radius: 6px; }
 
   .exp-title { font-size: 0.98rem; }
   .exp-company { font-size: 0.9rem; }
@@ -405,7 +405,7 @@ img.img-icon-sty {
 
   .exp-duration { margin-left: 0; }
 
-  .exp-logo { width: 3.25rem; height: 3.25rem; padding: 0.3rem; }
+  .exp-logo { width: 2.5rem; height: 2.5rem; padding: 0.22rem; border-radius: 8px; }
 
   .exp-tasks { font-size: 0.88rem; line-height: 1.65; }
 }
@@ -438,7 +438,7 @@ img.img-icon-sty {
 
   .experience-mobile-content { display: none; }
 
-  .exp-logo { width: 4.15rem; height: 4.15rem; }
+  .exp-logo { width: 2.75rem; height: 2.75rem; border-radius: 9px; }
 
   .exp-tasks { font-size: 0.92rem; }
 }
@@ -471,10 +471,92 @@ img.img-icon-sty {
 
   .experience-mobile-content { display: none; }
 
-  .exp-logo { width: 4.35rem; height: 4.35rem; }
+  .exp-logo { width: 3rem; height: 3rem; border-radius: 10px; }
 
   .exp-tasks { font-size: 0.95rem; }
 }
-.exp-section-title--italic {
+
+/* -------------------------
+   Overview
+------------------------- */
+.exp-overview-para {
   font-style: italic;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.exp-overview-para:last-child {
+  margin-bottom: 0;
+}
+
+/* -------------------------
+   Team & Scale
+------------------------- */
+.exp-team-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.5rem;
+}
+
+.exp-team-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: #f1f5f9;
+  border: 0.5px solid rgba(15, 23, 42, 0.1);
+  border-radius: 999px;
+  padding: 0.22rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #334155;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+.exp-team-overview {
+  font-size: 0.88rem;
+  color: #475569;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0.25rem 0 0;
+}
+
+/* -------------------------
+   Toggle Button
+------------------------- */
+.exp-toggle-btn {
+  margin-top: 0.75rem;
+  background: none;
+  border: 0.5px solid rgba(15, 23, 42, 0.2);
+  border-radius: 999px;
+  padding: 0.3rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #178EAF;
+  cursor: pointer;
+  font-style: normal;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.exp-toggle-btn:hover {
+  background: #f1f5f9;
+  border-color: #178EAF;
+}
+
+/* -------------------------
+   Expanded Content
+------------------------- */
+.exp-expanded {
+  margin-top: 0.5rem;
+  animation: expFadeIn 0.2s ease;
+}
+
+@keyframes expFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
